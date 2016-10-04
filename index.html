@@ -1,0 +1,830 @@
+<html ng-app="pasbaapp">
+ <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pasba Website</title>
+       
+        <!--font awesome-->
+        <link rel="stylesheet" href="libraries/font-awesome-4.3.0/css/font-awesome.min.css" type="text/css">
+
+        <!-- plugin styles -->
+        <link rel="stylesheet" href="content/css/bootstrap/bootstrap.min.css" type="text/css">
+        
+
+        <!-- Custom styles -->
+        <link id="theme_style" type="text/css" href="content/css/style.css" rel="stylesheet" media="screen">
+
+        <!-- Carousel -->
+        <link rel="stylesheet" href="content/css/carousel.css" type="text/css"> 
+
+
+        <!-- Favicon -->
+        <link href="assets/img/favicon.png" rel="icon" type="image/png">
+
+        <!-- Assets -->
+        <link rel="stylesheet" href="libraries/owl/css/owl-carosel.css">
+        <link rel="stylesheet" href="libraries/owl/css/owl-theme.css">
+
+        <!-- Animate -->
+        <link rel="stylesheet" href="libraries/css/animate.min.css" type="text/css">
+
+        <!-- JS Library -->
+        <script src="js/jquery.js"></script>
+
+
+        <!--Angular JS-->
+        <script src="pasbahome/angular/angular.min.js"></script>
+        <script src="pasbahome/js/app.js"></script>
+        <script src="pasbahome/controllers/appcontroller.js"></script>
+        <script src="libraries/slick/slick.js"></script>
+        
+        
+
+
+
+
+    </head>
+<body ng-controller="appcontroller">
+
+    <div class="wrapper">
+            <header class="navbar navbar-default navbar-fixed-top navbar-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        
+                            <a href="index.html" class="navbar-brand"><span class="logo"><img src="content/images/pasbalogomedcome.png"></span></a>
+                        
+                    </div>
+
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="new-ads"><a href="account_create_post.html" class="btn btn-ads btn-block">Home{{test}}</a></li>
+                            <li><a href="signup.html">About us</a></li>
+                            <li><a href="">Contact us</a></li>
+                            <!-- <li class="dropdown">
+                                <a class="dropdown-toggle" href="#" data-toggle="dropdown"><strong class="caret"></strong>&nbsp;Navigation</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="account_posts.html">Sub</a></li>
+                                    <li><a href="account_create_post.html">Sub</a></li>
+                                    <li><a href="account_profile.html">Sub</a></li>
+                                </ul>
+                            </li> -->
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="fa fa-user"></i>Welcome User&nbsp;</a>
+                                <div class="dropdown-menu dropdown-login" style="padding:15px;min-width:250px">
+                                    <form>                       
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <span class="input-group-addon addon-login"><i class="fa fa-user"></i></span>
+                                                <input type="text" placeholder="Username or email" required="required" class="form-control input-login">                                            
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <span class="input-group-addon addon-login"><i class="addon fa fa-lock"></i></span>
+                                                <input type="password" placeholder="Password" required="required" class="form-control input-login">                                            
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="checkbox">
+                                                <label class="string optional" for="user_remember_me">
+                                                    <input type="checkbox" id="user_remember_me" style="">
+                                                    Remember me
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <input type="submit" class="btn btn-custom btn-block" value="Sign In">
+                                        <a href="forgot_password.html" class="btn-block text-center">Forgot password?</a>
+                                    </form>                                    
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <section class="headerbackground ">
+
+               
+
+
+               
+                    
+                  
+<div class="Modern-Slider">
+  <!-- Item -->
+  <div class="item">
+    <div class="img-fill">
+      <img src="content/images/deploy-resize1.jpg">
+      <div class="info">
+        <div class="blurb-wrapper">
+        <div>
+          <h3>Welcome to the PASBA Application Suite</h3>
+          <h2>Where Inspiration...Meets Innovation</h2>  
+           <h4>Mission</h4> 
+           <h5>Improve Army Medicine by Providing Medical Coding and Auditing, Data Quality, Analytics, and Deployed Record Services.</h5>
+           <h4>Vision</h4>
+           <h5>Lead the Evolution of Healthcare through Clinical and Business Operations for a Ready and Reliable Force.</h5>
+
+      
+          
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <!-- // Item -->
+  <!-- Item -->
+  <div class="item">
+    <div class="img-fill">
+      <img src="content/images/medic-helo-crop.png">
+      <div class="info">
+       
+          <div class="blurb-wrapper">
+                  <div> 
+
+                   <h3>DMRPC</h3>
+                   <h4>Deployed Medical Records Processing Center</h4>
+                   <h5>Providing data for multiple PASBA applications and reports, DMRPC  is the primary contact point on the management of medical documentation of military</h5>
+                </div>
+          <h5></h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- // Item -->
+  <!-- Item -->
+  <div class="item">
+    <div class="img-fill">
+       <img src="content/images/coding.jpg">
+      <div class="info">
+         <div class="blurb-wrapper">
+        <div>
+          <h3>HIMS and Coding</h3>
+          <h4>The Health Information Management and Coding Consultation Section is the Army's lead agent for providing coding guidance and policy to all Military Treatment Facilities in both the deployed and fixed facilities</h4>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <!-- // Item -->
+  <!-- Item -->
+  <!-- <div class="item">
+    <div class="img-fill">
+      
+      <div class="info">
+        <div>
+          <h3></h3>
+          <h5></h5>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- // Item -->
+</div>
+
+                   
+                </div>
+            </section>
+            <section class="main">
+
+                <div class="green-space">
+                     <div class="space-wrapper">
+                        <div id="pasbaapps">
+                                <span class="active">
+                                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"></path></svg>
+                                        <h3>My Apps</h3>
+                                </span>
+
+                                <span>
+                                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z"></path></svg>
+                                        <h3>DMRPC</h3>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"></path></svg>
+                                        <h3>HIMS and Coding</h3>
+                                </span>
+
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12.01c1.1 0 1.99-.9 1.99-2l-.01-16zM9 19H7v-2h2v2zm8 0h-2v-2h2v2zm-8-4H7v-4h2v4zm4 4h-2v-4h2v4zm0-6h-2v-2h2v2zm4 2h-2v-4h2v4z"></path></svg>
+                                        <h3>Data Quality</h3>
+                                </span>
+
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path d="M 11 8 c -1.66 0 -3 1.34 -3 3 s 1.34 3 3 3 s 3 -1.34 3 -3 s -1.34 -3 -3 -3 Z" /><path d="M 17.59 19 l -3.83 -3.83 c -0.8 0.52 -1.74 0.83 -2.76 0.83 c -2.76 0 -5 -2.24 -5 -5 s 2.24 -5 5 -5 s 5 2.24 5 5 c 0 1.02 -0.31 1.96 -0.83 2.75 L 19 17.59 L 17.59 19 Z M 19 3 H 5 c -1.1 0 -2 0.9 -2 2 v 14 c 0 1.1 0.9 2 2 2 h 14 c 1.1 0 2 -0.9 2 -2 V 5 c 0 -1.1 -0.9 -2 -2 -2 Z" /></svg>
+                                        <h3>Data Analysis</h3>
+                                </span>
+
+                                 <span>
+                                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path d="M 12 12 c 2.21 0 4 -1.79 4 -4 s -1.79 -4 -4 -4 s -4 1.79 -4 4 s 1.79 4 4 4 Z" /><path d="M 12 14 c -2.67 0 -8 1.34 -8 4 v 2 h 16 v -2 c 0 -2.66 -5.33 -4 -8 -4 Z" /></svg>
+                                        <h3>Commanders Corner</h3>
+                                </span>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-8">
+
+                              <div class="section-header">
+                                        <h2>My Apps</h2>
+                                    </div>
+
+                            <div class="row person-wrapper">
+                            <!-- <div class="filter">
+                                <input type="text">
+                            </div> -->
+
+                            <div id="person-contain">
+                                <div class="col-xs-4 col-sm-3 icon-word">
+                                    <div class="shortcut">
+                                        <a href="category.html"><img src="content/images/icons/notes.svg"></a>
+                                    </div>
+
+                                    <a href="category.html"><h3>CARA</h3></a>
+
+                                </div>
+                                 <div class="col-xs-4 col-sm-3 icon-word">
+                                    <div class="shortcut">
+                                        <a href="category.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path d="M 19 3 H 5 c -1.1 0 -2 0.9 -2 2 v 14 c 0 1.1 0.9 2 2 2 h 14 c 1.1 0 2 -0.9 2 -2 V 5 c 0 -1.1 -0.9 -2 -2 -2 Z M 9 17 H 7 v -7 h 2 v 7 Z m 4 0 h -2 V 7 h 2 v 10 Z m 4 0 h -2 v -4 h 2 v 4 Z" /></svg></a>
+                                    </div>
+                                     <a href="category.html"><h3>CHUP</h3></a>
+                                </div>
+                                 <div class="col-xs-4 col-sm-3 icon-word">
+                                    <div class="shortcut">
+                                        <a href="category.html"><img src="content/images/icons/caper.svg"></a>
+                                        
+                                        
+                                    </div>
+                                    <a href="category.html"><h3>CAPER Reports</h3></a>
+                                </div>
+                                 <div class="col-xs-4 col-sm-3 icon-word">
+                                    <div class="shortcut">
+                                        <a href="category.html"><img src="content/images/icons/dqmcp.svg"></a>
+                                     
+                                        
+                                    </div>
+                                       <a href="category.html"><h3>DQMCP</h3></a>
+                                </div>
+                                 <div class="col-xs-4 col-sm-3 icon-word">
+                                    <div class="shortcut">
+                                        <a href="category.html"><img src="content/images/icons/eod.svg"></a>
+                                        
+                                        
+                                    </div>
+                                    <a href="category.html"><h3>WISPR</h3></a>
+                                </div>
+                                 <div class="col-xs-4 col-sm-3 icon-word">
+                                    <div class="shortcut">
+                                        <a href="category.html"><img src="content/images/icons/ipsr.svg"></a>
+                                        
+                                        
+                                    </div>
+                                    <a href="category.html"><h3>MEDCOM360</h3></a>
+                                </div>
+                                
+                                 <div class="col-xs-4 col-sm-3 icon-word">
+                                    <div class="shortcut">
+                                        <a href="category.html"><img src="content/images/icons/M.svg"></a>
+                                       
+                                        
+                                    </div>
+                                         <a href="category.html"><h3>MAP</h3></a>
+                                </div>
+                                 <div class="col-xs-4 col-sm-3 icon-word">
+                                    <div class="shortcut">
+                                        <a href="category.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path d="M 12 12 c 2.21 0 4 -1.79 4 -4 s -1.79 -4 -4 -4 s -4 1.79 -4 4 s 1.79 4 4 4 Z" /><path d="M 12 14 c -2.67 0 -8 1.34 -8 4 v 2 h 16 v -2 c 0 -2.66 -5.33 -4 -8 -4 Z" /></svg></a>
+                                        
+                                    </div>
+                                        <a href="category.html"><h3>Commanders Corner</h3></a>
+                                </div>
+                                
+                                    </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="section-header">
+                                        <h2>Featured Apps</h2>
+                                    </div>
+
+
+
+                                        <div class="gallery-container">
+
+<div class="gallery-wrapper">
+
+
+<div id = "image-set">
+
+
+     <div class="rowcar">
+        <div class="carouselwrap">
+          <div class="back_btn no_select"><</div>
+          <div class="next_btn no_select">></div>
+          <div class="carousel">
+            <div class="item">
+              <img src="content/images/medcom_carousel.png" title="MEDCOM360 provides a one-stop portal for viewing various Army Medicine specific reports by location." alt="Medcom" />
+            </div>
+             
+            <div class="item">
+             
+              <img src="content/images/cara_carousel.jpg" alt="nav arrow" title="Code Auditing and Reporting Application "/>
+            </div>
+
+            <div class="item">
+              <img src="content/images/map.png" alt="MAP" title="MAP" />
+            </div>
+
+             <div class="item">
+              <img src="content/images/pae_carousel.png" alt="PAE" title="The Program Analysis and Evaluation Division of MEDCOM is developing and testing a portal for the delivery of business operation metrics." />
+            </div>
+
+            <div class="item">
+              <img src="content/images/bmi_carousel.png" title="BMI Weight is a charts/graphs of CDC weight categories and patients without calculable BMI. Charts/graphs display data by beneficiary category and weight category for all levels down to the CHILD DMISID" alt="BMI Weight" />
+            </div>
+
+          
+         
+            
+          </div>
+
+
+          <!-- End Carousel-->
+
+          <div class="ic_title">
+          </div>
+        </div>
+        <!-- End Carousel Wrap-->
+      </div>
+      <!-- End rowcar-->
+   
+
+</div>
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+                                    <!-- <div id="featured-products" class="owl-carousel owl-carousel-featured">
+                                        <div class="item">
+                                            <div class="item-ads-grid">
+                                                <div class="item-badge-grid featured-ads">
+                                                    <a href="#">Featured Ads</a>
+                                                </div>
+                                                <div class="item-img-grid">
+                                                    <img alt="" src="assets/img/products/product-1.jpg" class="img-responsive img-center">
+                                                </div>
+                                                <div class="item-title">
+                                                    <a href="detail.html"><h4>Lenovo A326 Black 4GB RAM</h4></a>
+                                                </div>
+                                                <div class="item-meta">
+                                                    <ul>
+                                                        <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 am</li>
+                                                        <li class="item-cat"><i class="fa fa-bars"></i> <a href="category.html">Electronics</a> , <a href="category.html">Smartphone</a></li>
+                                                        <li class="item-location"><a href="category.html"><i class="fa fa-map-marker"></i> Manchester</a></li>
+                                                        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-footer">
+                                                    <div class="item-price-grid pull-left">
+                                                        <h3>$ 100</h3>
+                                                        <span>Negotiable</span>
+                                                    </div>
+                                                    <div class="item-action-grid pull-right">
+                                                        <ul>
+                                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Save Favorite" class="btn btn-default btn-sm"><i class="fa fa-heart"></i></a></li>
+                                                            <li><a href="detail.html" data-toggle="tooltip" data-placement="top" title="Show Details" class="btn btn-success btn-sm"><i class="fa fa-eye"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>   
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="item-ads-grid">
+                                                <div class="item-badge-grid premium-ads">
+                                                    <a href="#">Featured Ads</a>
+                                                </div>
+                                                <div class="item-img-grid">
+                                                    <img alt="" src="assets/img/products/product-6.jpg" class="img-responsive img-center">
+                                                </div>
+                                                <div class="item-title">
+                                                    <a href="detail.html"><h4>Samsung Tab 3 V 116</h4></a>
+                                                </div>
+                                                <div class="item-meta">
+                                                    <ul>
+                                                        <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 am</li>
+                                                        <li class="item-cat"><i class="fa fa-bars"></i> <a href="category.html">Electronics</a> , <a href="category.html">Smartphone</a></li>
+                                                        <li class="item-location"><a href="category.html"><i class="fa fa-map-marker"></i> Manchester</a></li>
+                                                        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-footer">
+                                                    <div class="item-price-grid pull-left">
+                                                        <h3>$ 100</h3>
+                                                        <span>Negotiable</span>
+                                                    </div>
+                                                    <div class="item-action-grid pull-right">
+                                                        <ul>
+                                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Save Favorite" class="btn btn-default btn-sm"><i class="fa fa-heart"></i></a></li>
+                                                            <li><a href="detail.html" data-toggle="tooltip" data-placement="top" title="Show Details" class="btn btn-success btn-sm"><i class="fa fa-eye"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="item-ads-grid highlight-ads">
+                                                <div class="item-img-grid">
+                                                    <img alt="" src="assets/img/products/product-7.jpg" class="img-responsive img-center">
+                                                </div>
+                                                <div class="item-title">
+                                                    <a href="detail.html"><h4>Sony Experia Z2 LTE</h4></a>
+                                                </div>
+                                                <div class="item-meta">
+                                                    <ul>
+                                                        <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 am</li>
+                                                        <li class="item-cat"><i class="fa fa-bars"></i> <a href="category.html">Electronics</a> , <a href="category.html">Smartphone</a></li>
+                                                        <li class="item-location"><a href="category.html"><i class="fa fa-map-marker"></i> Manchester</a></li>
+                                                        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-footer">
+                                                    <div class="item-price-grid pull-left">
+                                                        <h3>$ 100</h3>
+                                                        <span>Negotiable</span>
+                                                    </div>
+                                                    <div class="item-action-grid pull-right">
+                                                        <ul>
+                                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Save Favorite" class="btn btn-default btn-sm"><i class="fa fa-heart"></i></a></li>
+                                                            <li><a href="detail.html" data-toggle="tooltip" data-placement="top" title="Show Details" class="btn btn-success btn-sm"><i class="fa fa-eye"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="item-ads-grid">
+                                                <div class="item-badge-grid hot-ads">
+                                                    <a href="#">Featured Ads</a>
+                                                </div>
+                                                <div class="item-img-grid">
+                                                    <img alt="" src="assets/img/products/product-1.jpg" class="img-responsive img-center">
+                                                </div>
+                                                <div class="item-title">
+                                                    <a href="detail.html"><h4>Lenovo A326 Black 4GB RAM</h4></a>
+                                                </div>
+                                                <div class="item-meta">
+                                                    <ul>
+                                                        <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 am</li>
+                                                        <li class="item-cat"><i class="fa fa-bars"></i> <a href="category.html">Electronics</a> , <a href="category.html">Smartphone</a></li>
+                                                        <li class="item-location"><a href="category.html"><i class="fa fa-map-marker"></i> Manchester</a></li>
+                                                        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-footer">
+                                                    <div class="item-price-grid pull-left">
+                                                        <h3>$ 100</h3>
+                                                        <span>Negotiable</span>
+                                                    </div>
+                                                    <div class="item-action-grid pull-right">
+                                                        <ul>
+                                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Save Favorite" class="btn btn-default btn-sm"><i class="fa fa-heart"></i></a></li>
+                                                            <li><a href="detail.html" data-toggle="tooltip" data-placement="top" title="Show Details" class="btn btn-success btn-sm"><i class="fa fa-eye"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="item-ads-grid">
+                                                <div class="item-badge-grid featured-ads">
+                                                    <a href="#">Featured Ads</a>
+                                                </div>
+                                                <div class="item-img-grid">
+                                                    <img alt="" src="assets/img/products/product-1.jpg" class="img-responsive img-center">
+                                                </div>
+                                                <div class="item-title">
+                                                    <a href="detail.html"><h4>Lenovo A326 Black 4GB RAM</h4></a>
+                                                </div>
+                                                <div class="item-meta">
+                                                    <ul>
+                                                        <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 am</li>
+                                                        <li class="item-cat"><i class="fa fa-bars"></i> <a href="category.html">Electronics</a> , <a href="category.html">Smartphone</a></li>
+                                                        <li class="item-location"><a href="category.html"><i class="fa fa-map-marker"></i> Manchester</a></li>
+                                                        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-footer">
+                                                    <div class="item-price-grid pull-left">
+                                                        <h3>$ 100</h3>
+                                                        <span>Negotiable</span>
+                                                    </div>
+                                                    <div class="item-action-grid pull-right">
+                                                        <ul>
+                                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Save Favorite" class="btn btn-default btn-sm"><i class="fa fa-heart"></i></a></li>
+                                                            <li><a href="detail.html" data-toggle="tooltip" data-placement="top" title="Show Details" class="btn btn-success btn-sm"><i class="fa fa-eye"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                           <div class="widget">
+                                <div class="widget-header">
+                                    <h3>Access Request Form</h3>
+                                </div>
+                                <div class="widget-body">
+                                  
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path d="M 14 2 H 6 c -1.1 0 -1.99 0.9 -1.99 2 L 4 20 c 0 1.1 0.89 2 1.99 2 H 18 c 1.1 0 2 -0.9 2 -2 V 8 l -6 -6 Z m 2 16 H 8 v -2 h 8 v 2 Z m 0 -4 H 8 v -2 h 8 v 2 Z m -3 -5 V 3.5 L 18.5 9 H 13 Z" /></svg>
+                                
+                                </div>
+                            </div>
+
+                            <div class="widget">
+                                <div class="widget-header">
+                                    <h3>SAV (Staff Assistance Visit)</h3>
+                                </div>
+                                <div class="widget-body">
+                                  
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg>
+                                
+                                </div>
+                            </div>
+                            <div class="widget">
+                                <div class="widget-header">
+                                    <h3>New Items</h3>
+                                </div>
+                                <div class="widget-body">
+                                    <h4>MAP is now in production</h4>
+                                    <img src="content/images/MAP-logo.png">
+                                    <p>MEDCOM360 Analytics Platform is a web-based application that provides a single source for a host of metrics reporting and metric analysis capabilities from various MEDCOM clinical service lines</p>
+                                </div>
+                            </div>
+                           <div class="widget">
+                                <div class="widget-header">
+                                    <h3><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path d="M 12 2 C 6.48 2 2 6.48 2 12 s 4.48 10 10 10 s 10 -4.48 10 -10 S 17.52 2 12 2 Z m 1 17 h -2 v -2 h 2 v 2 Z m 2.07 -7.75 l -0.9 0.92 C 13.45 12.9 13 13.5 13 15 h -2 v -0.5 c 0 -1.1 0.45 -2.1 1.17 -2.83 l 1.24 -1.26 c 0.37 -0.36 0.59 -0.86 0.59 -1.41 c 0 -1.1 -0.9 -2 -2 -2 s -2 0.9 -2 2 H 8 c 0 -2.21 1.79 -4 4 -4 s 4 1.79 4 4 c 0 0.88 -0.36 1.68 -0.93 2.25 Z" /></svg>Helpful Resources</h3>
+                                </div>
+                                <div class="widget-body">
+                                    <ul class="trends">
+                                        <li><a href="#">Deployment Guide for PAD personnel </li>
+                                        <li><a href="#">Medical Record - how can I get it?</li>
+                                        <li><a href="#">AMEDD ICD-10 Transition is under way! </li>
+                                        <li><a href="#">link</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="banner-widget">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="counter">
+                
+    </div>
+    <div class="footer">
+        <div class="container">
+        <ul class="pull-left footer-menu">
+            <li>
+                <a href="index.html"> Home </a>
+                <a href="about.html"> About us </a>
+                <a href="contact.html"> Contact us </a>
+            </li>
+        </ul>
+
+        <div class="tagline">
+
+              <p>Where Inspiration...Meets Innovation</p>
+        </div>
+       
+        </div>
+    </div>
+</div>
+
+<!-- Essentials -->
+<script src="libraries/css/bootstrap/bootstrap.min.js"></script>
+
+
+<script>
+    $(window).load(function () {
+        function init() {
+            var length = $('.carousel div').length / 2;
+            var min = $('.carousel div').length;
+
+            //Rule Carousel must have 5 images at a minimum
+            if (min <= 4) {
+                alert('Sorry. You must have 5 images at a minimum');
+            } else {
+
+
+                //find the first img and assign it to active
+                $('.carousel').find('div').first().addClass('ic_active');
+                $('.carousel').find('div').first().find('img').addClass('mainimg');
+
+                //Divide Imgs in half and take the second half and move them to top of stack for wrap effect
+                var getHalf = Math.ceil(length);
+                var wrapImgs = $('.carousel').find('div').slice(getHalf, min);
+                $('.carousel').prepend(wrapImgs);
+                infinite();
+            }
+        } //end init
+        init();
+
+        function infinite() {
+            //Center first image
+            var active = $('.ic_active');
+            initActive(active);
+
+            $('.ic_active').next().addClass('next');
+            $('.ic_active').prev().addClass('prev');
+
+
+            //Get title
+            var title = $('.ic_active').find('img').attr('title');
+            //Add title
+            $('.ic_title').append('<p>' + title + '</p>');
+
+            function clickMe() {
+                //prevent multiple clicks on the same img
+                var clicked = $(this);
+                clicked.unbind('click');
+
+                if (clicked.hasClass('back_btn')) {
+
+                    var bkbtn = clicked.parent().find('.carousel').find('.prev');
+                    clicked = bkbtn;
+
+
+                } else if (clicked.hasClass('next_btn')) {
+
+                    var nxbtn = $(this).parent().find('.carousel').find('.next');
+                    clicked = nxbtn;
+                }
+
+                var state;
+                var parentMarginLeftCalculation;
+                var animationCalculation;
+
+                // Checking for what was clicked and assigning state a value
+                if (clicked.hasClass('next')) {
+                    state = 'next';
+                } else if (clicked.hasClass('prev')) {
+                    state = 'prev';
+                } else {
+                    return;
+                }
+
+                //Sets new active img
+                toggle(clicked);
+                //Grab position, widths of necessary elements, and title 
+                elementInfo(clicked);
+
+                // Checking for what was clicked for moving first/last img
+                if (state === 'next') {
+                    clicked.parent().append('<div class="item">' + firstImg + '</div>');
+                    clicked.parent().find('div.item').first().remove();
+                } else {
+                    clicked.parent().prepend('<div class="item">' + lastImg + '</div>');
+                    clicked.parent().find('div.item').last().remove();
+                }
+
+                var parentWidth = clicked.parent().parent().width() / 2;
+                var value = (parentWidth - activeImgPositionLeft) - halfOfActiveImgWidth;
+
+                // Calculations to move images forward or backward
+                if (state === 'next') {
+
+                    parentMarginLeftCalculation = value + firstImgWidth + prevImgWidth;
+                    animationCalculation = parentMarginLeftCalculation - prevImgWidth;
+                } else if (state === 'prev') {
+                    parentMarginLeftCalculation = value - lastImgWidth - nextImgWidth;
+                    animationCalculation = parentMarginLeftCalculation + nextImgWidth;
+                }
+
+                // Setting Margin Left based on calculations
+                clicked.parent().css('margin-left', '' + parentMarginLeftCalculation + 'px');
+
+                // Animating Margin Left
+                clicked.parent().animate({
+                    marginLeft: '' + animationCalculation + ''
+                }, 1000, function () {
+                    $('.next').unbind('click').click(clickMe);
+                    $('.prev').unbind('click').click(clickMe);
+                    $('.back_btn').unbind('click').click(clickMe);
+                    $('.next_btn').unbind('click').click(clickMe);
+                });
+            } //end clickMe
+
+            //getting position, width, title and contents of the first and last img
+            function elementInfo(myThis) {
+                activeImgPositionLeft = myThis.position().left;
+                halfOfActiveImgWidth = myThis.width() / 2;
+                prevImgWidth = myThis.prev().width();
+                nextImgWidth = myThis.next().width();
+                title = myThis.find('img').attr('title');
+                myThis.parent().next().find('p').html(title);
+                firstImgWidth = myThis.parent().find('div.item').first().width();
+                lastImgWidth = myThis.parent().find('div.item').last().width();
+                firstImg = myThis.parent().find('div.item').first().html();
+                lastImg = myThis.parent().find('div.item').last().html();
+            } //end elementInfo
+
+            // adding and removing appropriate classes
+            function toggle(myThis) {
+                myThis.parent().find('img').removeClass('mainimg');
+                myThis.parent().find('div').removeClass('ic_active');
+                myThis.parent().find('div').removeClass('next');
+                myThis.parent().find('div').removeClass('prev');
+                myThis.find('img').addClass('mainimg');
+                myThis.addClass('ic_active');
+                myThis.next().addClass('next');
+                myThis.prev().addClass('prev');
+            } //end toggle
+
+            $('.next').click(clickMe);
+            $('.prev').click(clickMe);
+            $('.back_btn').click(clickMe);
+            $('.next_btn').click(clickMe);
+
+        } //end infinite
+
+
+        //keeps active img centered on load and for window.resize function
+        function initActive(myActive) {
+
+            p = myActive.position().left;
+            w = myActive.width() / 2;
+            pw = myActive.parent().parent().width() / 2;
+            val = (pw - p) - w;
+            myActive.parent().css('margin-left', '' + val + 'px');
+
+        } //end initActive
+
+        $(window).resize(function () {
+
+            var active = $('.ic_active');
+            initActive(active);
+
+        }); //end window.resize
+
+    }); //end window.load
+
+$(document).ready(function(){
+  
+  $(".Modern-Slider").slick({
+    autoplay:true,
+    autoplaySpeed:10000,
+    speed:600,
+    slidesToShow:1,
+    slidesToScroll:1,
+    pauseOnHover:false,
+    dots:true,
+    pauseOnDotsHover:true,
+    cssEase:'linear',
+   // fade:true,
+    draggable:false,
+    prevArrow:'<button class="PrevArrow"></button>',
+    nextArrow:'<button class="NextArrow"></button>', 
+  });
+  
+})
+
+</script>
+
+  <ul>
+    <li>
+      <span>{{test}}</span>
+      
+    </li>
+  </ul>
+
+</body>
+</html>
