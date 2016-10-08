@@ -1,0 +1,416 @@
+<hr/>
+
+<div class="restrict">
+
+  <h3>Non-restricted Applications and Reports</h3>
+<div class="cblurb">
+<div id="non">
+  <p style="font-size: 16px">*&nbsp;Click to launch applications</p>
+</div>
+  </div>
+    </div>
+<div class="wrapper-pasbaapps">
+
+    
+  
+ <div class="box" id="medcom_boxfake" onMouseOver="togglefake()" onmouseout="toggleoutfake()">
+   <div class="description" id="medcom">
+
+    <h1>Medcom360</h1>
+<!-- <div class="image-contain">
+      <img src = "Images/medcom.png" alt="Medcom360">
+    </div> -->
+    <p>This web application brings together analytical content, which is normally found in various locations and from various sources, into one secure location.
+BH360 - Behavioral health reporting platform across the MEDCOM.</p>
+
+</div>
+    <div class="theme_name"><a href="../MEDCOM360/">MEDCOM 360</div>
+    <img src="Images/medcom.png" alt="Medcom360"></a>
+    
+  </div> 
+
+  
+  
+  <div class="box" onMouseOver="toggleEATC()" onmouseout="toggleoutEATC()">
+   <div class="description" id="EATC"><h1>Behavioral Health EATC - Summary</h1>
+    <!-- <div class="image-contain">
+          <img src="Images/appsicons/BH.png"  alt="Behavioral Health EATC - Summary"/>
+  </div> -->
+    <p>Compliance in Enhanced Access to Care (EATC) in BH and PC clinics. </p>
+    
+  </div>
+    <div class="theme_name"> <a href="../DataAnalysis/defaultBHSummary.asp">Behavioral Health EATC </div>
+    <img src="Images/appsicons/BH.png" alt="Behavioral Health EATC - Summary"></a>
+    
+  </div>
+  
+  <div class="box" onMouseOver="toggleBMI()" onmouseout="toggleoutBMI()">
+    <div class="description" id="BMI"><h1>Body Mass Index (BMI)</h1>
+    <!-- <div class="image-contain">
+          <img src="Images/appsicons/bmi_carousel.png" />
+  </div> -->
+    <p>Percentage of enrollees with a calculable BMI.</p>
+     
+  </div>
+    <div class="theme_name"> <a href="../bmi/Home/SplitIndex">Body Mass Index (BMI)
+ </div>
+   <img src="Images/appsicons/bmi_carousel.png"></a>
+    
+  </div>
+  
+  <div class="box" onMouseOver="toggleCAPER()" onmouseout="toggleoutCAPER()">
+    <div class="description" id="CAPER"><h1>CAPER Reports</h1>
+    <!-- <div class="image-contain">
+          <img src="Images/appsicons/caper.png" alt="CAPER Reports">
+  </div> -->
+    <p>These reports help MTFs track daily data transmittals, receipt and data processing.</p>
+    
+  </div>
+    <div class="theme_name"><a href="../caperreports">CAPER Reports</div>
+    <img src="Images/appsicons/caper.png" alt="CAPER Reports"></a>
+    
+  </div>
+  
+  <div class="box" onMouseOver="toggleDQMCP()" onmouseout="toggleoutDQMCP()">
+     <div class="description" id="DQMCP"><h1>DQMCP RPTS</h1>
+    <!-- <div class="image-contain">
+          <img src="Images/appsicons/dqmcq.png" alt="DQMCP RPTS">
+  </div> -->
+    <p>Survey results from the DQMCP application includes:<p>
+  </div>
+    <div class="theme_name"><a href="../mrDQMCP/DQMCPMetrics.aspx">DQMCP</div>
+    <img src="Images/appsicons/dqmcq.png" alt="DQMCP RPTS"></a>
+    
+  </div>
+
+  <div class="box" onMouseOver="toggleEOD()" onmouseout="toggleoutEOD()">
+    
+    <div class="description" id="EOD"><h1>EOD Summary</h1>
+   <!--  <div class="image-contain">
+          <img src="Images/appsicons/eod.png" alt="EOD Summary">
+  </div> -->
+    <p>EOD Summary is a monthly report monitoring the compliance with the "End of Day" requirements at RMC, MTF and CLINIC level. </p>
+    
+  </div>
+
+
+    <div class="theme_name"><a href="../DataAnalysis/defaultEOD.asp">EOD Summary </div>
+    <img src="Images/appsicons/eod.png" alt="EOD Summary"></a>
+    
+    </div>
+  
+
+
+<div class="box" onMouseOver="toggleIPSR()" onmouseout="toggleoutIPSR()">
+    <div class="description" id="IPSR"><h1>Inpatient Professional Service Rounds (IPSR) </h1>
+    <!-- <div class="image-contain">
+          <img src="Images/appsicons/inpatient.png" alt="Inpatient Professional Service Rounds (IPSR)">
+  </div> -->
+    <p>Reports the documentation, utilization, and data capture of professional rounds.<p>
+      
+
+  </div>
+
+
+    <div class="theme_name"><a href="../DataAnalysis/defaultIPSR.asp">IPSR</div>
+    <img src="Images/appsicons/inpatient.png" alt="Inpatient Professional Service Rounds (IPSR)" style="width: 110px; margin: 0px 25px"></a>
+    
+  </div>
+
+  <div class="box" onMouseOver="toggleMAPR()" onmouseout="toggleoutMAPR()">
+
+    <div class="description" id="MAPR"><h1>MAPR Data Quality Measures</h1>
+   <!--  <div class="image-contain">
+          <img src="Images/appsicons/database_check.png" alt="MAPR Data Quality Measures">
+  </div> -->
+    <p>Published under the MAPR along with the PBAM adjustments for the reporting month.<p>
+
+
+  </div>
+
+
+    <div class="theme_name"><a href="../DataAnalysis/defaultMAPR.asp">MAPR</div>
+    <img src="Images/appsicons/database_check.png" alt="MAPR Data Quality Measures"></a>
+   
+  </div>
+
+
+<div class="box" onMouseOver="toggle()" onmouseout="toggleout()">
+   <div class="description" id="medcom_box">
+
+    <h1>Medcom360</h1>
+<!-- <div class="image-contain">
+      <img src = "Images/appsicons/MEDCOM_white.png" alt="MEDCOM360">
+    </div> -->
+    <p>This web application brings together analytical content, which is normally found in various locations and from various sources, into one secure location.
+BH360 - Behavioral health reporting platform across the MEDCOM.</p>
+
+</div>
+    <div class="theme_name"><a href="../MEDCOM360/">MEDCOM 360</div>
+    <img src="Images/appsicons/MEDCOM_white.png" alt="MEDCOM360"></a>
+    
+  </div>
+
+  <div class="box" onMouseOver="toggleSIDR()" onmouseout="toggleoutSIDR()">
+    
+    <div class="description" id="SIDR"><h1>SIDR Reports</h1>
+      <!-- <div class="image-contain">
+          <img src="Images/appsicons/sidr.png" style="width: 118px; margin: 0px 19px; height: 102px" alt="SIDR Reports">
+      </div> -->
+      <p>SIDR reports include SIDR Completeness Transmittal Receipt Dates Counts by Source of Admission Files processed (F,E,D,C records) Record Action Summaries</p>
+    </div>
+    <div class="theme_name"><a href="../mrDQMCP/SIDRReports.aspx">SIDR Reports </div>
+    <img src="Images/appsicons/sidr.png" style="width: 118px; margin: 0px 19px; height: 102px" alt="SIDR Reports"></a>
+    
+  </div>
+<div sytle="clear: both"></div>
+
+  
+    
+    <!-- End of Non-Restricted Sites -->
+
+
+
+  <div class="divide"></div>
+
+ <div sytle="clear: both"></div>
+
+
+  <div class="restrict">
+
+  <h3>Restricted Applications and Reports</h3>
+
+<div class="cblurb">
+<div id="rest">
+  <p style="font-size: 16px">*&nbsp;Hover over images to view description</p>
+</div>
+  </div>
+    </div>
+
+
+
+
+
+ <div class="box" onMouseOver="toggleAllied()" onmouseout="toggleoutAllied()">
+    
+    <div class="description_restrict" id="allied"><h1>Allied Health</h1>
+    <!-- <div class="image-contain">
+          <img src="Images/appsicons/alliedhealth.png" alt="Allied Health">
+  </div> -->
+    <p>The percentage of total encounters with valid E&M code.<p>
+      
+
+  </div>
+
+
+    <div class="theme_name"><a href="#">Allied Health</div>
+    <img style="width: 96px; margin-top: 1px; margin-right: 32px; margin-bottom: 1px; margin-left: 32px;" alt="allied health" src="Images/appsicons/alliedhealth.png" alt="Allied Health" /></a>
+  
+    
+  </div>
+  
+  
+  <div class="box" onMouseOver="toggleasa()" onmouseout="toggleoutasa()">
+    <div class="description_restrict" id="asa"><h1>Anthrax, Smallpox and Abortions</h1>
+    <!-- <div class="image-contain">
+          <img src="Images/appsicons/incorrect.png" alt="Anthrax, Smallpox and Abortions">
+  </div> -->
+  <p>Encounters incorrectly coded.</p>
+</div>
+    <div class="theme_name"><a href="#">ASA </div>
+    <img src="Images/appsicons/incorrect.png" alt="Anthrax, Smallpox and Abortions" />
+    </a>
+  </div>
+
+  
+  <div class="box" onMouseOver="togglebehavioral()" onmouseout="toggleoutbehavioral()">
+    <div class="description_restrict" id="bhe"><h1>Behavioral Health EATC</h1>
+    <!-- <div class="image-contain">
+    <img src="Images/appsicons/raw.png" alt="Behavioral Health EATC" style="width: 114px; height: 102px; margin: 0px 34px">
+  </div> -->
+  <p>Compliance in Enhanced Access to Care (EATC) in BH and PC clinics with raw data included.</p>
+</div>
+    <div class="theme_name"><a href="#">BH EATC </div>
+    <img src="Images/appsicons/raw.png" style="width: 93px; height: 95px; margin: 0px 34px" alt="Behavioral Health EATC">
+    </a>
+  </div>
+  
+<div class="box" onMouseOver="togglebmi_two()" onmouseout="toggleoutbmi_two()">
+    <div class="description_restrict" id="bmi_two" alt="Body Mass Index Detail (BMI-D)"><h1>Body Mass Index Detail (BMI-D) </h1>
+   <!--  <div class="image-contain">
+    <img src="Images/appsicons/scale.png" alt="bh eatc" style="width: 106px; height: 95px; margin: 0px 34px">
+  </div> -->
+  <p>BMI weight categories for selected population.</p>
+</div>
+    <div class="theme_name"><a href="#
+">BMI-D</div>
+    <img src="Images/appsicons/scale.png" style="width: 107px; height: 100px; margin: 0 27px" alt="Body Mass Index Detail (BMI-D)"></a>
+    
+  </div>
+  
+<div class="box" onMouseOver="togglecara()" onmouseout="toggleoutcara()">
+    <div class="description_restrict" id="cara"><h1>CARA</h1>
+    <!-- <div class="image-contain">
+    <img src="Images/appsicons/cara.png" alt="CARA" style="height: 75px">
+  </div> -->
+  <p>Code Auditing and Reporting Application (CARA) Assists the MTFs through remote coding and monitoring.</p>
+</div>
+    <div class="theme_name"><a href="#
+">CARA</div>
+    <img src="Images/appsicons/cara.png" style="width: 131px; height: 60px; margin: 20px 15px" alt="CARA">
+    </a>
+  </div>
+
+  
+  <div class="box" onMouseOver="togglecoder()" onmouseout="toggleoutcoder()">
+    <div class="description_restrict" id="coder"><h1>Coder Manager</h1>
+   <!--  <div class="image-contain">
+    <img src="Images/appsicons/codermanage.png" alt="Coder Manager">
+  </div> -->
+  <p>Coding Help Desk</p>
+</div>
+    <div class="theme_name"><a href="#">Coder Manager</div>
+    <img src="Images/appsicons/codermanage.png" alt="Coder Manager">
+    </a>
+  </div>
+ 
+
+  <div class="box" onMouseOver="togglehelp()" onmouseout="toggleouthelp()">
+    <div class="description_restrict" id="help"><h1>Coding Help Desk</h1>
+    <!-- <div class="image-contain">
+    <img src="Images/appsicons/codinghelpdesk.jpg" alt="Coding Help Desk">
+  </div> -->
+  <p>Allows users in the *army.mil to enter coding inquiries to a database.</p>
+</div>
+    <div class="theme_name"><a href="#">Coding Help Desk</div>
+    <img src="Images/appsicons/codinghelpdesk.jpg" alt="Coding Help Desk">
+    </a>
+  </div>
+  
+  
+  
+  <!-- these apps have been droped <div class="box">
+    
+    <div class="theme_name"><a href="#">DART-PDHA  </div>
+    <img src="Images/appsicons/60days.png" alt="dart - pdha">
+    
+  </div>
+  
+  <div class="box">
+    
+    <div class="theme_name"><a href="#">DART-PDHRA</div>
+   <img src="Images/appsicons/60days.png" alt="dart - pdhra">
+    
+  </div>
+   -->
+
+
+<div class="box" onMouseOver="toggledqmcp_two()" onmouseout="toggleoutdqmcp_two()">
+    <div class="description_restrict" id="dqmcp_two"><h1>Data Quality Management Control Program </h1>
+   <!--  <div class="image-contain">
+    <img src="Images/appsicons/dqmcq.png" alt="Data Quality Management Control Program ">
+  </div> -->
+  <p>A survey from MTFs that produces reports on their performance.</p>
+</div>
+    <div class="theme_name"><a href="#">DQMCP </div>
+    <img src="Images/appsicons/dqmcq.png" alt="Data Quality Management Control Program ">
+    </a>
+  </div>
+
+
+<div class="box" onMouseOver="toggleutilization()" onmouseout="toggleoututilization()">
+    <div class="description_restrict" id="utilization"><h1>Est. Pt. E&M Code Utilization</h1>
+    <!-- <div class="image-contain">
+    <img src="Images/appsicons/ort.png" alt="Est. Pt. E&M Code Utilization">
+  </div> -->
+  <p>RVU loss, counts, miscoded records and a revenue loss of E&M codes (99211- 99215). </p>
+</div>
+    <div class="theme_name"><a href="#">Est. Pt. E&M</div>
+    <img src="Images/appsicons/ort.png" alt="Est. Pt. E&M Code Utilization">
+    </a>
+  </div>
+  
+  
+  <div class="box" onMouseOver="toggleeod_two()" onmouseout="toggleouteod_two()">
+    <div class="description_restrict" id="eod_two"><h1>End of Day Compliance Metric</h1>
+    <!-- <div class="image-contain">
+    <img src="Images/appsicons/endofday.png" alt="End of Day Compliance Metric">
+  </div> -->
+  <p>Monitors the individual appointment records with compliance/non-compliance with the "End of Day" requirements.</p>
+</div>
+    <div class="theme_name"><a href="#">EOD Metric</div>
+    <img src="Images/appsicons/endofday.png" alt="End of Day Compliance Metric">
+    </a>
+  </div>
+
+
+  <div class="box" onMouseOver="togglenff()" onmouseout="toggleoutnff()">
+    <div class="description_restrict" id="nonfacetoface"><h1>Non-Face-to-Face Service Code</h1>
+   <!--  <div class="image-contain">
+    <img src="Images/appsicons/nonface.jpg" alt="Non-Face-to-Face Service Code">
+  </div> -->
+  <p>Assists providers and non-providers to improve the use of E&M codes and CPT codes. </p>
+  </div>
+    <div class="theme_name"><a href="#">NFF Service Code</div>
+    <img src="Images/appsicons/nonface.jpg" alt="Non-Face-to-Face Service Code">
+    </a>
+  </div>
+
+
+  <div class="box" onMouseOver="toggleinpatient()" onmouseout="toggleoutinpatient()">
+    <div class="description_restrict" id="inpatient"><h1>Inpatient Record Transmission Tracking Tool </h1>
+    <!-- <div class="image-contain">
+    <img src="Images/appsicons/inpatient.png" alt="Inpatient Record Transmission Tracking Tool">
+  </div> -->
+  <p>Summary of total completed and incomplete records at an MTF by register number.</p>
+  </div>
+    <div class="theme_name"><a href="#">IRT3 Tool</div>
+    <img src="Images/appsicons/inpatient.png" alt="Inpatient Record Transmission Tracking Tool" style="width:111px; margin:0px 25px;">
+    </a>
+  </div>
+  
+
+   <div class="box" onMouseOver="toggleprovider()" onmouseout="toggleoutprovider()">
+    <div class="description_restrict" id="provider"><h1>Provider Productivity</h1>
+    <!-- <div class="image-contain">
+    <img src="Images/appsicons/providerproductivity.png" alt="Provider Productivity">
+  </div> -->
+  <p>This metric is a summary for each drill-down level of workload as reported in CAPER.</p>
+  </div>
+    <div class="theme_name"><a href="#">Provider Productivity</div>
+    <img src="Images/appsicons/providerproductivity.png" alt="Provider Productivity">
+    </a>
+  </div>
+
+
+  <div class="box" onMouseOver="togglewispr()" onmouseout="toggleoutwispr()">
+    <div class="description_restrict IE_restrict" id="wispr"><h1>WISPR</h1>
+    <!-- <div class="image-contain">
+    <img src="Images/appsicons/wispr.png" alt="WISPR">
+  </div> -->
+  <p>WISPR supports viewing of scanned medical records for subsequent review and analysis.</p>
+  <ul>PASBA processes the scanned inpatient medical records in four phases: 
+<li>The diagnoses and procedures are coded.</li>
+<li>Administrative and health care data are entered into our Standard Inpatient Data Record (SIDR) database.</li>
+<li>The hard-copies of the treatment data are scanned into our electronic repository.</li>
+<li>PASBA retires the records to the National Personnel Records Center (NPRC) in St. Louis, Missouri. </li>
+</ul>
+</p>
+  </div>
+    <div class="theme_name"><a href="#">WISPR</div>
+    <img src="Images/appsicons/wispr.png" alt="WISPR">
+    </a>
+  </div>
+  
+
+  <div class="box" onMouseOver="togglewtu()" onmouseout="toggleoutwtu()">
+    <div class="description_restrict" id="wtu"><h1>Warrior Transition Units (WTU)</h1>
+   <!--  <div class="image-contain">
+    <img src="Images/appsicons/wtu.png" alt="Warrior Transition Units (WTU)">
+  </div> -->
+  <p>This metric is a summary for each drill-down level of workload as reported in CAPER.</p>
+  </div>
+    <div class="theme_name"><a href="#">WTU</div>
+    <img src="Images/appsicons/wtu.png" alt="Warrior Transition Units (WTU)">
+    </a>
+  </div>
