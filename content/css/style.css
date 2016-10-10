@@ -145,10 +145,11 @@ a:hover{
 .navbar-top{
 	background: #FFF;
 	padding-top: 10px;
+	width: 100%;
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover{
-	background-color: #58b325;
+	/*background-color: #58b325;*/
 	color: #FFF;
 }
 
@@ -165,11 +166,11 @@ a:hover{
 
 .navbar-nav > li.new-ads a{
 	min-width: 180px;
-	color: #FFF !important;
+	/*color: #FFF !important;*/
 }
 
 .navbar-nav > li.new-ads a:hover, .navbar-nav > li.new-ads a:focus{
-	background-color: #398110;
+	/*background-color: #398110;*/
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
@@ -177,7 +178,19 @@ a:hover{
 }
 
 .btn-ads{
-	background-color: #500707;
+	color: #888;
+}
+
+.nav a{
+	color: #888 !important;
+}
+
+.nav a:active{
+	color: #000;
+}
+
+.nav a:hover{
+	color: #000;
 }
 
 .dropdown-login{
@@ -191,12 +204,12 @@ a:hover{
 }
 
 .btn-custom{
-	background-color: #58b325;
+	/*background-color: #58b325;*/
 	color: #FFF;
 }
 
 .btn-custom:hover{
-	background-color: #398110;
+	/*background-color: #398110;*/
 	color: #FFF;
 }
 
@@ -413,9 +426,24 @@ a:hover{
 	color: #117ABC;
 }
 
+.widget a{
+	color: #82000A;
+}
+
 .widget-header{
 	border-bottom: 1px solid #E7E7E7;
 	padding-bottom: 10px;
+}
+
+.apps-navigation h3{
+	text-align: left;
+	padding: 10px;
+
+}
+
+.apps-navigation h3:before{
+	content: '>';
+	padding-right: 10px;
 }
 
 .widget-body{
@@ -664,6 +692,17 @@ h2.product-title{
 	height: 35px;
 	padding-top: 10px;
 	border-top: 1px solid #DDD;
+}
+
+.tagline{
+	margin: auto;
+	text-align: center;
+}
+
+.tagline p{
+	font-size: 22px;
+	font-family: italic;
+	color: #0060A8;
 }
 
 .img-center {
@@ -1069,8 +1108,8 @@ h2.product-title{
 
 .footer-menu li a {
   border-left: 1px solid #ddd;
-  color: #4e575d;
-  font-size: 12px;
+  color: #0060A8;
+  font-size: 17px;
   padding: 0 10px;
   text-transform: uppercase;
 }

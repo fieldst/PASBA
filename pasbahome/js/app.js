@@ -10,10 +10,11 @@ app.config(function($routeProvider){
 	.when("/home", {
 		templateUrl: "views/pasbahome.html",
 		controller: 'pasbacontroller',
+
 	}).when("/pasbaapps", {
 		templateUrl: "views/pasbaapps.html",
-		controller: 'pasbacontroller',
-		css: 'css/pasbaappscss.css',
+		controller: 'pasbaappcontroller',
+		// css: 'css/pasbaappscss.css',
 
 	}).
 	otherwise({
