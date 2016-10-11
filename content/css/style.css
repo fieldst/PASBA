@@ -261,24 +261,30 @@ a:hover{
 	width: 100%;
 	max-width: 1277px;
 	/*border-right: 1px solid #c8c8c8;*/
-	border-left: 1px solid #c8c8c8;
+	/*border-left: 1px solid #c8c8c8;*/
 	height: 121px;
 	overflow: hidden;
+	list-style: none;
 }
 
-.space-wrapper span{
+.space-wrapper li{
 	float: left;
 	border-right: 1px solid #c8c8c8;
 	height: 121px;
 	padding: 5px 13px;
 	text-align: center;
 	width: 16%;
+	list-style: none;
 	
+}
+
+.space-wrapper li:first-child{
+	border-left: 1px solid #c8c8c8;
 }
 
 
 
-.space-wrapper span h3{
+.space-wrapper li h3{
 	color: #000;
 	clear: both;
 	padding: 0 40px 0 40px;
@@ -299,7 +305,12 @@ a:hover{
 	height: 68px;
 }
 
-.green-space .active{
+.green-space .actively{
+	background: #F5F5F5;
+	border-bottom: none;
+}
+
+li.active{
 	background: #F5F5F5;
 	border-bottom: none;
 }
