@@ -81,13 +81,12 @@ left: 0;
 }
 
 
-/*1*/
 
 .view-first img {
-  /*1*/
-  transition: all 0.2s linear;
- width: 278px;
- height: 195px;
+    transition: all 0.2s linear;
+    width: 214px;
+    height: 162px;
+    margin: auto;
 }
 
 .icon-contain{

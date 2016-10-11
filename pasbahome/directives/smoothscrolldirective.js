@@ -70,7 +70,7 @@ angular.module('angularSmoothscroll', [])
       if (speed >= 20) {
         speed = 20;
       }
-      step = Math.round(distance / 105);
+      step = Math.round(distance / 40);
       leapY = (stopY > startY ? startY + step : startY - step);
       timer = 0;
       if (stopY > startY) {

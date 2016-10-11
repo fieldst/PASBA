@@ -642,7 +642,7 @@ li.active{
     font-size: 20px;
     font-weight: 700;
     color: #117abc;
-    
+    text-align: left;
 }
 
 .item-numbers{
@@ -713,7 +713,7 @@ h2.product-title{
 .tagline p{
 	font-size: 22px;
 	font-family: italic;
-	color: #0060A8;
+	color: #82000A;
 }
 
 .img-center {
@@ -1119,7 +1119,7 @@ h2.product-title{
 
 .footer-menu li a {
   border-left: 1px solid #ddd;
-  color: #0060A8;
+  color: #82000A;
   font-size: 17px;
   padding: 0 10px;
   text-transform: uppercase;
