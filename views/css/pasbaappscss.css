@@ -233,11 +233,6 @@ padding-bottom: 47px;
 
 
 
-.update {
-	font-style: italic;
-	color: #3D3D3D;
-	float:left;
-}
 
 
 a {
@@ -397,6 +392,12 @@ a.lNavLink:hover {
 
 
 ul { position: relative; display: block; }
+
+#pasbaapps li a{
+  text-decoration: none;
+  outline:0;
+}
+
 li { position: relative; display: block; }
 
 .submenubox { 
@@ -1013,6 +1014,11 @@ transition: all 0.5s ease-in-out;
   left:0;
 }
 
+a.active{
+  background: #000;
+  color: #000;
+}
+
 .gallery a:active .light,
 .gallery a:focus .light {
   left:0;
@@ -1164,6 +1170,9 @@ transition: all 0.5s ease-in-out;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
 }
 
+a{
+  outline: 0 !important;
+}
 
 
 
