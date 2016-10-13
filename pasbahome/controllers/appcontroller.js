@@ -17,11 +17,11 @@ app.controller('pasbacontroller', function($scope, $compile, $timeout, uiCalenda
     };
 
     $scope.events = [
-      {title: 'All Day Event',start: new Date(y, m, 4)},
-      {title: 'Long Event',start: new Date(y, m, d - 5),end: new Date(y, m, d - 2)},
-      {id: 999,title: 'Repeating Event',start: new Date(y, m, d - 3, 16, 0),allDay: false},
-      {id: 999,title: 'Repeating Event',start: new Date(y, m, d + 4, 16, 0),allDay: false},
-      {title: 'Birthday Party',start: new Date(y, m, d + 1, 19, 0),end: new Date(y, m, d + 1, 22, 30),allDay: false},
+      {title: 'AHIMA Conference',start: new Date('Sat Oct 15 2016'), end: new Date('Thu Oct 20 2016'), allDay: true},
+      {title: 'Analyst Camp',start: new Date('Oct 24 2016'),end: new Date('Oct 28 2016'), allDay: true},
+      {title: 'Executive Skills Course',start: new Date('Nov 7 2016'), end: new Date('Nov 18 2016'),allDay: true},
+      {title: 'Blanchfield SAV',start: new Date('Nov 7 2016'), end: new Date('Nv 18 2016'), allDay: true},
+      {title: 'Walter-Reed SAV',start: new Date('Nov 14 2016'),end: new Date('Nov 16 2016'),allDay: true},
       // {title: 'Click for Google',start: new Date(y, m, 28),end: new Date(y, m, 29),url: 'http://google.com/'}
     ];
 
@@ -30,7 +30,7 @@ app.controller('pasbacontroller', function($scope, $compile, $timeout, uiCalenda
       var s = new Date(start).getTime() / 1000;
       var e = new Date(end).getTime() / 1000;
       var m = new Date(start).getMonth();
-      var events = [{title: 'Feed Me ' + m,start: s + (50000),end: s + (100000),allDay: false, className: ['customFeed']}];
+      var events = [{title: 'Feed Me ' + m,start: s + (50000),end: s + (100000),allDay: true, className: ['customFeed']}];
       callback(events);
     };
 
@@ -124,5 +124,7 @@ app.controller('pasbacontroller', function($scope, $compile, $timeout, uiCalenda
     $scope.eventSources2 = [$scope.calEventsExt, $scope.eventsF, $scope.events];
 
 });
+
+
 
 
