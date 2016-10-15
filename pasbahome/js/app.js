@@ -8,17 +8,17 @@ var app = angular.module('pasbaapp', [
 app.config(function($routeProvider){
 	$routeProvider
 	.when("/home", {
-		templateUrl: "views/pasbahome.html",
-		controller: 'pasbacontroller',
+		templateUrl: "templates/views/pasbahome.html",
+		controller: 'pasbaappcontroller',
 
 	}).when("/pasbaapps", {
-		templateUrl: "views/pasbaapps.html",
+		templateUrl: "templates/views/pasbaapps.html",
 		controller: 'pasbaappcontroller',
 		// css: 'css/pasbaappscss.css',
 
 	}).when("/dmrpc", {
-		templateUrl: "views/dmrpc.html",
-		controller: 'pasbaappcontroller',
+		templateUrl: "templates/views/dmrpc.html",
+		controller: 'dmrpccontroller',
 		// css: 'css/pasbaappscss.css',
 
 	}).

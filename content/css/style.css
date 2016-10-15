@@ -34,7 +34,7 @@ body{
     overflow: auto;
     height: auto;
     margin: auto;
-    width: 100%;
+    width: 105%;
     min-height: 889px;
     max-height: 889px;
 }
@@ -1289,6 +1289,10 @@ h2.product-title{
   width: 100%;
   height: 401px;
 
+}
+
+.blurb-list h5{
+	margin-right: 60px;
 }
 
 *,

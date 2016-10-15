@@ -1,0 +1,1177 @@
+﻿#hover {
+  color: rgba(188, 175, 204, 0.9);
+}
+
+h2#testimonials {
+  color: rgb(94, 244, 177);
+}
+
+div#all {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* generic css */
+
+.view {
+  margin: 10px;
+  float: left;
+  border: 10px solid #fff;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  box-shadow: 1px 1px 2px #e6e6e6;
+  cursor: default;
+  background: #fff url(../images/bgimg.jpg) no-repeat center center;
+  width: 300px;
+  height: 220px;
+}
+
+.view .mask,
+.view .content {
+  width: 300px;
+height: 220px;
+position: absolute;
+overflow: hidden;
+top: 0;
+left: 0;
+}
+
+.view img {
+  display: block;
+  position: relative
+}
+
+.view h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  font-family: Raleway, serif;
+  padding: 10px;
+  /*background: rgba(0, 0, 0, 0.8);*/
+  margin: 20px 0 0 0
+}
+
+.view p {
+  font-family: Merriweather, serif;
+  /*font-style: italic;
+*/  font-size: 14px;
+  position: relative;
+  color: #fff;
+  padding: 0px 20px 0px;
+  text-align: center
+}
+
+.view a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  background: #500707;
+  color: #fff;
+  font-family: Raleway, serif;
+  text-transform: uppercase;
+  
+}
+
+.view a.info:hover {
+  box-shadow: 0 0 5px #000
+}
+
+
+
+.view-first img {
+    transition: all 0.2s linear;
+    width: 214px;
+    height: 162px;
+    margin: auto;
+}
+
+.icon-contain{
+width: auto;
+height: auto;
+text-align: center;
+float: left;
+padding-bottom: 47px;
+}
+
+.container-pasbaapps h3{
+  font-size: 15px;
+}
+
+.view-first .mask {
+  opacity: 0;
+  background-color: rgba(0,0,0,.8);
+  transition: all 0.4s ease-in-out;
+}
+
+.view-first h2 {
+  transform: translateY(-100px);
+  opacity: 0;
+  font-family: Raleway, serif;
+  transition: all 0.2s ease-in-out;
+}
+
+.view-first p {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.view-first a.info {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+
+/* */
+
+.view-first:hover img {
+  transform: scale(1.1);
+}
+
+.view-first:hover .mask {
+  opacity: 1;
+}
+
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.view-first:hover p {
+  transition-delay: 0.1s;
+}
+
+.view-first:hover a.info {
+  transition-delay: 0.2s;
+}
+
+
+
+
+
+
+/*common css*/
+
+
+
+
+
+#maincontent {
+	width:100%;
+	position:relative;
+	background-color:#ffffff;
+	margin-left:15%;
+	height:100%;		/*Ray added*/
+	padding-top:0px;	/*Ray added*/
+	width:expression(document.body.clientWidth < 1090? "1090px": "auto" );
+}
+
+.wrapper-pasbaapps{
+  padding: 0;
+}
+
+
+.container-pasbaapps {
+    width: 100%;
+    /*margin: auto;*/
+    margin-left: 61px;
+    text-align: center;
+    max-width: 1400px;
+   
+}
+
+
+#mainleft {
+	position:relative;
+	float:left;
+	width:70%;
+	left:10;
+	background:#ffffff;
+	z-index:8;
+	height:100%;		/*Ray added*/
+}
+
+
+.footer {
+	clear:both;
+  	width: 100%;
+  	background: #fff;
+  	font-size: .625em;
+
+        color: black;
+	margin: 22px auto;
+}
+
+.pageTitle {
+	font-family: 'Times New Roman', Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1.5em;
+	font-style: italic;
+	font-weight: bold;
+	color: #0040FF;
+	text-align: left;
+	margin-bottom:40;
+}
+
+
+.review {
+	font-style: italic;
+	color: #3D3D3D;
+	float:right;
+}
+
+
+.source {
+      font-size:.5625em;
+      align:left;
+}
+
+
+
+
+
+a {
+	text-decoration: none;
+	color: #134B7d;
+}
+
+
+/*ct-NavBars*/
+
+#banner {
+  width: 100%;
+  background-image: url(../../images/Banner2.png);
+  background-repeat: no-repeat;
+  background-position:right top;
+  background-color:#f3f3f3; 
+  clear: both;
+  height: 126px;
+  min-width: 1090px;
+  width:expression(document.body.clientWidth < 1090? "1090px": "auto" );
+}
+
+
+.UpperNav {
+  width: 400px;
+  height:99px;
+  padding: 0px;
+  margin: 0px;
+  float: left;
+  margin-left: 22px;
+}
+
+
+a.uNavLink {
+  display: inline-block; /* edited by Joey */
+ 
+  color: #585858;
+  font-size: .5625em;
+  font-weight: bold;
+  margin: 0; border-right: 1 px solid black; padding: 1em;
+  line-height: 2em; 
+  text-align: center;
+  text-decoration: none;
+}
+
+a.uNavLink:hover {
+  color:#500707;
+}
+
+
+.LowerNav {
+  width: 100%;
+  min-width: 1090px;
+  height: 2em; /* corresponds to 'line-height' of a.navbartitle below */
+
+  border: 0; 
+  padding: 0;
+  background-color: #500707;
+  width:expression(document.body.clientWidth < 1090? "1090px": "auto" );
+  margin: 0px auto;
+}
+
+
+
+a.lNavLink {
+  display: block; 
+  float: left;
+  color: #ffffff;
+  background-color:  #500707;
+  font-size: .625em;
+  font-weight: bold;
+  /* margin: 0; border-right: 1px solid white; padding: 0; */
+  line-height: 3em; /* corresponds to 'top' value of .submenu below */
+  text-align: center;
+  text-decoration: none;
+  padding-top:.5em;
+  margin: auto;
+  width:expression(document.body.clientWidth < 136? "136px": "auto" );
+}
+
+a.lNavLink:hover {
+  background-color: #585858;
+  color: #ffffff;
+}
+
+
+/* lower menu title widths */
+#t1 { width: 12%; }
+#t2 { width: 12%; }
+#t3 { width: 12%;}
+#t4 { width: 12%;}
+#t5 { width: 12%; }
+#t6 { width: 12%;}
+#t7 { width: 12%;}
+#t8 { width: 12%;}
+
+
+
+/*  specify a absolute width for each menu title. Then, down below specify
+    a absolute left position for the corresponding submenus (e.g. #coding_submenu, etc.)
+    Using these absolute values isn't as elegant as just letting the text of each 
+    menu title determine the width of the menu titles and position of the submenus,
+    but this hardwired approach results in fewer cross-browser/cross-OS 
+    formatting glitches -- and it's pretty easy to adjust these title widths and the
+    corresponding submenu 'left' positions below, just by eyeballing them whenever
+    you need to change the navbar menu titles (which isn't often). */
+
+.submenu {
+	position:absolute;
+  	z-index: 2;
+  	top: 161px; /* corresponds to line-height of a.lNavLink above */
+  	padding: 0; margin: 0; 
+	width:12%; /* If adjust this, then adjust width of .submenu below a too */
+	color: white;
+	background-color:  #585858;
+	border: 1px solid #447755; /* box around entire sub-menu */
+	font-size: .625em;
+}
+/* Fix IE formatting quirks. */
+* html .submenu { width: 210px; } /* IE needs narrower than width of .submenu above */
+/* End */
+
+/* position of each sub menu */
+/* Eyeball the position of each submenu here -- can move left or right as needed. 
+   If you adjust menu title text, you might want to adjust these too. */
+
+#myApps_submenu   {  left: 12%; visibility: hidden;  }
+#coding_submenu   {  left: 48%; visibility: hidden;  }
+#quality_submenu  {  left: 60%; visibility: hidden;  }
+#ICD10_submenu    {  left: 72%; visibility: hidden;  }
+#analysis_submenu {  left: 84%; visibility: hidden;  }
+
+
+
+/* Note, each submenu is hidden when the page loads - then made visible when
+    the mouse goes over the menu title. Using the 'visibility' property instead
+    of using the 'display' property avoided a bug in some versions of Safari. 
+    (The bug is pretty where esoteric: The browser ignored the 'hover' property 
+    on 'li' objects inside an object whose display property was set to 'none' 
+    when the page loaded...) Using the 'visibility' property instead of 'display'
+    would normaly take up extra room on the page, but that's avoided here by putting
+    the submenu on a second layer: see 'position: absolute' and 'z-index: 2'
+    in .submenu definition, higher up this page. */
+
+.submenu a
+{
+  display: block;
+  color: #ffffff;
+  background-color: #585858;
+  width: 185px; /* This should be width of .submenu above minus right-side padding on next line */
+  padding: 5px 0px 4px 20px;
+  text-decoration: none;
+  background-color: #585858; 
+  border-bottom: #447755 dotted 1px; 
+  border-top: 0; border-left: 0; border-right: 0;
+}
+
+
+ul { position: relative; display: block; }
+
+#pasbaapps li a{
+  text-decoration: none;
+  outline:0;
+}
+
+li { position: relative; display: block; }
+
+.submenubox { 
+  margin: 0; padding: 0; border: 0;
+}
+.submenubox ul
+{
+  margin: 0; padding: 0; border: 0;
+  list-style-type: none;
+}
+
+.submenubox ul li { 
+  margin: 0; padding: 0; border: 0;
+}
+
+.submenubox ul li a:link { }
+.submenubox ul li a:visited { }
+.submenubox ul li a:hover
+{
+  color: #81BEF7; /* text color for submenu items */
+  background-color: #585858;
+  border-bottom: #447755 dotted 1px; 
+}
+
+
+.headleft {
+   float: left;
+ width: 250px;
+ height: 90px;
+ margin-left: 22px;
+ margin-top: 22px;
+}
+
+
+
+
+.greeting {
+ font-weight: bold;
+  font-size: .875em;
+  float: right;
+  margin-right: 22px;
+  height: 95px;
+  margin: 10px auto; 
+  margin-right: 10px; 
+}
+
+
+
+div.clear {
+	clear: both;
+	line-height: 0px;
+	height: 0px;
+	}
+
+
+.headright {			/*This is for the gray banner.*/
+	width:100%;
+	min-width: 1090px; /* added by Joey */
+	
+	
+}
+
+
+/*styles.css*/
+
+
+.cblurb{
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 0 10px;
+  margin: auto;
+}
+
+.cblurb#non{
+  margin: auto;
+}
+
+.cblurb.rest{
+  margin: auto;
+}
+#non p{
+  color: rgb(80, 7, 7);
+  font-size: 16px;
+}
+
+#rest p{
+  color: rgb(80, 7, 7);
+  font-size: 16px;
+}
+
+.description_restrict{
+  /*top: 200px;*/
+  bottom: 160px;
+  background: #fff;
+  padding: 10px;
+  width:250px;
+  z-index:99999;
+  border: 1px solid #500707;
+  box-shadow: 3px 0px 29px #888;
+  position: absolute;
+  display: none;
+  height: auto;
+
+}
+
+.description_restrict_left{
+  /*top: 200px;*/
+  bottom: 160px;
+  background: #fff;
+  padding: 2px;
+  width:250px;
+  z-index:99999;
+  border: 1px solid #500707;
+  box-shadow: 3px 0px 29px #888;
+  position: absolute;
+  display: none;
+
+}
+
+.description_restrict li{
+  list-style-type: circle !important;
+  text-align: left;
+}
+
+
+.description_restrict_last{
+  /*top: 111px;*/
+  bottom: 160px;
+  right: 40px;
+  background: #fff;
+  padding: 10px;
+  width:500px;
+  z-index:99999;
+  border: 1px solid #500707;
+  box-shadow: 3px 0px 29px #888;
+  position: absolute;
+  display: none;
+}
+
+.description_restrict_left{
+  /*top: 111px;*/
+  bottom: 160px;
+  left: -84px; /*for portrait purposes*/
+  background: #fff;
+  padding: 10px;
+  width:500px;
+  z-index:99999;
+  border: 1px solid #500707;
+  box-shadow: 3px 0px 29px #888;
+  position: absolute;
+  display: none;
+}
+
+
+
+.last_description{
+  bottom: 167px;
+  right: -38px;
+  background: #fff;
+  padding: 10px;
+  width:500px;
+  z-index:99999;
+  border: 1px solid #500707;
+  box-shadow: 3px 0px 29px #888;
+  position: absolute;
+  display: none;
+  clear: both;
+  
+}
+
+
+.description-left{
+  bottom: 167px;
+  left: 36px;
+  background: #fff;
+  padding: 10px;
+  width:500px;
+  z-index:99999;
+  border: 1px solid #500707;
+  box-shadow: 3px 0px 29px #888;
+  position: absolute;
+  display: none;
+  clear: both;
+  
+}
+
+
+.request {
+    width: 400px;
+    height: 35px;
+    background: #00759B;
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.request:hover{
+  background: rgb(80, 7, 7);
+  transform: scale(1.05); 
+  
+}
+
+
+.description p{
+  text-align: center;
+  color: #00759B;
+  z-index:99999;
+  /*float: right;*/
+  width:327px;
+  font-size: 14px;
+  width: 200px;
+  padding: 1px;
+  margin: auto;
+  font-weight: 300;
+}
+
+
+
+.description_restrict ul, li{
+  font-weight: none;
+  list-style-type: square;
+  }
+
+.description h1{
+  padding: 0;
+  font-size: 15px;
+}
+
+.description_restrict h1{
+   padding: 0;
+  font-size: 15px;
+}
+
+.description ul{
+  font-size: 14px;
+  float: left;
+}
+
+
+.description .visit{
+  font-weight: bold;
+}
+
+
+.container p.blurb {
+    font-size: 1.3em;
+    width: 87%;
+    text-align: center;
+    margin: auto;
+    line-height: 23px;
+}
+
+.container h1{
+  text-align: center;
+}
+
+
+.credit
+{
+  color:#fff;
+  font-size:12px;
+  font-family:'Lato';
+  width:850px;
+  margin: 0 auto;
+  letter-spacing:1px;
+  text-decoration:none;
+}
+
+
+
+.top-nav{
+  position: relative;
+  top: 0;
+  width: 100%;
+  float: right;
+  background: #500707;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #000;
+}
+
+.top-nav .btn{
+  float: right;
+}
+
+/*buttons*/ 
+
+.btn{
+  /*background: #00759B;*/
+  color: #fff;
+  padding: 15px;
+  width: 150px;
+  height: auto;
+  text-align: center;
+  font-weight: bold;
+  font-size" 22px;
+}
+
+.btn p, a{
+  margin: auto;
+  text-align: center;
+  color: #fff;
+}
+
+.box {
+    float: left;
+    margin: 5px 10px 15px;
+   /* position: relative;*/
+    
+    box-shadow: 2px 2px 5px 2px #000;
+    transition: all 0.4s ease-in-out 0s;
+    border: 1px solid #000;
+    width: 163px;
+    height: 145px;
+    z-index:9998;
+     transition: all 0.4s ease-in-out 0s;
+}
+
+.box:first-child{
+  display: none;
+}
+
+.box:hover{
+  color: #000;
+}
+
+
+.box:hover .caption{
+  opacity: 1;
+  width:322px;
+  transform: translateY(-100px);
+  -webkit-transform:translateY(-100px);
+  -moz-transform:translateY(-100px);
+  -ms-transform:translateY(-100px);
+  -o-transform:translateY(-100px);
+
+}
+
+
+
+.none{
+  display: none !important;
+}
+
+/*.box:hover .description{
+  display: block !important;
+  top: -225px;
+  left: auto;
+  position: absolute;
+  z-index:99999 !important;
+}*/
+
+.image-contain{
+ 
+  height: auto;
+ /* float: left;*/
+ margin: auto;
+  padding-right: 6px;
+}
+
+.image-contain img{
+ 
+  margin: auto;
+  padding: 0;
+}
+
+.box img {
+    z-index: 4;
+    max-width: 161px;
+    max-height: 105px;
+    padding-top: 5px;
+    border: medium none !important;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+
+.box .caption
+{
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  top:200px;
+  width:322px;
+  height:70px;
+
+  -webkit-transition:all 0.15s ease-in-out;
+  -moz-transition:all 0.15s ease-in-out;
+  -o-transition:all 0.15s ease-in-out;
+  -ms-transition:all 0.15s ease-in-out;
+  transition:all 0.15s ease-in-out;
+
+
+}
+
+.test{
+  display: none;
+}
+.box .blur
+{
+  background-color: rgba(0,0,0,0.7);
+  height: 50px;
+  width:322px;
+  z-index: 5;
+  position: absolute;
+}
+
+.box .caption-text
+{
+  text-transform: uppercase;
+  font-size: 11px;
+  color:#fff;
+  line-height:105%;
+  padding:0px 2px;
+}
+.box .caption-text{
+
+  color: #fff;
+  position: absolute;
+  width: 322px;
+  height: 25px;
+  text-align: center;
+  top:0px;
+}
+
+
+
+.box:hover{
+  transform: scale(1.1) !important;
+
+
+}
+
+
+
+
+.theme_number {
+    position: absolute;
+    float: left;
+    width: 21%;
+    top: 0px;
+    left: 0px;
+    padding: 5.7px 4px;
+    background: #500707;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    font-family: "Lato";
+
+}
+.theme_name{
+width:100%;
+top:0;
+left:23%;
+padding:5px 4px 6px 14px;
+background:#1d1d1d;
+color:#fff;
+font-size:13px;
+font-family:'Lato';
+text-align:center;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+max-width: 145px;
+}
+
+
+
+
+.theme_name a{
+  color: #fff !important;
+}
+
+
+.theme_prev {
+    /*position: absolute;*/
+    color: #FFF;
+    background: #1481C5;
+    font-size: 15px;
+   /* text-align: center;*/
+    font-family: "Lato";
+    padding: 5px 5px 5px 5px;
+    /*margin:auto;*/
+    letter-spacing: 8px;
+    text-decoration: none;
+}
+
+.theme_prev:hover
+{
+letter-spacing:.8px;
+-webkit-transition: all 0.5s ease-in-out !important;
+-moz-transition: all 0.5s ease-in-out !important;
+-ms-transition: all 0.5s ease-in-out !important;
+-o-transition: all 0.5s ease-in-out !important;
+transition: all 0.5s ease-in-out !important;
+}
+
+
+.theme_More Info
+{
+position:absolute;
+float:right;
+width:44%;
+color:#fff;
+text-align:right;
+background:#1481C5;
+font-size:13px;
+font-family:'Lato';
+padding:5px 5px 5px 0;
+margin:2px 0px 0px 2px;
+letter-spacing:8px;
+text-decoration:none;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+
+.theme_More Info:hover
+{
+letter-spacing:1px;
+ -webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+
+.restrict
+{
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+}
+
+.restrict h3
+{
+  margin: auto;
+  display: inline-block;
+  font-weight: bold;
+  padding-right: 20px;
+  color: #1481C5;
+  font-size: 22px;
+
+}
+
+.container h1{
+  /*padding-top: 3px !important;*/
+  text-decoration: underline;
+}
+
+
+
+
+.divide {
+    padding: 5px;
+    clear: both;
+}
+
+
+
+.gallery .light {
+  display:block;
+  position:fixed;
+  height:100%;
+  width:100%;
+  top:0;
+  bottom:0;
+  right:0;
+  left:-9999px;
+  background-color:black;
+  z-index:19;
+  cursor:default;
+}
+
+.gallery .lightbox {
+  display: table;
+  position:fixed;
+  height:100%;
+  width:100%;
+  top:0;
+  bottom:0;
+  right:0;
+  left:-9999px;
+  z-index:20;
+  cursor:default;
+}
+
+.gallery .lightbox .middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.gallery .lightbox .inner {
+  display:table;
+  margin:0 auto;
+  margin-top:-5%;
+  text-align:center;
+  background-color:white;
+  padding:20px;
+}
+
+.gallery a:active .lightbox,
+.gallery a:focus .lightbox {
+  left:0;
+}
+
+a.active{
+  background: #000;
+  color: #000;
+}
+
+.gallery a:active .light,
+.gallery a:focus .light {
+  left:0;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";  /* opacité sur IE */
+  filter: alpha(opacity=75);                                          
+  opacity:0.75;
+}
+
+.gallery a .close { 
+  display:block;
+  position:fixed;
+  right:-30px;
+  top:0;
+  width:16px;
+  height:16px;
+  background-image:url(img/close.gif);
+  z-index:200;
+  margin: 10px 10px 0 0;
+}
+
+.gallery a:active .close,
+.gallery a:focus .close {
+  right:0;
+}
+
+#selfRef {
+  display:block;
+  position:fixed;
+  width:16px;
+  height:16px;
+  right:0;
+  top:0;
+  z-index:300;
+  margin: 10px 10px 0 0;
+  outline:none;
+  background-image:url(img/1x1.png);
+}
+
+.gallery .lightbox .description {
+  display:inline-block;
+  max-width:500px;
+  color:gray;
+  margin-top:20px;
+}
+
+.gallery {
+  list-style:none;
+  float:left;
+  margin:0;
+  padding:10px 0 10px 0;
+  width:240px;
+}
+
+.gallery li {
+  float:left;
+  display:inline;
+  padding:0;
+  width:50px;
+  margin:5px 10px 5px 0;
+}
+
+.gallery a,
+.gallery a:visited,
+.gallery a:hover {
+  text-decoration:none;
+}
+
+.gallery img {
+  display:block;
+}
+
+.gallery .lightbox img {
+  display:inline;
+}
+
+.clear {
+  clear:both;
+}
+
+/*color box*/
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxWrapper {max-width:none;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+.cboxIframe{width:100%; height:100%; display:block; border:0; padding:0; margin:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:url(images/overlay.png) repeat 0 0;}
+#colorbox{outline:0;}
+    #cboxTopLeft{width:21px; height:21px; background:url(images/controls.png) no-repeat -101px 0;}
+    #cboxTopRight{width:21px; height:21px; background:url(images/controls.png) no-repeat -130px 0;}
+    #cboxBottomLeft{width:21px; height:21px; background:url(images/controls.png) no-repeat -101px -29px;}
+    #cboxBottomRight{width:21px; height:21px; background:url(images/controls.png) no-repeat -130px -29px;}
+    #cboxMiddleLeft{width:21px; background:url(images/controls.png) left top repeat-y;}
+    #cboxMiddleRight{width:21px; background:url(images/controls.png) right top repeat-y;}
+    #cboxTopCenter{height:21px; background:url(images/border.png) 0 0 repeat-x;}
+    #cboxBottomCenter{height:21px; background:url(images/border.png) 0 -29px repeat-x;}
+    #cboxContent{background:#fff; overflow:hidden;}
+        .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{margin-bottom:28px;}
+        #cboxTitle{position:absolute; bottom:4px; left:0; text-align:center; width:100%; color:#949494;}
+        #cboxCurrent{position:absolute; bottom:4px; left:58px; color:#949494;}
+        #cboxLoadingOverlay{background:url(images/loading_background.png) no-repeat center center;}
+        #cboxLoadingGraphic{background:url(images/loading.gif) no-repeat center center;}
+
+        /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
+        
+        /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+        #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+
+        #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+        #cboxPrevious{position:absolute; bottom:0; left:0; background:url(images/controls.png) no-repeat -75px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxPrevious:hover{background-position:-75px -25px;}
+        #cboxNext{position:absolute; bottom:0; left:27px; background:url(images/controls.png) no-repeat -50px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxNext:hover{background-position:-50px -25px;}
+        #cboxClose{position:absolute; bottom:0; right:0; background:url(images/controls.png) no-repeat -25px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxClose:hover{background-position:-25px -25px;}
+
+/*
+  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
+  See: http://jacklmoore.com/notes/ie-transparency-problems/
+*/
+.cboxIE #cboxTopLeft,
+.cboxIE #cboxTopCenter,
+.cboxIE #cboxTopRight,
+.cboxIE #cboxBottomLeft,
+.cboxIE #cboxBottomCenter,
+.cboxIE #cboxBottomRight,
+.cboxIE #cboxMiddleLeft,
+.cboxIE #cboxMiddleRight {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
+
+a{
+  outline: 0 !important;
+}
+
+
+

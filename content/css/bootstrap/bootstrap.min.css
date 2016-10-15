@@ -2004,10 +2004,10 @@ pre code {
 }
 
 @media (min-width:1200px) {
-    .container {
-        width: 100%;
-        max-width: 1350px;
-    }
+   .container {
+    width: 100%;
+    max-width: 1500px;
+}
 }
 
 .container-fluid {
@@ -2508,7 +2508,7 @@ pre code {
         width: 41.66666667%
     }
     .col-md-4 {
-        width: 24.333%;
+        width: 21.333%;
 		float: right;%
     }
     .col-md-3 {
