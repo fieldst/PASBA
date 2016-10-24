@@ -1,13 +1,103 @@
-app.controller('pasbaappcontroller', function($scope, $compile, $timeout) {
+app.controller('pasbaappcontroller', function($scope, $compile, $timeout, $http) {
   $scope.test = 'test';
 
+
+//unrestricted apps
    $scope.unrestrictapps = [
   
-        {name: 'MAP'}
+        {name: 'MAP', icon: 'content/images/icons/M.svg', classname: 'color1', link: '../map'},
+        {name: 'MEDCOM360', icon: 'content/images/icons/medcomchart.svg', classname: 'color2', link: '../medcom360'},
+        {name: 'BHEATC-Summary', icon: 'content/images/icons/caper.svg', classname: 'color3', link: ''},
+        {name: 'BMI IRIS Metric', icon: 'content/images/icons/dqmcp.svg', classname: 'color4', link: ''},
+        {name: 'CAPER Reports', icon: 'content/images/icons/eod.svg', classname: 'color5', link: ''},
+        {name: 'DQMCP Program Metrics', icon: 'content/images/icons/ipsr.svg', classname: 'color6', link: ''},
+        {name: 'End of Day Compliance Summary Metric', icon: 'content/images/icons/eodcompliance.svg', classname: 'color7', link: ''},
+        {name: 'Inpatient Professional Service Rounds Metric', icon: 'content/images/icons/inpatient.svg', classname: 'color8', link: ''},
+        {name: 'MAPR Data Quality Measures Metric', icon: 'content/images/icons/quality.svg', classname: 'color1', link: ''},
+        {name: 'R299/SIDR Report', icon: 'content/images/icons/sidrreport.svg', classname: 'color2', link: ''},
+        {name: 'Commanders Corner', icon: 'content/images/icons/commander.svg', classname: 'color3', link: ''},
 
   ]
 
-});
+
+
+//restricted apps
+$http.get("sandbox/userappinfo.js").
+	then(function(responce){
+
+		
+		$scope.username = responce.data;
+		$scope.restrictedapps = responce.data.UserApp;
+
+
+
+
+
+
+
+
+$http.get("sandbox/colors.js").
+	then(function(colorresponse){
+
+		
+
+		$scope.colors = colorresponse.data;
+
+
+$scope.unrestricteddata = [
+      {
+         "color":"color1",
+         "icon": "content/images/icons/administrator.svg"
+      }
+      ];
+
+		// restrictvalues.push({"restrictedapps.UserApp"});
+
+	// $scope.restrictedapps.push({color : "white"});
+
+
+
+
+	function addColor (objectArray, colorArray, restrictedtemplate){
+	
+	objectArray.forEach(function(object, index){
+		object.color = colorArray[index];
+
+
+		 if($scope.restrictedapps.length > 0){
+
+      // objectArray.forEach(function(object, index){
+      //   object.unrestrict = restrictedtemplate[index];
+      // })
+
+
+     $scope.test = "true";
+
+    
+  }
+
+	});
+	
+	// console.log(objectArray.length)
+	  // return objectArray;	
+};
+
+addColor($scope.restrictedapps, $scope.colors, $scope.unrestricteddata);
+ console.log($scope.restrictedapps);
+
+
+	})
+
+
+
+})
+
+})
+
+
+  // $scope.restricted =[];
+
+
 
 
 

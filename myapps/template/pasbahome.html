@@ -3,6 +3,7 @@
 
                               <div class="section-header">
                                         <h2>My Apps</h2>
+
                                     </div>
 
                             <div class="row person-wrapper">
@@ -12,11 +13,12 @@
 
                             <div class="restrict-status">
                                     <h4>Non Restricted Applications</h4>
+                                    
                             </div>
 
                             <div id="person-contain">
                                 <div class="col-xs-4 col-sm-3 icon-word"  ng-repeat="app in unrestrictapps">
-                                    <div class="shortcut {{app.classname}}">
+                                    <div class="shortcut {{app.classname}}" data-toggle="tooltip">
                                         <a href="category.html"><img ng-src="{{app.icon}}"></a>
                                     </div>
 
@@ -30,15 +32,20 @@
 
 <!-- Restricted Applications -->
                                 <div class="restrict-status">
-                                    <h4>Restricted Applications{{testname}}</h4>
+                                    <h4>Restricted Applications</h4>
+                                    
                             </div>
-
+                                  <div test-test ng-if="test != 'true'"></div>
                                 
                                   <div class="col-xs-4 col-sm-3 icon-word" ng-repeat="restrict in restrictedapps">
                                    <!--  <img src="content/images/pasbaapps-icons/lock.svg" class="lock"> -->
+
+                                   
+                                   
                                     <div class="shortcut {{restrict.color.color}}">
                                         <a href="{{restrict.TokenLink}}"><img ng-src="{{restrict.color.icon}}"></a>
-                                        <p>{{restrict.test}}</p>
+                                        
+                                        
                                     </div>
                                     <a href="{{restrict.TokenLink}}"><h3>{{restrict.TokenName}}</h3></a>
                                 </div>

@@ -118,6 +118,11 @@ a:hover{
 	-moz-border-radius: 0;
 	-webkit-border-radius : 0;
 }
+
+.welcomeuser{
+	color: #00317C !important;
+}
+
 .navbar-brand{
 	height: 70px;
 }
@@ -147,7 +152,7 @@ a:hover{
 
 .logo img {
     width: 575px;
-    margin: -22px -165px;
+    margin: -22px -11px;
 }
 .navbar-top{
 	background: #FFF;
@@ -191,7 +196,7 @@ a:hover{
 }
 
 .nav a{
-	color: #888 !important;
+	color: #888 ;
 }
 
 .nav a:active{
@@ -631,10 +636,25 @@ li.active{
 	background: rgba(204,83,13,.5);
 }
 
+.color17{
+	background: #00509A;
+}
+
+.color18{
+	background: #00506b;
+}
+
+.color19{
+	background: #FF530D;
+}
+
+.color20{
+	background: #99583D;
+}
 .lock {
     position: absolute;
     width: 20px;
-    right: 45px;
+    right: 58px;
     top: -11px;
 }
 

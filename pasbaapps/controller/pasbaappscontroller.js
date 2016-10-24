@@ -10,5 +10,3 @@ app.controller('pasbacontroller', function($scope, $compile, $timeout, uiCalenda
 });
 
 
-
-

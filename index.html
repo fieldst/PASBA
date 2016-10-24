@@ -31,6 +31,9 @@
         <!-- Full calendar optional -->
          <!-- <link rel="stylesheet" href="libraries/bower_components/fullcalendar/dist/fullcalendar.css" type="text/css"> -->
 
+        
+
+
         <!-- JS Library -->
         <script src="js/jquery.js"></script>
 
@@ -38,17 +41,20 @@
         <!--Angular JS-->
         
         <script src="pasbahome/angular/angular.min.js"></script>
+        <script src="pasbahome/angular/angular-animate.min.js"></script>
+         <script src="pasbahome/angular/angular-route.min.js"></script>
 
         <script src="pasbahome/js/app.js"></script>\
 
         <!-- controllers -->
+         <script src="myapps/controllers/pasbaappscontroller.js"></script>
         <script src="pasbahome/controllers/appcontroller.js"></script>
-        <script src="myapps/controllers/pasbaappscontroller.js"></script>
+       
 
 
 
 
-        <script src="pasbahome/angular/angular-route.min.js"></script>
+       
         <script src="libraries/slick/slick.js"></script>
         <script src="shared/directives/smoothscrolldirective.js"></script>
         <!-- optional calendar <script src="libraries/bower_components/moment/moment.js"></script>
@@ -56,6 +62,9 @@
         // <script src="libraries/bower_components/fullcalendar/dist/fullcalendar.min.js"></script> 
             <script type="text/javascript" src="libraries/bower_components/fullcalendar/dist/gcal.js"></script>-->
         <script src="libraries/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+        <script src="libraries/bower_components/angular-resource/angular-resource.js"></script>
+       
+
         
         
 
@@ -98,8 +107,8 @@
                                     <li><a href="account_profile.html">Sub</a></li>
                                 </ul>
                             </li> -->
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="fa fa-user"></i>Welcome User&nbsp;</a>
+                            <li class="dropdown" ng-controller="pasbaappcontroller">
+                                <a class="dropdown-toggle welcomeuser" href="#" data-toggle="dropdown"><i class="fa fa-user"></i>Welcome {{username.akoUserID}}&nbsp;</a>
                                 <div class="dropdown-menu dropdown-login" style="padding:15px;min-width:250px">
                                     <form>                       
                                         <div class="form-group">

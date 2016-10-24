@@ -3,16 +3,21 @@ var app = angular.module('pasbaapp', [
 	'angularSmoothscroll',
 	// optional'ui.calendar',
 	'ui.bootstrap',
+	'ngResource',
+	'ngAnimate',
+
 	]);
 
 app.config(function($routeProvider){
 	$routeProvider
+
+
 	.when("/home", {
-		templateUrl: "templates/views/pasbahome.html",
+		templateUrl: "myapps/template/pasbahome.html",
 		controller: 'pasbaappcontroller',
 
 	}).when("/pasbaapps", {
-		templateUrl: "templates/views/pasbaapps.html",
+		templateUrl: "pasbaapps/templates/pasbaapps.html",
 		controller: 'pasbaappcontroller',
 		// css: 'css/pasbaappscss.css',
 
@@ -30,8 +35,11 @@ app.config(function($routeProvider){
 	});
 
 
-
-
+app.directive('testTest', function() {
+  return {
+    templateUrl: 'sandbox/pasbahome.html'
+  };
+});
 
 
 

@@ -11,7 +11,7 @@
          "TokenLink":"/Administration/Launch.htm"
       },
       {
-         "TokenName":"Behavioral Health Enhanced Access To Care (EATC) Metric",
+         "TokenName":"Behavioral Health (EATC) Metric",
          "TokenLink":"DataAnalysis/defaultBH.asp"
       },
       {
