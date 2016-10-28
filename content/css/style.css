@@ -29,15 +29,158 @@ body{
 
 .person-wrapper {
     background: #fff;
-    padding: 10px 23px;
+    padding: 34px 23px;
     min-height: 100px;
     overflow: auto;
     height: auto;
-    margin: auto;
     width: 105%;
-    min-height: 889px;
     max-height: 889px;
+    margin: 0;
 }
+
+.intro-image {
+    float: left;
+    padding-right: 65px;
+    padding: 15px 68px;
+    background: #F5F5F5;
+    border: 3px solid #fff;
+    height: 350px;
+    clear: both;
+    width: 376px;
+    border-radius: 50%;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.intro-image img {
+    width: 255px;
+    vertical-align: middle;
+}
+
+.intro-image p{
+	text-align: center;
+	margin: auto;
+	color: #500707;
+}
+
+
+.body-image {
+    padding-right: 65px;
+    padding: 15px 68px;
+    /*background: #F5F5F5;*/
+    border: 3px solid #fff;
+    height: 350px;
+    clear: both;
+    width: 376px;
+    border-radius: 50%;
+    margin-right: 50px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+.body-image-left {
+    padding-right: 65px;
+    padding: 15px 68px;
+    /*background: #F5F5F5;*/
+    border: 3px solid #fff;
+    height: 350px;
+    clear: both;
+    width: 376px;
+    border-radius: 50%;
+    margin-right: 50px;
+    text-align: center;
+    margin-bottom: 209px;
+    float: left;
+}
+
+.body-image img {
+    width: 350px;
+    vertical-align: middle;
+}
+
+.body-image-left img {
+    width: 400px;
+    vertical-align: middle;
+}
+
+.content-right {
+    width: 100%;
+    padding: 0px 16px;
+    
+}
+
+.content-right a.link:before{
+	content:  "\f0c1";
+	 font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    padding-right: 5px;
+}
+.content-right h3{
+	font-size: 20px;
+	color: ;
+}
+
+.content-right h2 {
+    color: #500707;
+    text-decoration: underline;
+    padding-bottom: 7px;
+    padding-top: 7px;
+}
+.content-right p, li, ul{
+	font-size: 18px;
+}
+
+.content-right ul{
+	font-size: 20px;
+	padding-left: 0;
+
+}
+
+.content-right > li{
+	font-weight: bold;
+}
+
+.content-right ol{
+	font-size: 20px;
+}
+
+.content-right span{
+	font-size: 18px;
+}
+
+
+.content-right li{
+	line-height: 2em;
+	list-style: none;
+}
+
+.content-right a{
+	color: #500707;
+}
+.content-right ul li:before{
+	content: "\f054";
+	font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    padding-right: 5px;
+    color: #117ABC;
+
+}
+
+.content-right .ordered li{
+	list-style: decimal;
+}
+
+
+.center{
+	text-align: center;
+}
+
+
+
+
 
 #person-contain{
 	margin: auto;
@@ -77,6 +220,10 @@ a:hover{
 	clear: both;
 	padding: 26px;
 
+}
+
+.divider{
+	padding: 50px;
 }
 
 
@@ -304,12 +451,11 @@ a:hover{
 	font-size: 16px;
 }
 
-.space-wrapper svg{
-	width: 100%;
-	padding-bottom: 10px;
-	fill: #500707;
-	height: 65px;
-
+.space-wrapper svg {
+    width: 100%;
+    padding-bottom: 10px;
+    fill: #500707;
+    height: 74px;
 }
 
 .shortcut svg{
@@ -338,9 +484,12 @@ li.active{
 	background: #F5F5F5;
 }
 
-.green-space .active svg{
+.green-space .active svg {
 	fill: #00559E;
 	border-bottom: none;
+	border-right: none;
+	border-left: none;
+	background: #F5F5F5;
 }
 
 .category-search{
@@ -445,30 +594,44 @@ li.active{
 	margin-top: 3px;
 }
 
-.widget h3{
-	font-size: 15px;
-	text-transform: uppercase;
-	font-weight: 700;
-	color: #117ABC;
+.widget h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #117ABC;
+    text-align: center;
 }
 
-.widget a{
-	color: #82000A;
-	font-size: 14px;
+.widget h3{
+	text-align: left;
 }
+
+.widget a {
+    color: #82000A;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
 
 .widget-header{
 	border-bottom: 1px solid #E7E7E7;
 	padding-bottom: 10px;
 }
 
-.apps-navigation h3{
+.apps-navigation ul{
 	text-align: left;
-	padding: 10px;
+	padding: 6px;
 
 }
 
-.apps-navigation h3:before{
+.apps-navigation li a{
+	font-size: 16px;
+}
+
+
+
+.apps-navigation li:before{
 	content: '>';
 	padding-right: 10px;
 }
@@ -495,12 +658,20 @@ li.active{
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	font-weight: bold;
+	font-size: 21px;
 }
 
-.widget-body ul li{
-	padding: 3px 0;
+.widget-body ul:before{
+	content: "\f101";
+	font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
 }
 
+.widget-body ul li {
+    padding: 3px 19px;
+}
 .widget-body img{
 	margin: auto;
 	width: 200px;

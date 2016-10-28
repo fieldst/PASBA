@@ -8,7 +8,7 @@ app.controller('pasbaappcontroller', function($scope, $compile, $timeout, $http)
         {name: 'MAP', icon: 'content/images/icons/M.svg', classname: 'color1', link: '../map'},
         {name: 'MEDCOM360', icon: 'content/images/icons/medcomchart.svg', classname: 'color2', link: '../medcom360'},
         {name: 'BHEATC-Summary', icon: 'content/images/icons/caper.svg', classname: 'color3', link: ''},
-        {name: 'BMI IRIS Metric', icon: 'content/images/icons/dqmcp.svg', classname: 'color4', link: ''},
+        {name: 'BMI IRIS Metric', icon: 'content/images/icons/inpatient.svg', classname: 'color4', link: ''},
         {name: 'CAPER Reports', icon: 'content/images/icons/eod.svg', classname: 'color5', link: ''},
         {name: 'DQMCP Program Metrics', icon: 'content/images/icons/ipsr.svg', classname: 'color6', link: ''},
         {name: 'End of Day Compliance Summary Metric', icon: 'content/images/icons/eodcompliance.svg', classname: 'color7', link: ''},

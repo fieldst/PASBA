@@ -24,8 +24,8 @@ div#all {
   box-shadow: 1px 1px 2px #e6e6e6;
   cursor: default;
   background: #fff url(../images/bgimg.jpg) no-repeat center center;
-  width: 300px;
-  height: 220px;
+  width: 240px;
+  height: 200px;
 }
 
 .view .mask,
@@ -44,36 +44,36 @@ left: 0;
 }
 
 .view h2 {
-  text-transform: uppercase;
-  color: #fff;
-  text-align: center;
-  position: relative;
-  font-size: 17px;
-  font-family: Raleway, serif;
-  padding: 10px;
-  /*background: rgba(0, 0, 0, 0.8);*/
-  margin: 20px 0 0 0
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+    font-family: Raleway, serif;
+    padding: 10px;
+    
+    margin: 5px 60px 0 0;
 }
 
 .view p {
-  font-family: Merriweather, serif;
-  /*font-style: italic;
-*/  font-size: 14px;
-  position: relative;
-  color: #fff;
-  padding: 0px 20px 0px;
-  text-align: center
+    font-family: Merriweather, serif;
+    
+    font-size: 13px;
+    position: relative;
+    color: #fff;
+    padding: 0px 81px 0px 22px;
+    text-align: center;
 }
 
 .view a.info {
-  display: inline-block;
-  text-decoration: none;
-  padding: 7px 14px;
-  background: #500707;
-  color: #fff;
-  font-family: Raleway, serif;
-  text-transform: uppercase;
-  
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 15px;
+    background: #500707;
+    color: #fff;
+    font-family: Raleway, serif;
+    text-transform: uppercase;
+    margin: -9px 11px 10px -53px;
 }
 
 .view a.info:hover {
@@ -186,6 +186,11 @@ padding-bottom: 47px;
    
 }
 
+.container-pasbaapps h4 {
+    padding-bottom: 23px;
+    font-size: 22px;
+    color: #500707;
+}
 
 #mainleft {
 	position:relative;

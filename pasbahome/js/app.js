@@ -22,11 +22,29 @@ app.config(function($routeProvider){
 		// css: 'css/pasbaappscss.css',
 
 	}).when("/dmrpc", {
-		templateUrl: "templates/views/dmrpc.html",
+		templateUrl: "dmrpc/templates/dmrpc.html",
 		controller: 'dmrpccontroller',
 		// css: 'css/pasbaappscss.css',
 
-	}).
+	}).when("/recordsrequest", {
+		templateUrl: "dmrpc/templates/instructions.html",
+		controller: 'dmrpccontroller',
+
+
+	}).when("/padpoliciesandguidance", {
+		templateUrl: "dmrpc/templates/padpolicies.html",
+		controller: 'dmrpccontroller',
+
+	}).when("/medicalregulating", {
+		templateUrl: "dmrpc/templates/medicalregulating.html",
+		controller: 'dmrpccontroller',
+
+	})
+
+
+
+
+	.
 	otherwise({
 	  redirectTo: "/home"
 	});
@@ -34,12 +52,43 @@ app.config(function($routeProvider){
 
 	});
 
-
+//restricted structure
 app.directive('testTest', function() {
   return {
     templateUrl: 'sandbox/pasbahome.html'
   };
 });
+
+
+//home sidewidget template
+
+
+// app.directive('homeWidget', function() {
+//    return {
+//      templateUrl: 'side-widget/side-widget-templates/homewidget.html',
+//      controller: 'sidewidgetcontroller'
+//    };
+//  });
+
+
+
+
+
+
+app.directive('pasbaappsWidget', function() {
+   return {
+     templateUrl: 'side-widget/side-widget-templates/pasbaapps.widget.html',
+     }
+
+ });
+
+
+
+
+
+
+
+
 
 
 
