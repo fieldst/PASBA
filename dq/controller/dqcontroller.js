@@ -1,9 +1,9 @@
-app.controller('dmrpccontroller', function($scope, $compile, $timeout) {
+app.controller('dqcontroller', function($scope, $compile, $timeout) {
   // $scope.introimage = 'dmrpc/images/dmrpc-intro.svg',
   $scope.pageimage = {
 
 
-  						introimage : "dmrpc/images/dmrpc-intro.svg",
+  						introimage : "dq/images/dataquality.svg",
   						instructions : "dmrpc/images/instructions.svg",
   						pad : "dmrpc/images/pad.svg",
   						regulate : "dmrpc/images/regulate.svg",
@@ -13,7 +13,7 @@ app.controller('dmrpccontroller', function($scope, $compile, $timeout) {
 					}
 
 	$scope.title = {
-						home : "Deployment Guilde Home",
+						home : "Data Quality",
 						instruction : "Records Request Instructions",
 						pad : "PAD Deployed Medical Documentation",
 						regulate : "Medical Regulating",

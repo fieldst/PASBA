@@ -38,6 +38,15 @@ body{
     margin: 0;
 }
 
+.person-wrapper h4{
+	color: #117ABC;
+}
+
+
+.person-wrapper h3{
+	color: #500707;
+}
+
 .intro-image {
     float: left;
     padding-right: 65px;
@@ -117,6 +126,25 @@ body{
     font-weight: normal;
     padding-right: 5px;
 }
+
+.content-right a.download:before{
+	content:   "\f019";
+	 font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    padding-right: 5px;
+}
+
+.content-right a.email:before{
+	content:   "\f003";
+	 font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    padding-right: 5px;
+}
+
+
+
 .content-right h3{
 	font-size: 20px;
 	color: ;
@@ -144,6 +172,26 @@ body{
 
 .content-right ol{
 	font-size: 20px;
+}
+
+.content-right .linkinline li {
+    float: left;
+    padding-right: 75px;
+    width: 33%;
+   
+}
+
+.content-right .linkinline li:before{
+	content: "\f058";
+	font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    padding-right: 5px;
+    color: #117ABC;
+}
+
+.margin{
+	text-align: center
 }
 
 .content-right span{
@@ -181,6 +229,10 @@ body{
 
 
 
+.policy{
+	color: #500707;
+}
+
 
 #person-contain{
 	margin: auto;
@@ -201,7 +253,7 @@ a{
 
 a:hover{
 	text-decoration: none;
-	color: #398110;
+	/*color: #398110;*/
 }
 
 .no-padding{
@@ -602,9 +654,7 @@ li.active{
     text-align: center;
 }
 
-.widget h3{
-	text-align: left;
-}
+
 
 .widget a {
     color: #82000A;
@@ -625,8 +675,8 @@ li.active{
 
 }
 
-.apps-navigation li a{
-	font-size: 16px;
+.apps-navigation li a {
+    font-size: 14px;
 }
 
 
@@ -654,20 +704,20 @@ li.active{
 
 
 
-.widget-body ul{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	font-weight: bold;
-	font-size: 21px;
+.widget-body ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 18px;
 }
 
-.widget-body ul:before{
+/*.widget-body ul:before{
 	content: "\f101";
 	font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
-}
+}*/
 
 .widget-body ul li {
     padding: 3px 19px;
@@ -677,7 +727,23 @@ li.active{
 	width: 200px;
 }
 
+.links li:before{
+	content: "\f019";
+	font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    padding-right: 5px;
+}
 
+.links li:hover{
+	color: #117ABC;
+}
+
+.links li{
+	color: #82000A;
+	font-weight: normal;
+	font-size: 14px;
+}
 
 .seller-avatar{
 	height: 150px;

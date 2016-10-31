@@ -21,6 +21,8 @@ app.config(function($routeProvider){
 		controller: 'pasbaappcontroller',
 		// css: 'css/pasbaappscss.css',
 
+
+// start dmrpc
 	}).when("/dmrpc", {
 		templateUrl: "dmrpc/templates/dmrpc.html",
 		controller: 'dmrpccontroller',
@@ -39,12 +41,16 @@ app.config(function($routeProvider){
 		templateUrl: "dmrpc/templates/medicalregulating.html",
 		controller: 'dmrpccontroller',
 
-	})
+	}).when("/sidr", {
+		templateUrl: "dmrpc/templates/sidr.html",
+		controller: 'dmrpccontroller',
+// end drmpc
 
-
-
-
-	.
+}).when("/dataquality", {
+		templateUrl: "dq/templates/dataquality.html",
+		controller: 'dqcontroller',
+	
+	}).
 	otherwise({
 	  redirectTo: "/home"
 	});
@@ -53,11 +59,11 @@ app.config(function($routeProvider){
 	});
 
 //restricted structure
-app.directive('testTest', function() {
-  return {
-    templateUrl: 'sandbox/pasbahome.html'
-  };
-});
+ app.directive('testTest', function() {
+   return {
+     templateUrl: 'sandbox/pasbahome.html'
+   };
+ });
 
 
 //home sidewidget template

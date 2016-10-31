@@ -1,0 +1,161 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'aos', '--save' ]
+2 info using npm@2.10.1
+3 info using node@v0.12.4
+4 verbose install initial load of /Applications/MAMP/htdocs/pasba-material/libraries/package.json
+5 verbose readDependencies loading dependencies from /Applications/MAMP/htdocs/pasba-material/libraries/package.json
+6 silly cache add args [ 'aos', null ]
+7 verbose cache add spec aos
+8 silly cache add parsed spec { raw: 'aos',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'aos',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed aos@*
+10 verbose addNamed "*" is a valid semver range for aos
+11 silly addNameRange { name: 'aos', range: '*', hasData: false }
+12 silly mapToRegistry name aos
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/aos
+16 verbose addNameRange registry:https://registry.npmjs.org/aos not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/aos
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 10:06:28 PM
+20 verbose request id 14946d58a3a10032
+21 http request GET https://registry.npmjs.org/aos
+22 http 200 https://registry.npmjs.org/aos
+23 silly get cb [ 200,
+23 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 silly get     etag: '"3RWFEPNUX1BMUZ0W3B2TV3K4K"',
+23 silly get     'content-type': 'application/json',
+23 silly get     'content-encoding': 'gzip',
+23 silly get     'cache-control': 'max-age=300',
+23 silly get     'content-length': '6897',
+23 silly get     'accept-ranges': 'bytes',
+23 silly get     date: 'Mon, 31 Oct 2016 03:06:29 GMT',
+23 silly get     via: '1.1 varnish',
+23 silly get     age: '0',
+23 silly get     connection: 'keep-alive',
+23 silly get     'x-served-by': 'cache-dfw1831-DFW',
+23 silly get     'x-cache': 'MISS',
+23 silly get     'x-cache-hits': '0',
+23 silly get     'x-timer': 'S1477883189.147427,VS0,VE188',
+23 silly get     vary: 'Accept-Encoding' } ]
+24 verbose get saving aos to /Users/tyronefields1/.npm/registry.npmjs.org/aos/.cache.json
+25 silly addNameRange number 2 { name: 'aos', range: '*', hasData: true }
+26 silly addNameRange versions [ 'aos',
+26 silly addNameRange   [ '1.2.0',
+26 silly addNameRange     '1.2.1',
+26 silly addNameRange     '1.2.2',
+26 silly addNameRange     '2.0.0',
+26 silly addNameRange     '2.0.1',
+26 silly addNameRange     '2.0.2',
+26 silly addNameRange     '2.0.3',
+26 silly addNameRange     '2.0.4',
+26 silly addNameRange     '2.1.0',
+26 silly addNameRange     '2.1.1' ] ]
+27 silly addNamed aos@2.1.1
+28 verbose addNamed "2.1.1" is a plain semver version for aos
+29 silly mapToRegistry name aos
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/aos
+33 verbose addRemoteTarball https://registry.npmjs.org/aos/-/aos-2.1.1.tgz not in flight; adding
+34 verbose addRemoteTarball [ 'https://registry.npmjs.org/aos/-/aos-2.1.1.tgz',
+34 verbose addRemoteTarball   '2fb04c96e0b3b2df2a121ab6a882fef1207d6bc7' ]
+35 info retry fetch attempt 1 at 10:06:29 PM
+36 info attempt registry request try #1 at 10:06:29 PM
+37 http fetch GET https://registry.npmjs.org/aos/-/aos-2.1.1.tgz
+38 http fetch 200 https://registry.npmjs.org/aos/-/aos-2.1.1.tgz
+39 silly fetchAndShaCheck shasum 2fb04c96e0b3b2df2a121ab6a882fef1207d6bc7
+40 verbose addTmpTarball /var/folders/00/nxb0l5010cnfc0dr_z4v9pnc0000gp/T/npm-9220-958c575a/registry.npmjs.org/aos/-/aos-2.1.1.tgz not in flight; adding
+41 verbose addTmpTarball already have metadata; skipping unpack for aos@2.1.1
+42 silly cache afterAdd aos@2.1.1
+43 verbose afterAdd /Users/tyronefields1/.npm/aos/2.1.1/package/package.json not in flight; writing
+44 verbose afterAdd /Users/tyronefields1/.npm/aos/2.1.1/package/package.json written
+45 silly install resolved [ { name: 'aos',
+45 silly install resolved     version: '2.1.1',
+45 silly install resolved     description: 'Animate on scroll library',
+45 silly install resolved     homepage: 'http://michalsnik.github.io/aos/',
+45 silly install resolved     author: { name: 'Michał Sajnóg', email: 'michal.sajnog@hotmail.com' },
+45 silly install resolved     license: 'MIT',
+45 silly install resolved     main: 'dist/aos.js',
+45 silly install resolved     repository:
+45 silly install resolved      { type: 'git',
+45 silly install resolved        url: 'git+https://github.com/michalsnik/aos.git' },
+45 silly install resolved     bugs: { url: 'https://github.com/michalsnik/aos/issues' },
+45 silly install resolved     devDependencies:
+45 silly install resolved      { 'babel-core': '^6.9.1',
+45 silly install resolved        'babel-loader': '^6.2.4',
+45 silly install resolved        'babel-plugin-transform-object-assign': '^6.8.0',
+45 silly install resolved        'babel-polyfill': '^6.9.1',
+45 silly install resolved        'babel-preset-es2015': '^6.9.0',
+45 silly install resolved        'css-loader': '^0.23.1',
+45 silly install resolved        'extract-text-webpack-plugin': '^1.0.1',
+45 silly install resolved        'jasmine-core': '^2.3.4',
+45 silly install resolved        'jasmine-fixture': '^1.3.3',
+45 silly install resolved        'jasmine-jquery': '^2.1.1',
+45 silly install resolved        jquery: '^2.1.4',
+45 silly install resolved        karma: '^0.13.11',
+45 silly install resolved        'karma-chrome-launcher': '^0.2.1',
+45 silly install resolved        'karma-jasmine': '^0.3.6',
+45 silly install resolved        'karma-jasmine-jquery': '^0.1.1',
+45 silly install resolved        'karma-webpack': '^1.7.0',
+45 silly install resolved        'node-sass': '^3.7.0',
+45 silly install resolved        phantomjs: '^1.9.18',
+45 silly install resolved        'sass-loader': '^3.2.0',
+45 silly install resolved        'style-loader': '^0.13.1',
+45 silly install resolved        webpack: '^1.13.1',
+45 silly install resolved        'webpack-dev-server': '^1.14.1' },
+45 silly install resolved     dependencies:
+45 silly install resolved      { 'classlist-polyfill': '^1.0.3',
+45 silly install resolved        'lodash.debounce': '^4.0.6',
+45 silly install resolved        'lodash.throttle': '^4.0.1' },
+45 silly install resolved     scripts:
+45 silly install resolved      { test: 'node ./node_modules/karma/bin/karma start karma.conf.js',
+45 silly install resolved        build: 'webpack',
+45 silly install resolved        dev: 'node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js' },
+45 silly install resolved     gitHead: '8bd4e86d2631595f67c6d3bf215ebf15fc18f4eb',
+45 silly install resolved     _id: 'aos@2.1.1',
+45 silly install resolved     _shasum: '2fb04c96e0b3b2df2a121ab6a882fef1207d6bc7',
+45 silly install resolved     _from: 'aos@*',
+45 silly install resolved     _npmVersion: '3.8.6',
+45 silly install resolved     _nodeVersion: '5.11.1',
+45 silly install resolved     _npmUser: { name: 'michalsnik', email: 'michal.sajnog@netguru.pl' },
+45 silly install resolved     dist:
+45 silly install resolved      { shasum: '2fb04c96e0b3b2df2a121ab6a882fef1207d6bc7',
+45 silly install resolved        tarball: 'https://registry.npmjs.org/aos/-/aos-2.1.1.tgz' },
+45 silly install resolved     maintainers: [ [Object] ],
+45 silly install resolved     _npmOperationalInternal:
+45 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+45 silly install resolved        tmp: 'tmp/aos-2.1.1.tgz_1475186806613_0.4295066758058965' },
+45 silly install resolved     directories: {},
+45 silly install resolved     _resolved: 'https://registry.npmjs.org/aos/-/aos-2.1.1.tgz' } ]
+46 info install aos@2.1.1 into /Applications/MAMP/htdocs/pasba-material/libraries
+47 info installOne aos@2.1.1
+48 verbose installOne of aos to /Applications/MAMP/htdocs/pasba-material/libraries not in flight; installing
+49 warn locking Error: EACCES, open '/Users/tyronefields1/.npm/_locks/aos-78b8ed8c5f935b3c.lock'
+49 warn locking     at Error (native)
+49 warn locking  /Users/tyronefields1/.npm/_locks/aos-78b8ed8c5f935b3c.lock failed { [Error: EACCES, open '/Users/tyronefields1/.npm/_locks/aos-78b8ed8c5f935b3c.lock']
+49 warn locking   errno: -13,
+49 warn locking   code: 'EACCES',
+49 warn locking   path: '/Users/tyronefields1/.npm/_locks/aos-78b8ed8c5f935b3c.lock' }
+50 verbose stack Error: Attempt to unlock /Applications/MAMP/htdocs/pasba-material/libraries/node_modules/aos, which hasn't been locked
+50 verbose stack     at unlock (/usr/local/lib/node_modules/npm/lib/utils/locker.js:66:11)
+50 verbose stack     at cb (/usr/local/lib/node_modules/npm/lib/install.js:1017:5)
+50 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:1021:20
+50 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/locker.js:40:9
+50 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:149:38)
+50 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:177:38
+50 verbose stack     at FSReqWrap.oncomplete (fs.js:95:15)
+51 verbose cwd /Applications/MAMP/htdocs/pasba-material/libraries
+52 error Darwin 14.5.0
+53 error argv "node" "/usr/local/bin/npm" "install" "aos" "--save"
+54 error node v0.12.4
+55 error npm  v2.10.1
+56 error Attempt to unlock /Applications/MAMP/htdocs/pasba-material/libraries/node_modules/aos, which hasn't been locked
+57 error If you need help, you may report this error at:
+57 error     <https://github.com/npm/npm/issues>
+58 verbose exit [ 1, true ]
