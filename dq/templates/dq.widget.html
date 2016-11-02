@@ -5,22 +5,20 @@
                                     <h3>Data Quality</h3>
                                 </div>
                                 <div class="widget-body apps-navigation">
-                                  <ul>Guildance
+                                  <ul>Navigation
                                     <li><a href="#/dataquality">Deployment Guide Home</a></li>
-                                    <li><a href="#/recordsrequest">DQMC Program</a></li>
-                                    <li><a href="#/padpoliciesandguidance">DQ Policy/Regs</a></li>
-                                    <li><a href="#/medicalregulating">DQ Guidelines</a></li>
-                                    <li><a href="#/sidr">DQMC Program Metrics</a></li>
-                                     <li><a href="#/sidr">R299/SIDR Reports</a></li>
-                                      <li><a href="#/sidr">DQMC User's Manual</a></li>
-                                       <li><a href="#/sidr">DQ Managers List</a></li>
-                                        <li><a href="#/sidr">DW FAQ</a></li>
+                                    <li><a href="#/dqmcprogram">DQMC Program</a></li>
+                                    <li><a href="#/dqmcpolicies">DQ Policy/Regs</a></li>
+                                    <li><a href="#/dqguidelines">DQ Guidelines</a></li>
+                                    <li><a href="#/dqprogrammetrics">DQMC Program Metrics</a></li>
+                                     <li><a href="../quality/resources/dqmcpUserGuide.pdf">DQMC User's Manual</a></li>
+                                      <li><a href="../quality/resources/FY16DQMCPUsersGuide0616.pdf">DQMC User's Manual</a></li>
+                                       <li><a href="../quality/resources/dqMgrList.xls">DQ Managers List</a></li>
+                                        <li><a href="#/faq">DQ FAQ</a></li>
 
                                 </ul>
 
-                                <ul>Counterintelligence Assist 
-                                    <li><a href="https://www.inscom.army.mil/isalute">iSALUTE</a></li>
-                                </ul>
+                               
 
                                <!--  <ul>Counterintelligence Assist
                                     <li>iSALUTE</li>
@@ -31,17 +29,91 @@
                          
                             <div class="widget">
                                 <div class="widget-header">
-                                    <h3>Downloads and Forms</h3>
+                                    <h3>Other Resources</h3>
                                 </div>
-                                <div class="widget-body links" ng-repeat="form in documents">
+                                <div class="widget-body treeview">
 
-                                    <ul>
-                                        <li><a href="{{form.link}}" target="_blank">{{form.name}}</a></li>
+
+<div class="css-treeview">
+    <ul>
+        <li><input type="checkbox" id="item-0" /><label for="item-0">References</label>
+           
+               
+                
+                    <ul ng-repeat="item in References">
+                        <li><a href="{{item.link}}" target="_blank">{{item.name}}</a></li>
+                    </ul>
+                </li>
+
+                <li><input type="checkbox" id="item-0" /><label for="item-0">Guildance</label>
+
+                    <ul ng-repeat="item in Guildance">
+                        <li><a href="{{item.link}}" target="_blank">{{item.name}}</a></li>
+                       
+                    </ul>
+                </li>
+
+                <li><input type="checkbox" id="item-0" /><label for="item-0">Templates</label>
+
+                    <ul ng-repeat="item in Templates">
+                        <li><a href="{{item.link}}" target="_blank">{{item.name}}</a></li>
+    
+                    </ul>
+                </li>
+              
+                <li><input type="checkbox" id="item-0" /><label for="item-0">DQ POC</label>
+
+                    <ul ng-repeat="item in POC">
+                        <li><a href="{{item.link}}" target="_blank">{{item.name}}</a></li>
+                        
+                    </ul>
+                </li>
+
+                 <li><input type="checkbox" id="item-0" /><label for="item-0">Training</label>
+
+                    <ul ng-repeat="item in Training">
+                        <li><a href="{{item.link}}" target="_blank">{{item.name}}</a></li>
+                        
+                    </ul>
+                </li>
+
+                 <li><input type="checkbox" id="item-0" /><label for="item-0">Others</label>
+
+                    <ul ng-repeat="item in Others">
+                        <li><a href="{{item.link}}" target="_blank">{{item.name}}</a></li>
+                       
+                    </ul>
+                </li>
+        </ul>
+
+
+</div>
+
+
+                                 <!--  <div
+      data-angular-treeview="true"
+      data-tree-id="mytree"
+      data-tree-model="roleList"
+      data-node-id="roleId"
+      data-node-label="roleName"
+      data-node-children="children"
+      data-search-query='treeSearchQuery'>
+    </div> -->
+
+
                                   
-                                    <!-- <a href="{{documents.recordsrequest}}" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path d="M19 9h-4V3H9v6H5l7 7 7-7z"></path><path d="M5 18v2h14v-2H5z"></path></svg></a> -->
+                                    
                                 
                                 </div>
                             </div>
                           
 
                         </div>
+
+           
+                            <script>
+
+
+ </script>       
+
+                        
