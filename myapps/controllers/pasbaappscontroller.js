@@ -1,5 +1,10 @@
 app.controller('pasbaappcontroller', function($scope, $compile, $timeout, $http) {
-  $scope.test = 'test';
+
+
+  $scope.documents = {
+               accessrequest : "../PASBAApps/DD2875.pdf",
+               sav : "../PASBAApps/Request_for_sav.pdf",
+  };
 
 
 //unrestricted apps

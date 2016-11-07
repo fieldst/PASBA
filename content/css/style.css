@@ -34,7 +34,7 @@ body{
     overflow: auto;
     height: auto;
     width: 105%;
-    max-height: 1300px;
+   /* max-height: 1300px;*/
     margin: 0;
     overflow-x: hidden;
     overflow-y: auto;
@@ -50,7 +50,7 @@ body{
     
     margin: 0;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 .person-wrapper h4{
@@ -68,12 +68,31 @@ body{
     padding: 15px 68px;
     
     border: 3px solid #fff;
-    height: 450px;
+    height: 340px;
     clear: both;
     width: 376px;
     
     margin-right: 50px;
     text-align: center;
+}
+
+.leadership-intro-image{
+	 float: left;
+    padding-right: 65px;
+    padding: 15px 68px;
+    
+    border: 3px solid #fff;
+    height: 340px;
+    clear: both;
+    width: 376px;
+    height: 438px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.leadership-intro-image img{
+	 width: 255px;
+    vertical-align: middle;
 }
 
 .intro-image img {
@@ -177,6 +196,7 @@ body{
 	text-align: center;
 	margin: auto;
 	color: #500707;
+	font-size: 20px;
 }
 
 
@@ -636,6 +656,10 @@ a:hover{
     height: 74px;
 }
 
+/*.space-wrapper a{
+	height: 100%;
+}*/
+
 .shortcut svg{
 	fill: #fff;
 	width: 72px;
@@ -662,7 +686,7 @@ li.active{
 	background: #F5F5F5;
 }
 
-.green-space .active svg {
+.green-space .active li{
 	fill: #00559E;
 	border-bottom: none;
 	border-right: none;
@@ -830,6 +854,13 @@ li.active{
 	content: '>';
 	padding-right: 5px;
 	color: #117ABC;
+}
+
+.widget-body .trends .link:before{
+	content: "\f0c1";
+	font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
 }
 
 .widget-body svg{
