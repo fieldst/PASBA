@@ -34,8 +34,23 @@ body{
     overflow: auto;
     height: auto;
     width: 105%;
-    max-height: 889px;
+    max-height: 1300px;
     margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.about-wrapper {
+    background: #fff;
+    /*padding: 34px 23px;*/
+    min-height: 100px;
+    overflow: auto;
+    height: auto;
+    width: 140%;
+    
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .person-wrapper h4{
@@ -51,12 +66,12 @@ body{
     float: left;
     padding-right: 65px;
     padding: 15px 68px;
-    background: #F5F5F5;
+    
     border: 3px solid #fff;
-    height: 350px;
+    height: 450px;
     clear: both;
     width: 376px;
-    border-radius: 50%;
+    
     margin-right: 50px;
     text-align: center;
 }
@@ -65,6 +80,98 @@ body{
     width: 255px;
     vertical-align: middle;
 }
+
+.about-intro-image{
+	 float: left;
+    padding-right: 65px;
+    padding: 15px 68px;
+    
+    
+    height: 450px;
+    clear: both;
+    width: 376px;
+    
+    margin-right: 50px;
+    text-align: center;
+}
+
+.about-intro-image img{
+	width: 350px;
+    vertical-align: middle;
+}
+
+.about-intro-image p{
+	text-align: center;
+	margin: auto;
+	color: #500707;
+}
+
+.aboutus-header {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    clear: both;
+}
+
+
+.aboutus-header h2{
+	margin: auto;
+	text-align: center;
+    text-align: center;
+    padding-bottom: 39px;
+}
+
+.contain{
+	color: #fff;
+	padding: 30px;
+}
+
+.contain h3{
+	margin: auto;
+	text-align: center;
+	font-size: 30px !important;
+	padding-bottom: 15px;
+}
+
+.contain p {
+    font-size: 21px !important;
+    line-height: 2em;
+}
+
+.contain ul{
+	margin-left: 25px;
+}
+
+.contain ul li:before{
+	color: #fff !important;
+}
+
+.contain img{
+	width: 280px;
+}
+
+
+
+.blue{
+	background: #215DA2;
+}
+
+.orange{
+	background: #7F1906;
+}
+
+.green{
+	background: #007F0C;
+}
+
+.amber{
+	background: #7F0302;
+}
+
+.yellow{
+	background: #00767F;
+}
+
 
 .intro-image p{
 	text-align: center;
@@ -117,6 +224,13 @@ body{
     width: 100%;
     padding: 0px 16px;
     
+}
+
+.qoute p{
+	color: #500707;
+	font-style: italic;
+	font-size: 27px !important;
+	text-align: center;
 }
 
 .content-right a.link:before{
@@ -226,6 +340,10 @@ body{
 	text-align: center;
 }
 
+.medium-image{
+	width: 200px;
+}
+
 
 
 
@@ -244,6 +362,14 @@ body{
 	float: left;
 	position: absolute;
 	top: 0;
+}
+
+.iframe-style{
+	margin: auto;
+	border: none;
+	width: 1124px;
+	overflow: hidden;
+	height: 939px;
 }
 
 a{
@@ -386,7 +512,7 @@ a:hover{
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
-	color: #58b325;
+	color: #00317C;
 	outline: 0;
 }
 
@@ -626,12 +752,12 @@ li.active{
 	padding:30px 0;
 	min-height: 460px;
 }
-.widget, .post, .box-content{
-	background: #FFF;
-	padding: 15px;
-	border: 1px solid #DDD;
-	border-radius: 5px;
-	margin-bottom: 20px;
+.widget, .post, .box-content {
+    background: #FFF;
+    padding: 15px 0px 0 15px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .widget h2,h3{
@@ -684,11 +810,26 @@ li.active{
 .apps-navigation li:before{
 	content: '>';
 	padding-right: 10px;
+	color: #117ABC;
 }
 
 .widget-body{
 	padding-top: 10px;
 	text-align:center;
+}
+
+.widget-body .trends{
+	text-align: left
+}
+
+.widget-body p{
+	font-size: 14px;
+}
+
+.widget-body .trends li:before{
+	content: '>';
+	padding-right: 5px;
+	color: #117ABC;
 }
 
 .widget-body svg{
@@ -720,14 +861,15 @@ li.active{
 }*/
 
 .widget-body ul li {
-    padding: 3px 19px;
+    padding: 3px 15px;
 }
+
+
 .widget-body img{
 	margin: auto;
 	width: 200px;
 }
 
-<<<<<<< HEAD
 /*widget body hover*/
 
 .widget-body li a:hover{
@@ -874,8 +1016,6 @@ li.active{
 /*end of side widget*/
 
 
-=======
->>>>>>> parent of e8182c6... update wed
 .links li:before{
 	content: "\f019";
 	font-family: FontAwesome;
@@ -892,8 +1032,22 @@ li.active{
 	color: #82000A;
 	font-weight: normal;
 	font-size: 14px;
+	text-align: left;
 }
 
+
+.treeview li{
+	color: #82000A;
+	font-weight: normal;
+	font-size: 14px;
+	text-align: left;
+	
+}
+
+.treeview li a:before{
+	content: ">";
+	padding-right: 5px;
+}
 .seller-avatar{
 	height: 150px;
 	width: 150px;
@@ -1884,13 +2038,13 @@ h2.product-title{
 }
 
 .green-space .arrow{
-	fill: #fff;
-	margin: -70 auto;
-	z-index: 999999;
-	width: 60px;
-	height: 60px;
-
-}
+    fill: #fff;
+    margin: -58 auto;
+    z-index: 999999;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+  }
 
 .gallery-container {
     width: 100%;

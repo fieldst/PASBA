@@ -20,7 +20,7 @@
 
 
         <!-- Favicon -->
-        <link href="assets/img/favicon.png" rel="icon" type="image/png">
+        <!-- <link href="assets/img/favicon.png" rel="icon" type="image/png"> -->
 
         <!-- Animate -->
         <link rel="stylesheet" href="libraries/css/animate.min.css" type="text/css">
@@ -31,6 +31,9 @@
         <!-- Full calendar optional -->
          <!-- <link rel="stylesheet" href="libraries/bower_components/fullcalendar/dist/fullcalendar.css" type="text/css"> -->
 
+
+        <!--  AOS stylesheet -->
+        <link rel="stylesheet" href="libraries/bower_components/aos/dist/aos.css" />
         
 
 
@@ -38,19 +41,26 @@
         <script src="js/jquery.js"></script>
 
 
+
+          <!-- AOS script -->
+        <script src="libraries/bower_components/aos/dist/aos.js"></script>
+
+
+
         <!--Angular JS-->
         
-        <script src="pasbahome/angular/angular.min.js"></script>
-        <script src="pasbahome/angular/angular-animate.min.js"></script>
-         <script src="pasbahome/angular/angular-route.min.js"></script>
+        <script src="shared/angular/angular.min.js"></script>
+        <script src="shared/angular/angular-animate.min.js"></script>
+         <script src="shared/angular/angular-route.min.js"></script>
 
-        <script src="pasbahome/js/app.js"></script>\
+        <script src="shared/js/app.js"></script>\
 
         <!-- controllers -->
         <script src="myapps/controllers/pasbaappscontroller.js"></script>
-        <script src="pasbahome/controllers/appcontroller.js"></script>
+        <script src="shared/controllers/appcontroller.js"></script>
         <script src="dmrpc/controller/dmrpccontroller.js"></script>
         <script src="dq/controller/dqcontroller.js"></script>
+        <script src="about/controller/aboutcontroller.js"></script>
 
         <!-- directives -->
          <script src="pasbaapps/directives/pasbaapps.directive.js"></script>
@@ -116,7 +126,8 @@
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="index.html" class="btn btn-ads btn-block">Home</a></li>
-                            <li><a href="signup.html">About us</a></li>
+                            <li><a href="#/leadership">Leadership</a></li>
+                            <li><a href="#/aboutus">About Us</a></li>
                             <li><a href="">Contact us</a></li>
                             
                             <!-- <li class="dropdown">
@@ -387,23 +398,24 @@ $(document).ready(function(){
 </script>
 
  <script>
- // $('.green-space li').on('click', function(){
- //     $(this).addClass('active')
-
- //     .siblings().removeClass('active');
- // });   
-
-
- // $(".green-space span").click(function(){
- //    $('.size a.active').not(this).removeClass('active');
- //    $(this).toggleClass('active');
- // })     
 
     $(".green-space").on('click','li', function(){
       $(this).toggleClass('active').siblings().removeClass('active');
-   })         
- </script>
+   })  
+
+ </script>       
+
+
 
 </div> <!-- close contain -->
+
+ <script>
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: 'ease-in-sine',
+      delay: 100,
+    });
+  </script>
 </body>
 </html>
