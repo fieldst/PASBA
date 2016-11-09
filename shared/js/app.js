@@ -17,7 +17,14 @@ app.config(function($routeProvider){
 		templateUrl: "myapps/template/pasbahome.html",
 		controller: 'pasbaappcontroller',
 
-	}).when("/pasbaapps", {
+	}).when("/unrestrictedapps", {
+		templateUrl: "myapps/template/unrestrictedapps.html",
+		controller: 'pasbaappcontroller',
+
+	})
+
+
+	.when("/pasbaapps", {
 		templateUrl: "pasbaapps/templates/pasbaapps.html",
 		controller: 'pasbaappcontroller',
 		// css: 'css/pasbaappscss.css',

@@ -12,17 +12,23 @@ app.controller('pasbaappcontroller', function($scope, $compile, $timeout, $http)
   
         {name: 'MAP', icon: 'content/images/icons/M.svg', classname: 'color1', link: '../map'},
         {name: 'MEDCOM360', icon: 'content/images/icons/medcomchart.svg', classname: 'color2', link: '../medcom360'},
-        {name: 'BHEATC-Summary', icon: 'content/images/icons/caper.svg', classname: 'color3', link: ''},
-        {name: 'BMI IRIS Metric', icon: 'content/images/icons/inpatient.svg', classname: 'color4', link: ''},
-        {name: 'CAPER Reports', icon: 'content/images/icons/eod.svg', classname: 'color5', link: ''},
-        {name: 'DQMCP Program Metrics', icon: 'content/images/icons/ipsr.svg', classname: 'color6', link: ''},
-        {name: 'End of Day Compliance Summary Metric', icon: 'content/images/icons/eodcompliance.svg', classname: 'color7', link: ''},
-        {name: 'Inpatient Professional Service Rounds Metric', icon: 'content/images/icons/inpatient.svg', classname: 'color8', link: ''},
-        {name: 'MAPR Data Quality Measures Metric', icon: 'content/images/icons/quality.svg', classname: 'color1', link: ''},
-        {name: 'R299/SIDR Report', icon: 'content/images/icons/sidrreport.svg', classname: 'color2', link: ''},
+        {name: 'BHEATC-Summary', icon: 'content/images/icons/caper.svg', classname: 'color3', link: '#/unrestrictedapps'},
+        {name: 'BMI IRIS Metric', icon: 'content/images/icons/inpatient.svg', classname: 'color4', link: '#/unrestrictedapps'},
+        {name: 'CAPER Reports', icon: 'content/images/icons/eod.svg', classname: 'color5', link: '#/unrestrictedapps'},
+        {name: 'DQMCP Program Metrics', icon: 'content/images/icons/ipsr.svg', classname: 'color6', link: '#/unrestrictedapps'},
+        {name: 'End of Day Compliance Summary Metric', icon: 'content/images/icons/eodcompliance.svg', classname: 'color7', link: '#/unrestrictedapps'},
+        {name: 'Inpatient Professional Service Rounds Metric', icon: 'content/images/icons/inpatient.svg', classname: 'color8', link: '#/unrestrictedapps'},
+        {name: 'MAPR Data Quality Measures Metric', icon: 'content/images/icons/quality.svg', classname: 'color1', link: '#/unrestrictedapps'},
+        {name: 'R299/SIDR Report', icon: 'content/images/icons/sidrreport.svg', classname: 'color2', link: '#/unrestrictedapps'},
         {name: 'Commanders Corner', icon: 'content/images/icons/commander.svg', classname: 'color3', link: ''},
 
   ]
+
+  $scope.linktarget = {
+        bheatcsummary: "../DataAnalysis/defaultBHSummary.asp"
+
+
+  }
 
 
 

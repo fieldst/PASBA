@@ -837,9 +837,10 @@ li.active{
 	color: #117ABC;
 }
 
-.widget-body{
-	padding-top: 10px;
-	text-align:center;
+.widget-body {
+    padding-top: 10px;
+    text-align: center;
+    padding-right: 11px;
 }
 
 .widget-body .trends{
