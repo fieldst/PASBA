@@ -1,4 +1,4 @@
-app.controller('pasbaappcontroller', function($scope, $compile, $timeout, $http) {
+app.controller('pasbaappcontroller', function($scope, $compile, $timeout, $http, $routeParams, usSpinnerService) {
 
 
   $scope.documents = {
@@ -10,20 +10,27 @@ app.controller('pasbaappcontroller', function($scope, $compile, $timeout, $http)
 //unrestricted apps
    $scope.unrestrictapps = [
   
-        {name: 'MAP', icon: 'content/images/icons/M.svg', classname: 'color1', link: '../map'},
-        {name: 'MEDCOM360', icon: 'content/images/icons/medcomchart.svg', classname: 'color2', link: '../medcom360'},
-        {name: 'BHEATC-Summary', icon: 'content/images/icons/caper.svg', classname: 'color3', link: '#/unrestrictedapps'},
-        {name: 'BMI IRIS Metric', icon: 'content/images/icons/inpatient.svg', classname: 'color4', link: '#/unrestrictedapps'},
-        {name: 'CAPER Reports', icon: 'content/images/icons/eod.svg', classname: 'color5', link: '#/unrestrictedapps'},
-        {name: 'DQMCP Program Metrics', icon: 'content/images/icons/ipsr.svg', classname: 'color6', link: '#/unrestrictedapps'},
-        {name: 'End of Day Compliance Summary Metric', icon: 'content/images/icons/eodcompliance.svg', classname: 'color7', link: '#/unrestrictedapps'},
-        {name: 'Inpatient Professional Service Rounds Metric', icon: 'content/images/icons/inpatient.svg', classname: 'color8', link: '#/unrestrictedapps'},
-        {name: 'MAPR Data Quality Measures Metric', icon: 'content/images/icons/quality.svg', classname: 'color1', link: '#/unrestrictedapps'},
-        {name: 'R299/SIDR Report', icon: 'content/images/icons/sidrreport.svg', classname: 'color2', link: '#/unrestrictedapps'},
-        {name: 'Commanders Corner', icon: 'content/images/icons/commander.svg', classname: 'color3', link: ''},
+        
+        {name: 'BHEATC-Summary', icon: 'content/images/icons/caper.svg', classname: 'color3', link: '#/unrestrictedapps', target: '../DataAnalysis/defaultBHSummary.asp'},
+        {name: 'BMI IRIS Metric', icon: 'content/images/icons/inpatient.svg', classname: 'color4', link: '#/unrestrictedapps', target: '../DataAnalysis/defaultIRIS.asp'},
+        {name: 'CAPER Reports', icon: 'content/images/icons/eod.svg', classname: 'color5', link: '#/unrestrictedapps', target: '../caperreports'},
+        {name: 'DQMCP Program Metrics', icon: 'content/images/icons/ipsr.svg', classname: 'color6', link: '#/unrestrictedapps', target: '../mrDQMCP/DQMCPMetrics.aspx'},
+        {name: 'End of Day Compliance Summary Metric', icon: 'content/images/icons/eodcompliance.svg', classname: 'color7', link: '#/unrestrictedapps', target: '../DataAnalysis/defaultEOD.asp'},
+        {name: 'Inpatient Professional Service Rounds Metric', icon: 'content/images/icons/inpatient.svg', classname: 'color8', link: '#/unrestrictedapps', target: '../DataAnalysis/defaultIPSR.asp'},
+        {name: 'MAPR Data Quality Measures Metric', icon: 'content/images/icons/quality.svg', classname: 'color1', link: '#/unrestrictedapps', target: '../DataAnalysis/defaultMAPR.asp'},
+        {name: 'R299/SIDR Report', icon: 'content/images/icons/sidrreport.svg', classname: 'color2', link: '#/unrestrictedapps', target: '../mrDQMCP/SIDRReports.aspx'},
+        {name: 'Commanders Corner', icon: 'content/images/icons/commander.svg', classname: 'color3', link: '', target: ''},
 
   ]
 
+
+$scope.externalapps = [
+  
+        {name: 'MAP', icon: 'content/images/icons/M.svg', classname: 'color1', link: '../map'},
+        {name: 'MEDCOM360', icon: 'content/images/icons/medcomchart.svg', classname: 'color2', link: '../medcom360'},
+       
+
+  ]
   $scope.linktarget = {
         bheatcsummary: "../DataAnalysis/defaultBHSummary.asp"
 
@@ -33,12 +40,15 @@ app.controller('pasbaappcontroller', function($scope, $compile, $timeout, $http)
 
 
 //restricted apps
-$http.get("sandbox/userappinfo.js").
-	then(function(responce){
 
+// when live
+
+ $http.get("sandbox/userappinfo.js").
+ 	then(function(responce){
 		
 		$scope.username = responce.data;
 		$scope.restrictedapps = responce.data.UserApp;
+    $scope.currentItem = $routeParams.itemId;
 
 
 
@@ -106,23 +116,4 @@ addColor($scope.restrictedapps, $scope.colors, $scope.unrestricteddata);
 })
 
 
-  // $scope.restricted =[];
-
-
-
-
-
-
-// this.future = [
-//     //{ name: 'Behavioral Health', dataName: 'behavioralHealth', icon: 'bh360', linkValue: 'metric-dashboard', iconColorClass: 'colorMed' },
-//     { name: 'Public Health', dataName: 'publicHealth', icon: 'ph360', linkValue: 'metric-dashboard', iconColorClass: 'colorMed' },
-//     //{ name: 'Access To Care', dataName: 'accessToCare', icon: 'caduceus1', linkValue: 'metric-dashboard', iconColorClass: 'color4' },
-//     //{ name: 'Beneficiary Health', dataName: 'beneficiaryHealth', icon: 'family21', linkValue: 'metric-dashboard', iconColorClass: 'color5' },
-//     { name: 'Coding', dataName: 'coding', icon: 'numbered10', linkValue: 'metric-dashboard', iconColorClass: 'color1' },
-//     //{ name: 'Data Processing', dataName: 'dataProcessing', icon: 'monitor7', linkValue: 'metric-dashboard', iconColorClass: 'color5' },
-//     { name: 'Data Quality', dataName: 'dataQuality', icon: 'positive3', linkValue: 'metric-dashboard', iconColorClass: 'color2' },
-//     //{ name: 'Performance', dataName: 'performance', icon: 'ascendant6', linkValue: 'metric-dashboard', iconColorClass: 'color4' },
-//     //{ name: 'Utilization', dataName: 'utilization', icon: 'circle54', linkValue: 'metric-dashboard', iconColorClass: 'color3' },
-//   { name: 'CHUP', dataName: 'chup', icon: 'ascendant6', linkValue: 'metric-dashboard', iconColorClass: 'color3' },
-//   { name: 'PAWS', dataName: 'paws', icon: 'circle54', linkValue: 'metric-dashboard', iconColorClass: 'color4' },
-//     ];
+  

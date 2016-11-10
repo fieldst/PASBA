@@ -3,7 +3,7 @@ app.controller('aboutuscontroller', function($scope, $compile, $timeout) {
   $scope.pageimage = {
 
 
-              directorimage : "content/images/braxton.jpg",
+              directorimage : "content/images/braxton.png",
               logo : "content/images/PASBA-new-logo1.png",
               dataquality : "about/images/dqlight.svg",
               coding: "about/images/codinglight.svg",

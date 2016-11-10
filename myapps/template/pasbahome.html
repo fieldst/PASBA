@@ -20,15 +20,34 @@
                             </div>
 
                             <div id="person-contain">
-                                <div class="col-xs-4 col-sm-3 icon-word"  ng-repeat="app in unrestrictapps">
+                                <div class="col-xs-4 col-sm-3 icon-word"  ng-repeat="app in externalapps">
                                     <div class="shortcut {{app.classname}}" data-toggle="tooltip">
-                                        <a href="{{app.link}}"><img ng-src="{{app.icon}}"></a>
+                                        <a href="{{app.link}}" target="blank"><img ng-src="{{app.icon}}"></a>
+
                                     </div>
+
+
 
                                     <a href=""><h3>{{app.name}}</h3></a>
 
                                 </div>
-                                
+
+
+                                <div class="col-xs-4 col-sm-3 icon-word"  ng-repeat="app in unrestrictapps">
+                                    <div class="shortcut {{app.classname}}" data-toggle="tooltip">
+                                        <a href="#/unrestrictedapps/{{unrestrictapps.indexOf(app)}}"><img ng-src="{{app.icon}}"></a>
+
+                                    </div>
+
+
+
+                                    <a href=""><h3>{{app.name}}</h3></a>
+
+                                </div>
+
+
+
+                               
 
                                 <div class="clear"></div>
 

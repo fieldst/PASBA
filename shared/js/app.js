@@ -6,6 +6,8 @@ var app = angular.module('pasbaapp', [
 	'ngResource',
 	'ngAnimate',
 	'angularTreeview',
+	'angularSpinner',
+
 
 	]);
 
@@ -17,7 +19,7 @@ app.config(function($routeProvider){
 		templateUrl: "myapps/template/pasbahome.html",
 		controller: 'pasbaappcontroller',
 
-	}).when("/unrestrictedapps", {
+	}).when("/unrestrictedapps/:itemId", {
 		templateUrl: "myapps/template/unrestrictedapps.html",
 		controller: 'pasbaappcontroller',
 
@@ -65,6 +67,8 @@ app.config(function($routeProvider){
 		controller: 'dmrpccontroller',
 // end drmpc
 
+//start data quality
+
 }).when("/dataquality", {
 		templateUrl: "dq/templates/dataquality.html",
 		controller: 'dqcontroller',
@@ -88,7 +92,16 @@ app.config(function($routeProvider){
 	}).when("/faq", {
 		templateUrl: "dq/templates/faq.html",
 		controller: 'dqcontroller',
+	//end data quality
+
 	
+	//start data analysis
+	}).when("/dataanalysis", {
+		templateUrl: "dataanalysis/templates/dataanalysis.html",
+		controller: 'dataanalysiscontroller',
+
+
+
 	}).
 	otherwise({
 	  redirectTo: "/home"
