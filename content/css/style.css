@@ -1894,7 +1894,7 @@ h2.product-title{
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.04);
+ /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.04);*/
 }
 
 .Grid1k {
