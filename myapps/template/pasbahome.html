@@ -10,17 +10,19 @@
                                     </div>
 
                             <div class="row person-wrapper">
-                            <!-- <div class="filter">
-                                <input type="text">
-                            </div> -->
-
+                            
                             <div class="restrict-status">
+                                 <div class="filter">
+
+                                <label><h4>Search</h4></label><input type="text" placeholder="app name" ng-model="searchapps">
+                            </div> 
+
                                     <h4>Non Restricted Applications</h4>
                                     
                             </div>
 
                             <div id="person-contain">
-                                <div class="col-xs-4 col-sm-3 icon-word"  ng-repeat="app in externalapps">
+                                <div class="col-xs-4 col-sm-3 icon-word animate-repeat" ng-repeat="app in externalapps | filter:searchapps">
                                     <div class="shortcut {{app.classname}}">
                                         <a href="{{app.link}}" target="blank"><img ng-src="{{app.icon}}"></a>
 
@@ -33,7 +35,7 @@
                                 </div>
 
 
-                                <div class="col-xs-4 col-sm-3 icon-word"  ng-repeat="app in unrestrictapps">
+                                <div class="col-xs-4 col-sm-3 icon-word animate-repeat" ng-repeat="app in unrestrictapps | filter:searchapps">
                                     <div class="shortcut {{app.classname}}" data-toggle="tooltip">
                                         <a href="#/unrestrictedapps/{{unrestrictapps.indexOf(app)}}"><img ng-src="{{app.icon}}"></a>
 
@@ -54,18 +56,19 @@
 
 <!-- Restricted Applications -->
                                 <div class="restrict-status">
+
                                     <h4>Restricted Applications</h4>
                                     
                             </div>
                                   <div test-test ng-if="test != 'true'"></div>
                                 
-                                  <div class="col-xs-4 col-sm-3 icon-word" ng-repeat="restrict in restrictedapps">
+                                  <div class="col-xs-4 col-sm-3 icon-word animate-repeat" ng-repeat="restrict in restrictedapps | filter:searchapps">
                                    <!--  <img src="content/images/pasbaapps-icons/lock.svg" class="lock"> -->
 
                                    
                                    
                                     <div class="shortcut {{restrict.color.color}}">
-                                        <a href="#/restricted/{{restrictedapps.indexOf(restrict)}}"><img ng-src="{{restrict.color.icon}}"></a>
+                                        <a href="{{restrict.TokenLink}}" target="blank"><img ng-src="{{restrict.color.icon}}"></a>
                                         
                                         
                                     </div>

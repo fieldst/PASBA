@@ -64,14 +64,46 @@
       },
       {
          "color":"color20",
-         "icon":"content/images/icons/parrts.svg"
+         "icon":"content/images/icons/ort3.svg"
       },
       {
          "color":"colo1r",
          "icon":"content/images/icons/wispr.svg"
       },
       {
-         "color":"color2",
+         "color":"color3",
          "icon":"content/images/icons/wispr.svg"
+      },
+      {
+         "color":"color19",
+         "icon":"content/images/icons/providerproduct.svg"
+      },
+      {
+         "color":"color20",
+         "icon":"content/images/icons/tracking.svg"
+      },
+      {
+         "color":"colo1r",
+         "icon":"content/images/icons/wispr.svg"
+      },
+      {
+         "color":"color18",
+         "icon":"content/images/icons/wispr.svg"
+      },
+      {
+         "color":"color19",
+         "icon":"content/images/icons/providerproduct.svg"
+      },
+      {
+         "color":"color20",
+         "icon":"content/images/icons/parrts.svg"
+      },
+      {
+         "color":"colo1r",
+         "icon":"content/images/icons/scan.svg"
+      },
+      {
+         "color":"color2",
+         "icon":"content/images/icons/scan.svg"
       }
    ]

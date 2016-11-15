@@ -1,4 +1,4 @@
-app.controller('pasbaappcontroller', function($scope, $compile, $timeout, $http, $routeParams, usSpinnerService, $location) {
+app.controller('pasbaappcontroller', function($scope, $compile, $timeout, $http, $routeParams, usSpinnerService, $location, $animate ) {
 
 
 $scope.$on('LOAD',function(){$scope.loading=true});
@@ -67,7 +67,7 @@ $scope.$emit('LOAD')
 
      angular.forEach($scope.restrictedapps,function(value, key) {
         
-     value.TokenLink = value.TokenLink.replace("/", "");
+     value.TokenLink = value.TokenLink.replace("/", "../");
     },{});
 
 

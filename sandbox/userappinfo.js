@@ -35,6 +35,18 @@
          "TokenLink":"/apps/codingInquiryApps/codingHelpDeskFrameset.html"
       },
       {
+         "TokenName":"Deployment Assessment Referral Tracking ",
+         "TokenLink":"/dataanalysis/defaultDART.asp"
+      },
+      {
+         "TokenName":"DODET",
+         "TokenLink":"/DODET/Webforms/Default.aspx"
+      },
+      {
+         "TokenName":"DQMC Program",
+         "TokenLink":"/DQMCP/default.asp"
+      },
+      {
          "TokenName":"DQMCP Program (.NET)",
          "TokenLink":"/DQMCPNet/Launch.htm"
       },
@@ -55,12 +67,32 @@
          "TokenLink":"/PASBAMetrics/MetricMain.aspx?PageID=1"
       },
       {
+         "TokenName":"Outpatient Record Transmission Tracking Tool (ORT3)",
+         "TokenLink":"/dataanalysis/defaultORT3.asp"
+      },
+      {
          "TokenName":"PARRTS Coding Application",
          "TokenLink":"/APPS/PARRTS/Coding/"
       },
       {
          "TokenName":"Provider Productivity Application",
          "TokenLink":"/PPA/defaultrvu.asp"
+      },
+      {
+         "TokenName":"SARPTA",
+         "TokenLink":"/sexualAssault/default.aspx"
+      },
+      {
+         "TokenName":"SIDR",
+         "TokenLink":"/Protect3.asp"
+      },
+      {
+         "TokenName":"SIDR Error",
+         "TokenLink":"/APPS/SIDR/ErrorDB/default.aspx"
+      },
+      {
+         "TokenName":"Tableau File Management Utility",
+         "TokenLink":"/TFMS/"
       },
       {
          "TokenName":"WarriorTransition Unit(WTU)",

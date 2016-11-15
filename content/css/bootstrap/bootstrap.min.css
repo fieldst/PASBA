@@ -2351,6 +2351,7 @@ pre code {
     height: 149px;
     max-height: 152px;
     min-height: 149px;
+    margin-bottom: 9px;
 }
     .col-sm-pull-11 {
         right: 91.66666667%

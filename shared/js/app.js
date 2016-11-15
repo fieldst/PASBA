@@ -1,12 +1,13 @@
 var app = angular.module('pasbaapp', [
+	'ngAnimate',
 	'ngRoute',
 	'angularSmoothscroll',
 	// optional'ui.calendar',
 	'ui.bootstrap',
 	'ngResource',
-	'ngAnimate',
 	'angularTreeview',
 	'angularSpinner',
+
 
 
 	]);

@@ -515,6 +515,37 @@ body{
 }
 
 
+.animate-repeat {
+  line-height:30px;
+  list-style:none;
+  box-sizing:border-box;
+}
+
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter,
+.animate-repeat.ng-leave {
+  -webkit-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -moz-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -ms-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -o-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    position: relative;
+    display: block;
+}
+
+.animate-repeat.ng-leave.ng-leave-active,
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter {
+  opacity:0;
+  max-height:0;
+}
+
+.animate-repeat.ng-leave,
+.animate-repeat.ng-move.ng-move-active,
+.animate-repeat.ng-enter.ng-enter-active {
+  opacity:1;
+  max-height:30px;
+}
 
 
 
@@ -530,10 +561,25 @@ body{
 	width: 100%;
 }
 
- .filter{
-	float: left;
-	position: absolute;
-	top: 0;
+ .filter {
+    float: right;
+    position: relative;
+    top: 0;
+}
+
+.filter label{
+  padding-right: 10px;
+  font-size: 18px;
+  font-family: helvetica;
+}
+
+.filter label h4:before{
+    content: "\f002";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+
+  
 }
 
 .iframe-style{
@@ -1498,10 +1544,10 @@ li.active{
 
 /*restrict status*/
 
-.restrict-status{
-	width: 100%;
-	padding: 10px 15px 15px 15px;
-	position: relative;
+.restrict-status {
+    width: 59%;
+    padding: 10px 15px 15px 15px;
+    position: relative;
 }
 
 
