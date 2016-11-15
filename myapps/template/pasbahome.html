@@ -1,4 +1,4 @@
-<div class="row">
+ <div class="row">
 
 
 
@@ -21,7 +21,7 @@
 
                             <div id="person-contain">
                                 <div class="col-xs-4 col-sm-3 icon-word"  ng-repeat="app in externalapps">
-                                    <div class="shortcut {{app.classname}}" data-toggle="tooltip">
+                                    <div class="shortcut {{app.classname}}">
                                         <a href="{{app.link}}" target="blank"><img ng-src="{{app.icon}}"></a>
 
                                     </div>
@@ -65,7 +65,7 @@
                                    
                                    
                                     <div class="shortcut {{restrict.color.color}}">
-                                        <a href="../{{restrict.TokenLink}}" target="_blank"><img ng-src="{{restrict.color.icon}}"></a>
+                                        <a href="#/restricted/{{restrictedapps.indexOf(restrict)}}"><img ng-src="{{restrict.color.icon}}"></a>
                                         
                                         
                                     </div>

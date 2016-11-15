@@ -23,6 +23,10 @@ app.config(function($routeProvider){
 		templateUrl: "myapps/template/unrestrictedapps.html",
 		controller: 'pasbaappcontroller',
 
+	}).when("/restricted/:itemId", {
+		templateUrl: "myapps/template/restricted.html",
+		controller: 'pasbaappcontroller',
+
 	})
 
 
@@ -99,6 +103,22 @@ app.config(function($routeProvider){
 	}).when("/dataanalysis", {
 		templateUrl: "dataanalysis/templates/dataanalysis.html",
 		controller: 'dataanalysiscontroller',
+
+	}).when("/dataanalysissupport", {
+		templateUrl: "dataanalysis/templates/dataanalysissupport.html",
+		controller: 'dataanalysiscontroller',
+	})
+
+		.when("/dataanalysissources", {
+		templateUrl: "dataanalysis/templates/dataanalysissources.html",
+		controller: 'dataanalysiscontroller',
+
+		})
+
+		.when("/dataanalysissharing", {
+		templateUrl: "dataanalysis/templates/dataanalysissharing.html",
+		controller: 'dataanalysiscontroller',
+
 
 
 

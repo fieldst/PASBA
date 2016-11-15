@@ -1,23 +1,30 @@
-app.controller('dataanalysiscontroller', function($scope, $compile, $timeout) {
+app.controller('dataanalysiscontroller', function($scope, $compile, $timeout, $location) {
   // $scope.introimage = 'dmrpc/images/dmrpc-intro.svg',
+
+  
+
+  $scope.isActive = function(destination){
+    return destination === $location.path();
+  }
+
   $scope.pageimage = {
 
 
   						introimage : "dataanalysis/images/da-intro.svg",
-  						instructions : "dmrpc/images/instructions.svg",
-  						pad : "dmrpc/images/pad.svg",
-  						regulate : "dmrpc/images/regulate.svg",
-  						sidr : "dmrpc/images/sidr.svg"
+  						support : "dataanalysis/images/datasupport.svg",
+  						
+  						sharing : "dataanalysis/images/share.svg",
+  						
 
 
 					}
 
 	$scope.title = {
 						home : "Data Analysis",
-						instruction : "Records Request Instructions",
-						pad : "PAD Deployed Medical Documentation",
+						support : "Data Analysis Support",
+						sources : "Data Sources",
 						regulate : "Medical Regulating",
-						sidr : "Instructions for proccessing deployed SIDR"
+						sharing : "Data Sharing Agreements"
 	}
 
 	// $scope.documents = {

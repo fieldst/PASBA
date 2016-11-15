@@ -1,4 +1,4 @@
-app.controller('pasbacontroller', function($scope, $compile, $timeout, uiCalendarConfig) {
+app.controller('sharedController', function($scope) {
   $scope.test = 'test';
 
    $scope.apps = [

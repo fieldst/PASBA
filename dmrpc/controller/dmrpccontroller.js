@@ -1,5 +1,11 @@
-app.controller('dmrpccontroller', function($scope, $compile, $timeout) {
+app.controller('dmrpccontroller', function($scope, $compile, $timeout, $location) {
   // $scope.introimage = 'dmrpc/images/dmrpc-intro.svg',
+
+  $scope.isActive = function(destination){
+    return destination === $location.path();
+  }
+
+
   $scope.pageimage = {
 
 
@@ -32,6 +38,14 @@ app.controller('dmrpccontroller', function($scope, $compile, $timeout) {
         {name: 'Page 1 of DA Form 2985', link: '../deployment/SA_refresher060126.ppt'},
         {name: 'A&C Data Dictionary', link: 'http://www.apd.army.mil/'},
 
+  ]
+
+  $scope.navigation = [
+        {name: 'Deployment Guide Home', link: 'dmrpc'},
+        {name: 'Records Request Instructions', link: 'recordsrequest'},
+        {name: 'PAD Policies and Guidance', link: 'padpoliciesandguidance'},
+        {name: 'Medical Regulating', link: 'medicalregulating'},
+        {name: 'SIDR', link: 'sidr'}
   ]
   
 

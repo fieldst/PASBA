@@ -5,16 +5,14 @@
                                     <h3>DMRPC Guide</h3>
                                 </div>
                                 <div class="widget-body apps-navigation">
-                                  <ul>Guildance
-                                    <li><a href="#/dmrpc">Deployment Guide Home</a></li>
-                                    <li><a href="#/recordsrequest">Records Request Instructions</a></li>
-                                    <li><a href="#/padpoliciesandguidance">PAD Policies and Guidance</a></li>
-                                    <li><a href="#/medicalregulating">Medical Regulating</a></li>
-                                    <li><a href="#/sidr">SIDR</a></li>
+                                    <h4>Guildance</h4>
+                                  <ul ng-repeat="word in navigation">
+                                    <li><a ng-href="#/{{word.link}}" ng-class="{activelink: isActive('/{{word.link}}')}">{{word.name}}</a></li>
+                                   
 
                                 </ul>
-
-                                <ul>Counterintelligence Assist 
+                                    <h4>Counterintelligence Assist</h4>
+                                <ul> 
                                     <li><a href="https://www.inscom.army.mil/isalute">iSALUTE</a></li>
                                 </ul>
 

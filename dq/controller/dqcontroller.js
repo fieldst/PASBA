@@ -1,5 +1,14 @@
-app.controller('dqcontroller', function($scope, $compile, $timeout) {
-  // $scope.introimage = 'dmrpc/images/dmrpc-intro.svg',
+app.controller('dqcontroller', function($scope, $compile, $timeout, $location) {
+  
+
+  $scope.isActive = function(destination){
+    return destination === $location.path();
+  }
+
+
+
+
+
   $scope.pageimage = {
 
 
@@ -90,45 +99,17 @@ app.controller('dqcontroller', function($scope, $compile, $timeout) {
         
   ]
 
-  // $scope.roleList2 = [
-  //       { "roleName" : "References", "roleId" : "role1", "expanded" : false, "children" : 
-  //       [
-  //         { "roleName" : "subUser1", "roleId" : "role11", "collapsed" : true, "children" : [] },
+  // $scope.navigation = [
+  //       {name: 'Deployment Guide Home', link: 'dataquality'},
+  //       {name: 'DQMC Program', link: 'dqmcprogram'},
+  //       {name: 'DQ Policy/Regs', link: 'dqmcpolicies'},
+  //       {name: 'DQ Guidelines', link: 'dqguidelines'},
+  //       {name: 'DQMC Program Metrics', link: 'dqprogrammetrics'},
+  //       {name: "DQMC User's Manual", link: '../quality/resources/dqmcpUserGuide.pdf'},
+  //       {name: "DQMC User's Manual", link: '../quality/resources/FY16DQMCPUsersGuide0616.pdf'},
+  //       {name: 'DQ Managers List', link: '../quality/resources/dqMgrList.xls'},
+  //       {name: 'DQ FAQ', link: 'faq'}
 
-
-  //         { "roleName" : "subUser2", "roleId" : "role12", "collapsed" : true, "children" : [
-  //           { "roleName" : "subUser2-1", "roleId" : "role121", "children" : 
-
-  //           [
-  //             { "roleName" : "subUser2-1-1", "roleId" : "role1211", "children" : [] },
-  //             { "roleName" : "subUser2-1-2", "roleId" : "role1212", "children" : [] }
-  //           ]}
-
-
-  //         ]}
-  //       ]},
-
-  //       { "roleName" : "test", "roleId" : "role2", "expanded" : false, "children" : [
-  //         { "roleName" : "subAdmin1", "roleId" : "role11", "collapsed" : true, "children" : [] },
-  //         { "roleName" : "subAdmin2", "roleId" : "role12", "children" : [
-  //           { "roleName" : "subAdmin2-1", "roleId" : "role121", "children" : [
-  //             { "roleName" : "subAdmin2-1-1", "roleId" : "role1211", "children" : [] },
-  //             { "roleName" : "subAdmin2-1-2", "roleId" : "role1212", "children" : [] }
-  //           ]}
-  //         ]}
-  //       ]},
-
-  //       { "roleName" : "test", "roleId" : "role3", "expanded" : false, "children" : [
-  //         { "roleName" : "subGuest1", "roleId" : "role11", "children" : [] },
-  //         { "roleName" : "subGuest2", "roleId" : "role12", "collapsed" : true, "children" : [
-  //           { "roleName" : "subGuest2-1", "roleId" : "role121", "children" : [
-  //             { "roleName" : "subGuest2-1-1", "roleId" : "role1211", "children" : [] },
-  //             { "roleName" : "subGuest2-1-2", "roleId" : "role1212", "children" : [] }
-  //           ]}
-  //         ]}
-  //       ]}
-  //     ];
-
-  //      $scope.roleList = $scope.roleList2;
+  // ]
 
 });

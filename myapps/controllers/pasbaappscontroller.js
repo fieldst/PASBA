@@ -1,4 +1,15 @@
-app.controller('pasbaappcontroller', function($scope, $compile, $timeout, $http, $routeParams, usSpinnerService) {
+app.controller('pasbaappcontroller', function($scope, $compile, $timeout, $http, $routeParams, usSpinnerService, $location) {
+
+
+$scope.$on('LOAD',function(){$scope.loading=true});
+$scope.$on('UNLOAD',function(){$scope.loading=false});
+
+
+$scope.isActive = function(destination){
+    return destination === $location.path();
+  }
+
+
 
 
   $scope.documents = {
@@ -41,18 +52,30 @@ $scope.externalapps = [
 
 //restricted apps
 
-// when live
+// when live path ../pact/api/userappinfo
+
+$scope.$emit('LOAD')
 
  $http.get("sandbox/userappinfo.js").
  	then(function(responce){
 		
 		$scope.username = responce.data;
-		$scope.restrictedapps = responce.data.UserApp;
+
+    $scope.restrictedapps = responce.data.UserApp;
+     
+    //romove stupid slash
+
+     angular.forEach($scope.restrictedapps,function(value, key) {
+        
+     value.TokenLink = value.TokenLink.replace("/", "");
+    },{});
+
+
+		console.log($scope.restrictedapps);
+
+
+   
     $scope.currentItem = $routeParams.itemId;
-
-
-
-
 
 
 
@@ -87,10 +110,6 @@ $scope.unrestricteddata = [
 
 		 if($scope.restrictedapps.length > 0){
 
-      // objectArray.forEach(function(object, index){
-      //   object.unrestrict = restrictedtemplate[index];
-      // })
-
 
      $scope.test = "true";
 
@@ -99,16 +118,14 @@ $scope.unrestricteddata = [
 
 	});
 	
-	// console.log(objectArray.length)
-	  // return objectArray;	
 };
 
 addColor($scope.restrictedapps, $scope.colors, $scope.unrestricteddata);
- console.log($scope.restrictedapps);
+ // console.log($scope.restrictedapps);
 
 
 	})
-
+$scope.$emit('UNLOAD')
 
 
 })
