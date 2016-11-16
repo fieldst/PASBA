@@ -33,7 +33,7 @@ app.config(function($routeProvider){
 
 	.when("/pasbaapps", {
 		templateUrl: "pasbaapps/templates/pasbaapps.html",
-		controller: 'pasbaappcontroller',
+		controller: 'pasbaappsinfocontroller',
 		// css: 'css/pasbaappscss.css',
 
 	}).when("/leadership", {
@@ -154,12 +154,6 @@ app.config(function($routeProvider){
 
 
 
-app.directive('pasbaappsWidget', function() {
-   return {
-     templateUrl: 'side-widget/side-widget-templates/pasbaapps.widget.html',
-     }
-
- });
 
 
 

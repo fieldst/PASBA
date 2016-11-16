@@ -194,110 +194,30 @@ max-width: 145px;
 
 <div class="col-md-8 col-sm-8" data-aos="fade-in">
 <div class="section-header">
-      <h2>PASBA APPS</h2>
+      <h2>PASBA APPS{{testing}}</h2>
 </div>
 
     <div class="container-pasbaapps">
 <h4   id="nonrestricted"><u>Non-Restricted</u></h4>
-  <!-- <h1>PASBA Web-based Applications and Reports</h1>
-
   
 
 
-      <p class="blurb">The products on this page include both restricted and non-restricted versions. To request authorization to restricted products, a request must be submitted using a PASBA Form 10. Click the <i>Access Request Form</i> control to open a form and then submit it to the address shown in PART IV of the form.</P> -->
-
-<!-- <form target="_blank" style="text-align: center">
-<input type="button" name="input"  class="request" value="Access Request Form"  onClick="window.open('RAAR_V9_2C.pdf')" />
-</form></p> -->
-
-
-<div class="icon-contain">
-  <h3>Behavioral Health EATC - Summary</h3>
+<div class="icon-contain" ng-repeat="app in nonrestricted">
+  <h3>{{app.name}}</h3>
  <div class="view view-first">
 
-    <img src="content/images/pasbaapps-icons/BH.png" />
+    <img ng-src="{{app.icon}}" />
 
     <div class="mask">
-      <h2>Behavioral Health EATC - Summary</h2>
-      <p>Compliance in Enhanced Access to Care (EATC) in BH and PC clinics.</p>
-      <a href="#" class="info">Read More</a>
+      <h2>{{app.name}}</h2>
+      <p>{{app.info}}</p>
+      <a href="{{app.link}}" class="info">Visit</a>
     </div>
   </div>
 
   </div>
 
-  <div class="icon-contain">
-  <h3>CAPER Reports</h3>
-   <div class="view view-first">
-    <img src="content/images/pasbaapps-icons/caper.png" />
-    <div class="mask">
-      <h2>CAPER Reports</h2>
-      <p>These reports help MTFs track daily data transmittals, receipt and data processing.</p>
-      <a href="#" class="info">Read More</a>
-    </div>
-  </div>
-</div>
-
-<div class="icon-contain">
-  <h3>DQMCP RPTS</h3>
-  <div class="view view-first">
-    <img src="content/images/pasbaapps-icons/dqmcq.png" />
-    <div class="mask">
-      <h2>DQMCP RPTS</h2>
-      <p>Survey results from the DQMCP application includes:</p>
-      <a href="#" class="info">Read More</a>
-    </div>
-  </div>
-</div>
-
-<div class="icon-contain">
-  <h3>EOD Summary</h3>
-  <div class="view view-first">
-    <img src="content/images/pasbaapps-icons/eod.png" />
-    <div class="mask">
-      <h2>EOD Summary</h2>
-      <p>EOD Summary is a monthly report monitoring the compliance with the "End of Day" requirements at RMC, MTF and CLINIC level.</p>
-      <a href="#" class="info">Read More</a>
-    </div>
-  </div>
-</div>
-
-<div class="icon-contain">
-  <h3>Inpatient Professional Service Rounds</h3>
-  <div class="view view-first">
-    <img src="content/images/pasbaapps-icons/inpatient.png" />
-    <div class="mask">
-      <h2>Inpatient Professional Service Rounds (IPSR)</h2>
-      <p>Reports the documentation, utilization, and data capture of professional rounds.</p>
-      <a href="#" class="info">Read More</a>
-    </div>
-  </div>
-</div>
-
-<div class="icon-contain">
-  <h3>MAPR Data Quality Measures</h3>
-  <div class="view view-first">
-    <img src="content/images/pasbaapps-icons/database_check.png" />
-    <div class="mask">
-      <h2>MAPR Data Quality Measures</h2>
-      <p>Published under the MAPR along with the PBAM adjustments for the reporting month.</p>
-      <a href="#" class="info">Read More</a>
-    </div>
-  </div>
-</div>
-
-<div class="icon-contain">
-  <h3>SIDR Reports</h3>
-  <div class="view view-first">
-    <img src="content/images/pasbaapps-icons/sidr.png" />
-    <div class="mask">
-      <h2>SIDR Reports</h2>
-      <p>SIDR reports include SIDR Completeness Transmittal Receipt Dates Counts by Source of Admission Files processed</p>
-      <a href="#" class="info">Read More</a>
-    </div>
-  </div>
-</div>
-
+  
 
 
 <div style="clear: both"></div>
@@ -307,104 +227,22 @@ max-width: 145px;
 <h4 id="restricted"><u>Restricted</u></h4>
 
 
-<div class="icon-contain">
+<div class="icon-contain" ng-repeat="app in restricted">
   <h3>Allied Health</h3>
- <div class="view view-first">
+<div class="view view-first">
 
-    <img src="content/images/pasbaapps-icons/alliedhealth.png" />
+    <img ng-src="{{app.icon}}" />
 
     <div class="mask">
-      <h2>Allied Health</h2>
-      <p>The percentage of total encounters with valid E&M code.</p>
-      <a href="#" class="info">Read More</a>
+      <h2>{{app.name}}</h2>
+      <p>{{app.info}}</p>
+      <a href="" class="info">Visit</a>
     </div>
   </div>
 
   </div>
 
-  <div class="icon-contain">
-  <h3>Anthrax, Smallpox and Abortions</h3>
-   <div class="view view-first">
-    <img src="content/images/pasbaapps-icons/incorrect.png" />
-    <div class="mask">
-      <h2>Anthrax, Smallpox and Abortions</h2>
-      <p>TEncounters incorrectly coded.</p>
-      <a href="#" class="info">Read More</a>
-    </div>
-  </div>
-</div>
-
-<div class="icon-contain">
-  <h3>Behavioral Health EATC</h3>
-  <div class="view view-first">
-    <img src="content/images/pasbaapps-icons/raw.png" />
-    <div class="mask">
-      <h2>Behavioral Health EATC</h2>
-      <p>Compliance in Enhanced Access to Care (EATC) in BH and PC clinics with raw data included.</p>
-      <a href="#" class="info">Read More</a>
-    </div>
-  </div>
-</div>
-
-<div class="icon-contain">
-  <h3>Body Mass Index Detail (BMI-D)</h3>
-  <div class="view view-first">
-    <img src="content/images/pasbaapps-icons/scale.png" />
-    <div class="mask">
-      <h2>Body Mass Index Detail (BMI-D)</h2>
-      <p>BMI weight categories for selected population.</p>
-      <a href="#" class="info">Read More</a>
-    </div>
-  </div>
-</div>
-
-<div class="icon-contain">
-  <h3>CARA</h3>
-  <div class="view view-first">
-    <img src="content/images/pasbaapps-icons/cara.png" />
-    <div class="mask">
-      <h2>CARA</h2>
-      <p>Code Auditing and Reporting Application (CARA) Assists the MTFs through remote coding and monitoring.</p>
-      <a href="#" class="info">Read More</a>
-    </div>
-  </div>
-</div>
-
-<div class="icon-contain">
-  <h3>Coder Manager</h3>
-  <div class="view view-first">
-    <img src="content/images/pasbaapps-icons/codermanage.png" />
-    <div class="mask">
-      <h2>Coder Manager</h2>
-      <p>Coding Help Desk.</p>
-      <a href="#" class="info">Read More</a>
-    </div>
-  </div>
-</div>
-
-<div class="icon-contain">
-  <h3>Coding Help Desk</h3>
-  <div class="view view-first">
-    <img src="content/images/pasbaapps-icons/codinghelpdesk.jpg" />
-    <div class="mask">
-      <h2>Coding Help Desk</h2>
-      <p>Allows users in the *army.mil to enter coding inquiries to a database.</p>
-      <a href="#" class="info">Read More</a>
-    </div>
-  </div>
-</div>
-
-<div class="icon-contain">
-  <h3>DART-PDHA </h3>
-  <div class="view view-first">
-    <img src="content/images/pasbaapps-icons/60days.png" />
-    <div class="mask">
-      <h2>DART-PDHA</h2>
-      <p>DART-PDHRA</p>
-      <a href="#" class="info">Read More</a>
-    </div>
-  </div>
-</div>
+  
 
 </div> <!-- close wrapper -->
 

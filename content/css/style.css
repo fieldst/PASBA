@@ -564,7 +564,7 @@ body{
  .filter {
     float: right;
     position: relative;
-    top: 0;
+    margin-top: -23px;
 }
 
 .filter label{
@@ -1545,7 +1545,7 @@ li.active{
 /*restrict status*/
 
 .restrict-status {
-    width: 59%;
+    width: 100%;
     padding: 10px 15px 15px 15px;
     position: relative;
 }
