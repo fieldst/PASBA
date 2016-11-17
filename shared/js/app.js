@@ -119,15 +119,23 @@ app.config(function($routeProvider){
 		.when("/dataanalysissharing", {
 		templateUrl: "dataanalysis/templates/dataanalysissharing.html",
 		controller: 'dataanalysiscontroller',
+//end data analysis
 
-
-
+//start coding 
+}).when("/coding", {
+		templateUrl: "coding/templates/codinghome.html",
+		controller: 'codingcontroller',
+}).when("/codingguildelines", {
+		templateUrl: "coding/templates/codingguildline.html",
+		controller: 'codingcontroller',
+}).when("/codinghelpdesk", {
+		templateUrl: "coding/templates/helpdesk.html",
+		controller: 'codingcontroller',
 
 	}).
 	otherwise({
 	  redirectTo: "/home"
 	});
-
 
 	});
 
