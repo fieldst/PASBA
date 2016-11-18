@@ -15,6 +15,7 @@ app.controller('codingcontroller', function($scope, $compile, $timeout, $locatio
   						guildelines: "coding/images/guildelines.svg",
   						sharing : "conding/images/share.svg",
               helpurl: "../army/CHDinquiry/HelpDeskInquiry.asp",
+              compliance : "coding/images/compliance.svg"
 
 					}
 
@@ -23,7 +24,8 @@ app.controller('codingcontroller', function($scope, $compile, $timeout, $locatio
 						guidelines : "Coding Guidelines",
 						sources : "Data Sources",
 						regulate : "Medical Regulating",
-						sharing : "Data Sharing Agreements"
+						sharing : "Data Sharing Agreements",
+            compliance : "Coding Compliance"
 	}
 
 	// $scope.documents = {

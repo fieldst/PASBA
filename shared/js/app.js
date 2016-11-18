@@ -131,7 +131,9 @@ app.config(function($routeProvider){
 }).when("/codinghelpdesk", {
 		templateUrl: "coding/templates/helpdesk.html",
 		controller: 'codingcontroller',
-
+}).when("/codingcompliance", {
+		templateUrl: "coding/templates/codingcompliance.html",
+		controller: 'codingcontroller',
 	}).
 	otherwise({
 	  redirectTo: "/home"

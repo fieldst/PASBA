@@ -5,7 +5,7 @@ $scope.$on('LOAD',function(){$scope.loading=true});
 $scope.$on('UNLOAD',function(){$scope.loading=false});
 
 
-$scope.isActive = function(destination,destinationtwo){
+$scope.isActive = function(destination){
 
     // return destination === $location.path();
     return $location.path() === destination;
