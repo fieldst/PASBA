@@ -4,14 +4,55 @@ app.controller('pasbaappcontroller', function($scope, $compile, $timeout, $http,
 $scope.$on('LOAD',function(){$scope.loading=true});
 $scope.$on('UNLOAD',function(){$scope.loading=false});
 
+ $scope.useroption = false;
 
-$scope.isActive = function(destination){
 
-    // return destination === $location.path();
-    return $location.path() === destination;
+  $scope.remove = function() {
+        $scope.useroption = !$scope.useroption;
+    };
+
+
+
+// $scope.isActive = function(destination){
+
+//     // return destination === $location.path();
+
+//     if($location.path() === '/recordsrequest'){
+//       // console.log("highlight");
+
+
+//     }
+//     return $location.path() === destination;
+
+
    
 
+//   }
+
+//   $scope.getdestination = function(){
+//       var here = $location.path()
+//       console.log(here);
+//   }
+
+// $scope.undue = function(){
+
+
+//   if($location.path() === '/leadership'){
+//     return $scope.current = null;
+//   }
+// }
+
+$scope.current = null;
+
+$scope.setcurrent = function(value){
+  $scope.current = value;
+
+  if($scope.current === 'leadership'){
+     return $scope.current === null;
   }
+};
+
+
 
 
 
@@ -134,7 +175,10 @@ $scope.$emit('UNLOAD')
 
 })
 
-})
+
+
+    
+});
 
 
   
