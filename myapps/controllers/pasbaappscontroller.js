@@ -1,6 +1,6 @@
-app.controller('pasbaappcontroller', function($scope, $compile, $timeout, $http, $routeParams, usSpinnerService, $location, $animate ) {
+app.controller('pasbaappcontroller', function($scope, $compile, $timeout, $http, $routeParams, usSpinnerService, $location, $animate, $rootScope ) {
 
-
+$rootScope.location = $location;
 $scope.$on('LOAD',function(){$scope.loading=true});
 $scope.$on('UNLOAD',function(){$scope.loading=false});
 
@@ -13,9 +13,13 @@ $scope.$on('UNLOAD',function(){$scope.loading=false});
 
 
 
-// $scope.isActive = function(destination){
+ $scope.isActive = function(destination){
+  
+      return destination === $location.path();
+       
+    
+}
 
-//     // return destination === $location.path();
 
 //     if($location.path() === '/recordsrequest'){
 //       // console.log("highlight");
@@ -48,9 +52,11 @@ $scope.setcurrent = function(value){
   $scope.current = value;
 
   if($scope.current === 'leadership'){
-     return $scope.current === null;
+      $scope.noshade = "noshade";
+
   }
 };
+console.log($scope.noshade)
 
 
 

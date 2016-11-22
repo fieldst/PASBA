@@ -1082,6 +1082,7 @@ li.active{
 	border-bottom: none;
 }
 
+/*navigation hack*/
 
 .green-space .active2 li {
     fill: #00559E;
@@ -1089,6 +1090,74 @@ li.active{
     border-right: none;
     border-left: none;
     background: #EEEEEE ;
+}
+
+.green-space .active3 li {
+    fill: #00559E;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    background: #EEEEEE ;
+}
+
+.green-space .active4 li {
+    fill: #00559E;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    background: #EEEEEE ;
+}
+
+.green-space .active5 li {
+    fill: #00559E;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    background: #EEEEEE ;
+}
+
+.green-space .active6 li {
+    fill: #00559E;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    background: #EEEEEE ;
+}
+
+.green-space .active7 li {
+    fill: #00559E;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    background: #EEEEEE ;
+}
+
+.green-space .active8 li {
+    fill: #00559E;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    background: #EEEEEE ;
+}
+
+.green-space .active9 li {
+    fill: #00559E;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    background: #EEEEEE ;
+}
+
+.green-space .active10 li {
+    fill: #00559E;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    background: #EEEEEE ;
+}
+
+.green-space .noshade li{
+  background: #FFFFFF;
 }
 
 

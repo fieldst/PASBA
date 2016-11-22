@@ -3,7 +3,7 @@ app.controller('dataanalysiscontroller', function($scope, $compile, $timeout, $l
 
   
 
-  $scope.isActive = function(destination){
+  $scope.isActive = function(destination,destinationtwo){
     return destination === $location.path();
   }
 
