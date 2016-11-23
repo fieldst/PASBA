@@ -198,20 +198,20 @@ max-width: 145px;
 </div>
 
     <div class="container-pasbaapps">
-<h4   id="nonrestricted"><u>Non-Restricted</u></h4>
+<h4 id="nonrestricted"><u>Non-Restricted</u></h4>
   
 
 
 <div class="icon-contain" ng-repeat="app in nonrestricted">
   <h3>{{app.name}}</h3>
- <div class="view view-first">
+ <div class="view view-first" style="background: {{app.background}}">
 
     <img ng-src="{{app.icon}}" />
 
     <div class="mask">
       <h2>{{app.name}}</h2>
       <p>{{app.info}}</p>
-      <a href="{{app.link}}" class="info">Visit</a>
+      <a href="#/unrestrictedapps/{{nonrestricted.indexOf(app)}}" class="info">Visit</a>
     </div>
   </div>
 
@@ -228,8 +228,8 @@ max-width: 145px;
 
 
 <div class="icon-contain" ng-repeat="app in restricted">
-  <h3>Allied Health</h3>
-<div class="view view-first">
+  <h3>{{app.name}}</h3>
+<div class="view view-first" style="background: {{app.background}}">
 
     <img ng-src="{{app.icon}}" />
 

@@ -28,13 +28,14 @@ app.config(function($routeProvider){
 		templateUrl: "myapps/template/restricted.html",
 		controller: 'pasbaappcontroller',
 
-	})
-
-
-	.when("/pasbaapps", {
+	}).when("/pasbaapps", {
 		templateUrl: "pasbaapps/templates/pasbaapps.html",
 		controller: 'pasbaappsinfocontroller',
 		// css: 'css/pasbaappscss.css',
+
+	}).when("/viewapps/:itemId", {
+		templateUrl: "pasbaapps/templates/unrestrictedapps.html",
+		controller: 'pasbaappsinfocontroller',
 
 	}).when("/leadership", {
 		templateUrl: "about/templates/leadership.html",

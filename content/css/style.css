@@ -111,7 +111,7 @@ body{
     padding: 15px 68px;
     
     
-    height: 450px;
+    height: 331px;
     clear: both;
     width: 376px;
     
@@ -953,7 +953,7 @@ a:hover{
 
 .activelink{
 	color: #117ABC !important;
-	font-weight: bold !important;
+	/*font-weight: bold !important;*/
 }
 
 .dropdown-login{
@@ -1314,7 +1314,7 @@ li.active{
 }
 
 .apps-navigation li a {
-    font-size: 14px;
+    font-size: 15px;
 }
 
 
@@ -1665,7 +1665,7 @@ li.active{
 }
 
 .color4{
-	background: #004002;
+	background: #19578B;
 }
 
 .color5{
