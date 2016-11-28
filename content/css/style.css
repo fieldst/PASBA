@@ -1023,12 +1023,17 @@ a:hover{
 .space-wrapper {
     margin: auto;
     width: 100%;
-    max-width: 1330px;
+    /*max-width: 1384px;*/
    /* border-right: 1px solid #c8c8c8;
     border-left: 1px solid #c8c8c8;*/
     height: 121px;
     overflow: hidden;
     list-style: none;
+}
+
+#pasbaapps{
+  max-width: 1384px;
+  margin:auto;
 }
 
 .space-wrapper li {
@@ -1059,6 +1064,14 @@ a:hover{
     padding-bottom: 10px;
     fill: #500707;
     height: 74px;
+}
+
+.space-wrapper .disabled{
+  width: 100%;
+    padding-bottom: 10px;
+    fill: rgba(80,7,7,.5);
+    height: 74px;
+    cursor: not-allowed;
 }
 
 /*.space-wrapper a{

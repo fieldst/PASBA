@@ -1,6 +1,6 @@
 app.directive('dqWidget', function(){
 	return{
-		templateUrl: 'dq/templates/dq.widget.html',
+		templateUrl: 'dqsection/templates/dq.widget.html',
 	}
 });
 

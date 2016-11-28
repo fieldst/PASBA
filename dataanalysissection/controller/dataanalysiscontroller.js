@@ -10,10 +10,10 @@ app.controller('dataanalysiscontroller', function($scope, $compile, $timeout, $l
   $scope.pageimage = {
 
 
-  						introimage : "dataanalysis/images/da-intro.svg",
-  						support : "dataanalysis/images/datasupport.svg",
+  						introimage : "dataanalysissection/images/da-intro.svg",
+  						support : "dataanalysissection/images/datasupport.svg",
   						
-  						sharing : "dataanalysis/images/share.svg",
+  						sharing : "dataanalysissection/images/share.svg",
   						
 
 
@@ -33,7 +33,7 @@ app.controller('dataanalysiscontroller', function($scope, $compile, $timeout, $l
  
   		 $scope.documents = [
   
-        {name: 'Records Request', link: 'dmrpc/documents/AuthorizationforDisclosureofMedicalorDentalInformation(DD2870).pdf'},
+        {name: 'Records Request', link: 'dmrpcsection/documents/AuthorizationforDisclosureofMedicalorDentalInformation(DD2870).pdf'},
         {name: 'DA FORM 3647', link: '../deployment/DeployMedRecGuidance.pdf'},
         {name: 'ITRCS Data Dictionary', link: '../deployment/DeployMedRecComplete.pdf'},
         {name: 'Page 1 of DA Form 2985', link: '../deployment/SA_refresher060126.ppt'},

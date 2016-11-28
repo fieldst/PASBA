@@ -20,6 +20,8 @@ $scope.$on('UNLOAD',function(){$scope.loading=false});
     
 }
 
+$scope.slideshow = false;
+
 
 //     if($location.path() === '/recordsrequest'){
 //       // console.log("highlight");

@@ -10,12 +10,12 @@ app.controller('codingcontroller', function($scope, $compile, $timeout, $locatio
   $scope.pageimage = {
 
 
-  						introimage : "coding/images/coding-intro.svg",
-  						leveling : "coding/images/level.svg",
-  						guildelines: "coding/images/guildelines.svg",
-  						sharing : "conding/images/share.svg",
+  						introimage : "codingsection/images/coding-intro.svg",
+  						leveling : "codingsection/images/level.svg",
+  						guildelines: "codingsection/images/guildelines.svg",
+  						sharing : "condingsection/images/share.svg",
               helpurl: "../army/CHDinquiry/HelpDeskInquiry.asp",
-              compliance : "coding/images/compliance.svg"
+              compliance : "codingsection/images/compliance.svg"
 
 					}
 
@@ -34,7 +34,7 @@ app.controller('codingcontroller', function($scope, $compile, $timeout, $locatio
  
   		 $scope.documents = [
   
-        {name: 'Records Request', link: 'dmrpc/documents/AuthorizationforDisclosureofMedicalorDentalInformation(DD2870).pdf'},
+        {name: 'Records Request', link: 'dmrpcsection/documents/AuthorizationforDisclosureofMedicalorDentalInformation(DD2870).pdf'},
         {name: 'DA FORM 3647', link: '../deployment/DeployMedRecGuidance.pdf'},
         {name: 'ITRCS Data Dictionary', link: '../deployment/DeployMedRecComplete.pdf'},
         {name: 'Page 1 of DA Form 2985', link: '../deployment/SA_refresher060126.ppt'},

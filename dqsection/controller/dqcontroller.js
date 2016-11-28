@@ -12,15 +12,15 @@ app.controller('dqcontroller', function($scope, $compile, $timeout, $location) {
   $scope.pageimage = {
 
 
-  						introimage : "dq/images/dataquality.svg",
-  						dqmcprogram : "dq/images/dqmc.svg",
-              certified  : "dq/images/certification.svg",
-              regulations : "dq/images/regulations.svg",
-              guildlines : "dq/images/guildlines.svg",
-              outpatients : "dq/images/outpatient.svg",
-              tracking : "dq/images/tracking.svg",
-              meeting : "dq/images/Meeting.svg",
-              faq : "dq/images/faq.svg",
+  						introimage : "dqsection/images/dataquality.svg",
+  						dqmcprogram : "dqsection/images/dqmc.svg",
+              certified  : "dqsection/images/certification.svg",
+              regulations : "dqsection/images/regulations.svg",
+              guildlines : "dqsection/images/guildlines.svg",
+              outpatients : "dqsection/images/outpatient.svg",
+              tracking : "dqsection/images/tracking.svg",
+              meeting : "dqsection/images/Meeting.svg",
+              faq : "dqsection/images/faq.svg",
 
 
 					}
@@ -41,7 +41,7 @@ app.controller('dqcontroller', function($scope, $compile, $timeout, $location) {
  
   		 $scope.documents = [
   
-        {name: 'Records Request', link: 'dmrpc/documents/AuthorizationforDisclosureofMedicalorDentalInformation(DD2870).pdf'},
+        {name: 'Records Request', link: 'dmrpcsection/documents/AuthorizationforDisclosureofMedicalorDentalInformation(DD2870).pdf'},
         {name: 'DA FORM 3647', link: '../deployment/DeployMedRecGuidance.pdf'},
         {name: 'ITRCS Data Dictionary', link: '../deployment/DeployMedRecComplete.pdf'},
         {name: 'Page 1 of DA Form 2985', link: '../deployment/SA_refresher060126.ppt'},

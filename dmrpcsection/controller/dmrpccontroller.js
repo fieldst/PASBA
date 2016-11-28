@@ -9,11 +9,11 @@ app.controller('dmrpccontroller', function($scope, $compile, $timeout, $location
   $scope.pageimage = {
 
 
-  						introimage : "dmrpc/images/dmrpc-intro.svg",
-  						instructions : "dmrpc/images/instructions.svg",
-  						pad : "dmrpc/images/pad.svg",
-  						regulate : "dmrpc/images/regulate.svg",
-  						sidr : "dmrpc/images/sidr.svg"
+  						introimage : "dmrpcsection/images/dmrpc-intro.svg",
+  						instructions : "dmrpcsection/images/instructions.svg",
+  						pad : "dmrpcsection/images/pad.svg",
+  						regulate : "dmrpcsection/images/regulate.svg",
+  						sidr : "dmrpcsection/images/sidr.svg"
 
 
 					}
@@ -32,7 +32,7 @@ app.controller('dmrpccontroller', function($scope, $compile, $timeout, $location
  
   		 $scope.documents = [
   
-        {name: 'Records Request', link: 'dmrpc/documents/AuthorizationforDisclosureofMedicalorDentalInformation(DD2870).pdf'},
+        {name: 'Records Request', link: 'dmrpcsection/documents/AuthorizationforDisclosureofMedicalorDentalInformation(DD2870).pdf'},
         {name: 'DA FORM 3647', link: '../deployment/DeployMedRecGuidance.pdf'},
         {name: 'ITRCS Data Dictionary', link: '../deployment/DeployMedRecComplete.pdf'},
         {name: 'Page 1 of DA Form 2985', link: '../deployment/SA_refresher060126.ppt'},

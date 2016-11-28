@@ -29,12 +29,12 @@ app.config(function($routeProvider){
 		controller: 'pasbaappcontroller',
 
 	}).when("/pasbaapps", {
-		templateUrl: "pasbaapps/templates/pasbaapps.html",
+		templateUrl: "pasbaappspage/templates/pasbaapps.html",
 		controller: 'pasbaappsinfocontroller',
 		// css: 'css/pasbaappscss.css',
 
 	}).when("/viewapps/:itemId", {
-		templateUrl: "pasbaapps/templates/unrestrictedapps.html",
+		templateUrl: "pasbaappspage/templates/unrestrictedapps.html",
 		controller: 'pasbaappsinfocontroller',
 
 	}).when("/leadership", {
@@ -51,89 +51,89 @@ app.config(function($routeProvider){
 
 // start dmrpc
 	}).when("/dmrpc", {
-		templateUrl: "dmrpc/templates/dmrpc.html",
+		templateUrl: "dmrpcsection/templates/dmrpc.html",
 		controller: 'dmrpccontroller',
 		// css: 'css/pasbaappscss.css',
 
 	}).when("/recordsrequest", {
-		templateUrl: "dmrpc/templates/instructions.html",
+		templateUrl: "dmrpcsection/templates/instructions.html",
 		controller: 'dmrpccontroller',
 
 
 	}).when("/padpoliciesandguidance", {
-		templateUrl: "dmrpc/templates/padpolicies.html",
+		templateUrl: "dmrpcsection/templates/padpolicies.html",
 		controller: 'dmrpccontroller',
 
 	}).when("/medicalregulating", {
-		templateUrl: "dmrpc/templates/medicalregulating.html",
+		templateUrl: "dmrpcsection/templates/medicalregulating.html",
 		controller: 'dmrpccontroller',
 
 	}).when("/sidr", {
-		templateUrl: "dmrpc/templates/sidr.html",
+		templateUrl: "dmrpcsection/templates/sidr.html",
 		controller: 'dmrpccontroller',
 // end drmpc
 
 //start data quality
 
 }).when("/dataquality", {
-		templateUrl: "dq/templates/dataquality.html",
+		templateUrl: "dqsection/templates/dataquality.html",
 		controller: 'dqcontroller',
 	
 	}).when("/dqmcprogram", {
-		templateUrl: "dq/templates/dqmcprogram.html",
+		templateUrl: "dqsection/templates/dqmcprogram.html",
 		controller: 'dqcontroller',
 	
 	}).when("/dqmcpolicies", {
-		templateUrl: "dq/templates/policies.html",
+		templateUrl: "dqsection/templates/policies.html",
 		controller: 'dqcontroller',
 	
 	}).when("/dqguidelines", {
-		templateUrl: "dq/templates/guidelines.html",
+		templateUrl: "dqsection/templates/guidelines.html",
 		controller: 'dqcontroller',
 	
 	}).when("/dqprogrammetrics", {
-		templateUrl: "dq/templates/programmetrics.html",
+		templateUrl: "dqsection/templates/programmetrics.html",
 		controller: 'dqcontroller',
 	
 	}).when("/faq", {
-		templateUrl: "dq/templates/faq.html",
+		templateUrl: "dqsection/templates/faq.html",
 		controller: 'dqcontroller',
 	//end data quality
 
 	
 	//start data analysis
 	}).when("/dataanalysis", {
-		templateUrl: "dataanalysis/templates/dataanalysis.html",
+		templateUrl: "dataanalysissection/templates/dataanalysis.html",
 		controller: 'dataanalysiscontroller',
 
 	}).when("/dataanalysissupport", {
-		templateUrl: "dataanalysis/templates/dataanalysissupport.html",
+		templateUrl: "dataanalysissection/templates/dataanalysissupport.html",
 		controller: 'dataanalysiscontroller',
 	})
 
 		.when("/dataanalysissources", {
-		templateUrl: "dataanalysis/templates/dataanalysissources.html",
+		templateUrl: "dataanalysissection/templates/dataanalysissources.html",
 		controller: 'dataanalysiscontroller',
 
 		})
 
 		.when("/dataanalysissharing", {
-		templateUrl: "dataanalysis/templates/dataanalysissharing.html",
+		templateUrl: "dataanalysissection/templates/dataanalysissharing.html",
 		controller: 'dataanalysiscontroller',
 //end data analysis
 
 //start coding 
 }).when("/coding", {
-		templateUrl: "coding/templates/codinghome.html",
+		templateUrl: "codingsection/templates/codinghome.html",
 		controller: 'codingcontroller',
 }).when("/codingguildelines", {
-		templateUrl: "coding/templates/codingguildline.html",
+		templateUrl: "codingsection/templates/codingguildline.html",
 		controller: 'codingcontroller',
 }).when("/codinghelpdesk", {
-		templateUrl: "coding/templates/helpdesk.html",
+		templateUrl: "codingsection/templates/helpdesk.html",
 		controller: 'codingcontroller',
 }).when("/codingcompliance", {
-		templateUrl: "coding/templates/codingcompliance.html",
+		templateUrl: "codingsection/templates/codingcompliance.html",
 		controller: 'codingcontroller',
 	}).
 	otherwise({
