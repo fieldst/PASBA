@@ -73,6 +73,7 @@
   <script src="dqsection/directives/dq.directive.js"></script> 
   <script src="dataanalysissection/directives/dataanalysis.directive.js"></script>
   <script src="codingsection/directives/coding.directive.js"></script>
+  <script src="about/directives/about.directive.js"></script>
 
 
 
@@ -125,23 +126,24 @@
           <header class="navbar navbar-default navbar-fixed-top navbar-top">
             <div class="container">
               <div class="navbar-header">
-                <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                <button data-target="navbar-toggle collapsed" data-toggle="collapse" class="navbar-toggle" type="button">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
+
                 </button>
 
                 <a href="index.html" class="navbar-brand"><span class="logo"><img src="content/images/pasbalogomedcom.png"></span></a>
 
               </div>
 
-              <div class="navbar-collapse collapse">
+              <div class="navbar-collapse collapse" id="navbar">
                 <ul class="nav navbar-nav navbar-right">
                   <li><a href="#/home" class="btn-ads btn-block" ng-class="{activenavlink: isActive('/home')}">Home</a></li>
                   <li><a href="#/leadership" ng-click="setcurrent('leadership')" ng-class="{'activenavlink': isActive('/leadership')}">Leadership</a></li>
                   <li><a href="#/aboutus" ng-class="{activenavlink: isActive('/aboutus')}">About Us</a></li>
-                  <li><a href="">Contact us</a></li>
+                  <li><a href="#/contactus" ng-class="{activenavlink: isActive('/contactus')}">Contact us</a></li>
 
                             <!-- <li class="dropdown">
                                 <a class="dropdown-toggle" href="#" data-toggle="dropdown"><strong class="caret"></strong>&nbsp;Navigation</a>
@@ -160,6 +162,8 @@
 
                             </ul>
                           </div>
+
+
                         </div>
                       </header>
                       <section class="headerbackground" ng-hide="useroption">
@@ -307,8 +311,8 @@
 
                 <div class="footer">
 
-                  <div class="container">
-                    <ul class="pull-left footer-menu">
+                <div class="footer-wrapper">
+                    <ul class="pull-left footer-menu col-md-4">
                       <li>
                         <a href="index.html"> Home </a>
                         <a href="#/leadership">Leadership</a>
@@ -317,26 +321,32 @@
                       </li>
                     </ul>
 
-                    <div class="tagline">
-                      
+                    <div class="site-info">
+                     
                       <p>Where Inspiration...Meets Innovation</p>
 
                     </div>
 
-                    <div class="update">
-                      <p>Updated: November 9, 2016</p>
-                    </div>
-                  </div>
+                  <div class="address">
+                     <p>Patient Administration Systems and Biostatistics Activity<br/> 2404 Stanley Rd, Ste 25, Fort Sam Houston, TX 78234-5053</p>
+                    
+                   </div>
+
+                    <div style="clear: both"></div>
+
+<div class="update"><p>Updated: November 9, 2016</p></div>
+                    
+                  </div><!--  end footer wrapper -->
                 </div>
-              </div>
+              </div> <!-- end wrapper -->
 
               <!-- Essentials -->
               <!-- <script src="libraries/css/bootstrap/bootstrap.min.js"></script> -->
 
-
+<!-- top slider -->
               <script>
 
-//top slider
+
 $(document).ready(function(){
 
   $(".Modern-Slider").slick({
@@ -359,7 +369,7 @@ $(document).ready(function(){
 
 </script>
 
-// <script>
+ <script>
 
      //    $(".green-space").on('click','.pasbaiconlink', function(){
      //      $(this).toggleClass('active').siblings().removeClass('active');

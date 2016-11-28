@@ -45,6 +45,9 @@ app.config(function($routeProvider){
 		templateUrl: "about/templates/aboutus.html",
 		controller: 'aboutuscontroller',
 		
+	}).when("/contactus", {
+		templateUrl: "about/templates/contactus.html",
+		controller: 'aboutuscontroller',
 
 
 
@@ -135,6 +138,8 @@ app.config(function($routeProvider){
 }).when("/codingcompliance", {
 		templateUrl: "codingsection/templates/codingcompliance.html",
 		controller: 'codingcontroller',
+
+
 	}).
 	otherwise({
 	  redirectTo: "/home"
