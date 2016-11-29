@@ -1360,10 +1360,10 @@ li.active{
 
 .side-hide {
     position: fixed;
-    right: 0px;
+    right: 1px;
     top: 598px;
     height: 80px;
-    width: 89px;
+    width: 99px;
     
    
   
