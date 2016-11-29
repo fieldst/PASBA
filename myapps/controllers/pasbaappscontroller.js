@@ -6,6 +6,8 @@ $scope.$on('UNLOAD',function(){$scope.loading=false});
 
  $scope.useroption = false;
 
+ $scope.goCats = false;
+
 
   $scope.remove = function() {
         $scope.useroption = !$scope.useroption;

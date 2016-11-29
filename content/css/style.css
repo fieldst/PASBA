@@ -53,6 +53,10 @@ body{
     overflow-y: hidden;
 }
 
+.about-wrapper p{
+  line-height: 1.7em;
+}
+
 .person-wrapper h4{
 	color: #117ABC;
 }
@@ -196,6 +200,28 @@ body{
 .yellow{
 	background: #00767F;
 }
+
+/*ng sticky style*/
+
+.ng-sticky-fixed{
+   
+    position:fixed;
+    top:111;
+    width:19.333%;
+    right: 92;
+    float: right;
+
+  }
+
+  .ng-sticky-fixed-myapps{
+   
+    position:fixed;
+    top:96;
+    width:19.333%;
+    right: 92;
+    float: right;
+
+  }
 
 
 .intro-image p {
@@ -1328,8 +1354,31 @@ li.active{
 
 .widget a {
     color: #82000A;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: normal;
+}
+
+.side-hide {
+    position: fixed;
+    right: 0px;
+    top: 598px;
+    height: 80px;
+    width: 89px;
+    
+   
+  
+    background: #fff;
+    box-shadow: -6px 9px 36px rgb(148, 136, 136);
+}
+
+.side-hide p{
+  text-align: center;
+}
+
+.side-hide a{
+  transform: rotate(90deg);
+  transform-origin: left top 0;
+  color: #fff;
 }
 
 
@@ -1372,7 +1421,7 @@ li.active{
 }
 
 .widget-body p{
-	font-size: 14px;
+	font-size: 15px;
 }
 
 .widget-body .trends li:before{

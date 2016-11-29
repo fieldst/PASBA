@@ -35,6 +35,8 @@
   <!--  AOS stylesheet -->
   <link rel="stylesheet" href="libraries/bower_components/aos/dist/aos.css" />
 
+  <!-- toggle switch stylesheet -->
+  <link rel="stylesheet" href="libraries/bower_components/angular-toggle-switch/angular-toggle-switch.css" />
 
 
   <!-- JS Library -->
@@ -81,17 +83,14 @@
 
   <!-- libraries -->
 
-  <script src="libraries/slick/slick.js"></script>
-  <script src="shared/directives/smoothscrolldirective.js"></script>
-        <!-- optional calendar <script src="libraries/bower_components/moment/moment.js"></script>
-        // <script src="libraries/bower_components/angular-ui-calendar/src/calendar.js"></script>
-        // <script src="libraries/bower_components/fullcalendar/dist/fullcalendar.min.js"></script> 
-        <script type="text/javascript" src="libraries/bower_components/fullcalendar/dist/gcal.js"></script>-->
+        <script src="libraries/slick/slick.js"></script>
+        <script src="shared/directives/smoothscrolldirective.js"></script>
         <script src="libraries/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
         <script src="libraries/bower_components/angular-resource/angular-resource.js"></script>
         <script src="libraries/angular-spinner.js"></script>
         <script src="libraries/spin.min.js"></script>
-        
+        <script src="libraries/bower_components/angular-sticky-navigation-directive/dist/ng-sticky.js"></script>
+        <script src="libraries/bower_components/angular-toggle-switch/angular-toggle-switch.js"></script>
 
 
 
@@ -134,11 +133,13 @@
 
                 </button>
 
-                <a href="index.html" class="navbar-brand"><span class="logo"><img src="content/images/pasbalogomedcom.png"></span></a>
+                <a href="index.html" class="navbar-brand"><span class="logo"><img src="content/images/pasbalogomedcom.png"></span></a><br/>
+               <div class="side-hide"><p>Toggle Slider</p><toggle-switch ng-model="switchStatus" on-label="show" off-label="hide"><toggle-switch></div>
 
               </div>
 
               <div class="navbar-collapse collapse" id="navbar">
+
                 <ul class="nav navbar-nav navbar-right">
                   <li><a href="#/home" class="btn-ads btn-block" ng-class="{activenavlink: isActive('/home')}">Home</a></li>
                   <li><a href="#/leadership" ng-click="setcurrent('leadership')" ng-class="{'activenavlink': isActive('/leadership')}">Leadership</a></li>
@@ -166,7 +167,7 @@
 
                         </div>
                       </header>
-                      <section class="headerbackground" ng-hide="useroption">
+                      <section class="headerbackground" ng-hide="switchStatus = switchStatus">
 
 
 
@@ -255,7 +256,7 @@
                        <div class="info">
                          <div class="blurb-wrapper">
                           <div>
-                            <h3>Data Analysis</h3>
+                            <h3>Data Analysis</h3>ea
                             <h4>The mission of the Data Analysis Section is to provide timely and useful healthcare data and expert data analysis to assist the Department of Defense, US Army, US Army Medical Command, and individual customers in providing the best healthcare for our beneficiaries.</h4>
 
                           </div>
@@ -277,11 +278,13 @@
 
                 <div class="green-space">
 
-                  <div id="arrowcontain">
-                    <!-- optional  -->
-                    <a href="" smooth-scroll target="p4" offset="80">
+ <!-- optional arrow  -->
+                 <!--  <div id="arrowcontain">
+                   
+                     <a href="" smooth-scroll target="p4" offset="80"> 
+                   
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" class="arrow" ><path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path></svg></a>
-                    </div>
+                    </div> -->
 
                     <div ng-include src="'shared/layout/tabs.html'"></div>
 
@@ -306,6 +309,7 @@
                   <div class="container">
 
                     <div ng-view></div>
+
                   </div>
                 </section>
 

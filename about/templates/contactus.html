@@ -27,18 +27,13 @@
       </tr>
     </thead>
     <tfoot>
-      
     </tfoot>
     <tbody>
-      <tr ng-repeat="contact in general | filter:searchcontacts">
+      <tr ng-repeat="contact in general | filter:searchcontacts" class="animate-repeat">
         <th scope="row">{{contact.contactname}}</th>
         <td data-title="Released"><a href="mailto: {{contact.contactemail}}" class="email">{{contact.contactemail}}</a></td>
         <td data-title="Studio">{{contact.fax}}</td> 
       </tr>
-     
-     
-      
-      
     </tbody>
   </table>
 
@@ -54,23 +49,69 @@
         <th scope="col">Functional Assistance</th>
         <th scope="col">Email</th>
         <th scope="col">Fax</th>
-        
-        
       </tr>
     </thead>
     <tfoot>
       
     </tfoot>
     <tbody>
-      <tr ng-repeat="contact in functional | filter:searchcontacts">
+      <tr ng-repeat="contact in functional | filter:searchcontacts" class="animate-repeat">
         <th scope="row">{{contact.contactname}}</th>
         <td data-title="Released"><a href="mailto: {{contact.contactemail}}" class="email">{{contact.contactemail}}</a></td>
         <td data-title="Studio">{{contact.fax}}</td> 
       </tr>
-     
-     
+    </tbody>
+  </table>
+
+  <div class="clear"></div>
+
+  <!-- start technical assistance -->
+
+  <div id="technical"></div>
+  <h4>Technical Assistance</h4>
+    <table class="responsive-table">
+    
+    <thead>
+      <tr>
+        <th scope="col">Technical Assistance</th>
+        <th scope="col">Email</th>
+        <th scope="col">Fax</th>
+      </tr>
+    </thead>
+    <tfoot>
       
+    </tfoot>
+    <tbody>
+      <tr ng-repeat="contact in technical | filter:searchcontacts" class="animate-repeat">
+        <th scope="row">{{contact.contactname}}</th>
+        <td data-title="Released"><a href="mailto: {{contact.contactemail}}" class="email">{{contact.contactemail}}</a></td>
+        <td data-title="Studio">{{contact.fax}}</td> 
+      </tr>
+    </tbody>
+  </table>
+<div class="clear"></div>
+  <!-- start website feedback -->
+
+  <div id="feedback"></div>
+  <h4>Web Site Feedback</h4>
+    <table class="responsive-table">
+    
+    <thead>
+      <tr>
+        <th scope="col">Web Site Feedback</th>
+        <th scope="col">Email</th>
+        <th scope="col">Fax</th>
+      </tr>
+    </thead>
+    <tfoot>
       
+    </tfoot>
+    <tbody>
+      <tr ng-repeat="contact in feedback | filter:searchcontacts" class="animate-repeat">
+        <th scope="row">{{contact.contactname}}</th>
+        <td data-title="Released"><a href="mailto: {{contact.contactemail}}" class="email">{{contact.contactemail}}</a></td>
+        <td data-title="Studio">{{contact.fax}}</td> 
+      </tr>
     </tbody>
   </table>
 	

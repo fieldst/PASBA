@@ -7,6 +7,10 @@ var app = angular.module('pasbaapp', [
 	'ngResource',
 	'angularTreeview',
 	'angularSpinner',
+	'dm.stickyNav',
+	'toggle-switch',
+
+
 
 
 

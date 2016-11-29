@@ -48,7 +48,18 @@ app.controller('aboutuscontroller', function($scope, $compile, $timeout) {
               {contactname : 'Data Use Agreements', contactemail : 'usarmy.jbsa.medcom-pasba.list.pasba-data-use-agreements@mail.mil', fax : ''},
               {contactname : 'DQMC', contactemail : 'usarmy.jbsa.medcom-pasba.list.pasba-data-quality@mail.mil', fax : '221-2046 '},
               {contactname : 'E&M/TCU', contactemail : 'usarmy.jbsa.medcom-pasba.list.pasba-data-analysis@mail.mil', fax : ''},
-              {contactname : 'FTP Transfer', contactemail : 'usarmy.jbsa.medcom-pasba.list.pasba-ftp-transfer@mail.mil', fax : '221-9016'},
+              {contactname : 'ORT3', contactemail : 'usarmy.jbsa.medcom-pasba.list.pasba-data-analysis@mail.mil', fax : ''},
+              {contactname : 'Provider Productivity', contactemail : 'usarmy.jbsa.medcom-pasba.list.pasba-data-analysis@mail.mil', fax : ''},
+              {contactname : 'WISPR', contactemail : 'usarmy.jbsa.medcom-pasba.list.WISPR@mail.mil', fax : '221-2046'},
+              {contactname : 'WTU', contactemail : 'usarmy.jbsa.medcom-pasba.list.pasba-data-analysis@mail.mil', fax : ''},
+        ]
+
+        $scope.technical = [
+              {contactname : 'PASBA Service Desk ', contactemail : 'usarmy.jbsa.medcom-pasba.list.pasba-service-desk@mail.mil', fax : '221-2046'}
+        ]
+
+        $scope.feedback = [
+              {contactname : 'PASBA Web site', contactemail : 'usarmy.jbsa.medcom-pasba.list.pasba-service-desk@mail.mil', fax : '221-2046'}
         ]
         
 
