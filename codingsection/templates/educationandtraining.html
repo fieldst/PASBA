@@ -1,0 +1,42 @@
+<div class="col-md-8 col-sm-8">
+
+                              <div class="section-header" id="dmrpchome">
+                                        <h2>{{title.contactus}}</h2>
+                                    </div>
+
+
+<div class="row person-wrapper">
+  <div class="filter">
+
+                                <label><h4>Search Training</h4></label><input type="text" placeholder="contact name" ng-model="searchcontacts">
+   </div> 
+
+   <!-- START VTC -->
+
+
+
+   <div id="videoteleconference"></div>
+	<h4>Videoteleconference (Webinar)</h4>
+	  <table class="responsive-table">
+    
+    <thead>
+      <tr>
+        <th scope="col">Date</th>
+        <th scope="col">Topic</th>
+        
+        
+      </tr>
+    </thead>
+
+     <tbody>
+      <tr ng-repeat="item in training | filter:searchcontacts" class="animate-repeat">
+        <th scope="row">{{item.date}}</th>
+        <td data-title="Released"><a href="{{item.link}}" class="email" target="_blank">{{item.topic}}</a></td>
+      </tr>
+    </tbody>
+    </table>
+
+</div>
+</div>
+
+<coding-widget></coding-widget>

@@ -41,6 +41,20 @@ app.controller('codingcontroller', function($scope, $compile, $timeout, $locatio
         {name: 'A&C Data Dictionary', link: 'http://www.apd.army.mil/'},
 
   ]
+
+  $scope.training = [
+        {date: 'September 2016', topic: 'September 2016 Presentation ', link: '../coding/PsychNeuroBehavioralSept2016.pdf'},
+        {date: 'July 2016', topic: 'July 2016 Presentation', link: '../coding/EvalandMgmtCodingJuly2016Final.pdf'},
+        {date: 'April 2016 ', topic: 'April 2016 Presentation', link: '../coding/April2016PhyOccTherapy.pdf'},
+        {date: 'February 2016', topic: 'February 2016 Clinical Pharmacy', link: '../coding/Feb2016ClinicalPharmacy.pdf'},
+        {date: 'January 2016', topic: 'Highlights October 2015 Common Errors', link: '../coding/ICD10CMHighlightsOct2015ComErrs26Jan2016.pdf'},
+        {date: 'October 2015', topic: 'ICD-10-CM Spec Coding Guide Infectious Disease', link: '../coding/VTC1510/ICD10CMInfectiousDiseaseNeoplasms.pdf'},
+        {date: 'September 2015 ', topic: 'ICD-10 CM/PCS Orthopedic Coding', link: '../coding/VTC1509/ICD10-Orthopedics.pptx'},
+        {date: 'August 2015', topic: 'ICD-10-CM SpecialtyCodingGuide_BH', link: '../coding/VTC1508/ICD10CMSpecCodGuidBH.pdf'},
+        {date: 'July 2015', topic: 'Coding TBI', link: '../coding/VTC1507/TBI.ppt'},
+        {date: 'June 2015', topic: 'ICD-10-CM Spec Coding Guide Infectious Disease', link: '../coding/VTC1506/MHSProfServicesMedCodingGuidelines.pdf'},
+        {date: 'May 2015', topic: 'ICD-10-CM Spec Coding Guide Infectious Disease', link: '../coding/VTC1505/ICD10CMGeneralCodingGuidelines.ppt'},
+  ]
   
 
 });

@@ -142,7 +142,9 @@ app.config(function($routeProvider){
 }).when("/codingcompliance", {
 		templateUrl: "codingsection/templates/codingcompliance.html",
 		controller: 'codingcontroller',
-
+}).when("/education", {
+		templateUrl: "codingsection/templates/educationandtraining.html",
+		controller: 'codingcontroller',
 
 	}).
 	otherwise({

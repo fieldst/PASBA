@@ -3,3 +3,6 @@ app.directive('aboutWidget', function(){
 		templateUrl: 'about/templates/about.widget.html',
 	}
 });
+
+
+});

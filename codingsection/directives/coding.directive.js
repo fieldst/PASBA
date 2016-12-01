@@ -3,3 +3,9 @@ app.directive('codingWidget', function(){
 		templateUrl: 'codingsection/templates/coding.widget.html',
 	}
 });
+
+app.directive('codingTrainingWidget', function(){
+	return{
+		templateUrl: 'codingsection/templates/training.widget.html',
+	}
+});

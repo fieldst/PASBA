@@ -612,6 +612,14 @@ body{
     margin-top: -23px;
 }
 
+.filtercoding{
+  margin-bottom: 10px;
+}
+
+.filtercoding h4{
+  display: inline;
+}
+
 .filter label{
   padding-right: 10px;
   font-size: 18px;
@@ -1368,11 +1376,12 @@ li.active{
    
   
     background: #fff;
-    box-shadow: -6px 9px 36px rgb(148, 136, 136);
+    box-shadow: 6px 9px 36px rgb(148, 136, 136);
 }
 
 .side-hide p{
   text-align: center;
+  font-size: 14px
 }
 
 .side-hide a{
