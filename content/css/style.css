@@ -81,6 +81,14 @@ body{
     text-align: center;
 }
 
+.intro-image-center {
+    height: 380px;
+    clear: both;
+    width: 350px;
+    margin: auto;
+    text-align: center;
+}
+
 .leadership-intro-image {
     float: left;
     padding-right: 65px;
@@ -296,14 +304,14 @@ body{
     padding-right: 5px;
 }
 
-.content-right a.email:before{
-  content:  "\f0e0";
+/*.content-right a.email:before{
+  content:  "\f05a";
    font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     padding-right: 5px;
 }
-
+*/
 
 
 .content-right a.download:before{
@@ -315,7 +323,7 @@ body{
 }
 
 .person-wrapper a.email:before{
-	content:   "\f003";
+	content:   "\f0e0";
 	 font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -323,6 +331,22 @@ body{
     color: person-wrapper;
 }
 
+.person-wrapper a.info:before{
+  content:   "\f05a";
+   font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    padding-right: 5px;
+    color: person-wrapper;
+    color: #500707;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.person-wrapper a.info{
+  text-align: center;
+  color: #500707;
+}
 
 .person-wrapper a.email{
   text-align: center;
@@ -414,6 +438,43 @@ body{
 .medium-image{
 	width: 200px;
 }
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 21px;
+    transition: 0.4s;
+    margin-bottom: 11px;
+    text-align: center;
+    font-weight: bold;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;  
+}
+
+
+
 
 /*DQ table*/
 
@@ -610,6 +671,18 @@ body{
     float: right;
     position: relative;
     margin-top: -23px;
+    padding-bottom: 28px
+}
+
+.filter ul li{
+  float: right;
+  padding-left: 25px;
+  list-style: none
+
+}
+
+.filter a{
+  color: #500707;
 }
 
 .filtercoding{

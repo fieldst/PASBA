@@ -229,7 +229,7 @@ max-width: 145px;
 
 <div class="icon-contain" ng-repeat="app in restricted">
   <h3>{{app.name}}</h3>
-<div class="view view-first" style="background: {{app.background}}">
+<div class="view view-first" ng-attr-style="background: {{app.background}}">
 
     <img ng-src="{{app.icon}}" />
 

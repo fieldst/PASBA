@@ -145,6 +145,10 @@ app.config(function($routeProvider){
 }).when("/education", {
 		templateUrl: "codingsection/templates/educationandtraining.html",
 		controller: 'codingcontroller',
+}).when("/prodevelopment", {
+		templateUrl: "codingsection/templates/professionaldevelopment.html",
+		controller: 'codingcontroller',
+
 
 	}).
 	otherwise({
