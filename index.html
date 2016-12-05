@@ -14,6 +14,7 @@
 
   <!-- Custom styles -->
   <link id="theme_style" type="text/css" href="content/css/style.css" rel="stylesheet" media="screen">
+  <link id="theme_style" type="text/css" href="content/css/pasbaappscss.css" rel="stylesheet" media="screen">
 
   <!-- Carousel -->
   <link rel="stylesheet" href="content/css/carousel.css" type="text/css"> 
@@ -274,6 +275,22 @@
                 <div id="p4"></div>
                 
               </section>
+
+              <div class="load-wrapp" ng-show="loading">
+                    <div style="margin-top: 241px">
+
+                      <!-- loading icon css -->
+                      <div class="load-1">
+                        <p>LOADING...</p>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                      </div>
+
+                      <!-- end loading -->
+
+                    </div>
+                  </div>
               <section class="main" ng-controller="pasbaappcontroller">
 
                 <div class="green-space">
@@ -291,21 +308,7 @@
 
                   </div>
 
-                  <div class="load-wrapp" ng-show="loading">
-                    <div style="margin-top: 241px">
-
-                      <!-- loading icon css -->
-                      <div class="load-1">
-                        <p>LOADING...</p>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                      </div>
-
-                      <!-- end loading -->
-
-                    </div>
-                  </div>
+                  
                   <div class="container">
 
                     <div ng-view></div>

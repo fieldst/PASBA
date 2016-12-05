@@ -9,7 +9,7 @@ app.controller('aboutuscontroller', function($scope, $compile, $timeout) {
               coding: "about/images/codinglight.svg",
               development: "about/images/developmentlight.svg",
               dataanalysis: "about/images/dataanalysislight.svg",
-              datainput: "about/images/datain922909putlight.svg",
+              datainput: "about/images/datainputlight.svg",
 
          }
 

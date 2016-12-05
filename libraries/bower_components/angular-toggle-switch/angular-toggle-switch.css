@@ -5,9 +5,9 @@
     text-align: left;
     overflow: hidden;
     line-height: 8px;
-    min-width: 76px;
-    height: 30px;
-    top: 34px;
+    min-width: 89px;
+    height: 31px;
+    top: 21px;
     position: absolute;
     right: 15;
     left: 7px;
@@ -62,7 +62,7 @@
 
 .toggle-switch .switch-left {
     color: #fff;
-    background: #005fcc;
+    background: #117ABC;
 }
 
 .toggle-switch .switch-right {

@@ -5435,10 +5435,10 @@ textarea.input-group-sm>.input-group-btn>.btn {
     .navbar-left {
         float: left!important
     }
-    .navbar-right {
-        float: right!important;
-        margin-right: -104px
-    }
+   .navbar-right {
+    float: right !important;
+    margin-right: -19px;
+}
     .navbar-right~.navbar-right {
         margin-right: 0
     }

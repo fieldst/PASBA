@@ -15,7 +15,7 @@ div#all {
 /* generic css */
 
 .view {
-  margin: 10px;
+  margin: auto 2px;
   float: left;
   border: 10px solid #fff;
   overflow: hidden;
