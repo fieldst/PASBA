@@ -647,7 +647,7 @@ div.panel.show {
 
 
 .animate-repeat {
-  line-height:30px;
+  line-height:24px;
   list-style:none;
   box-sizing:border-box;
 }
@@ -1209,6 +1209,19 @@ a:hover{
 	/*padding: 0 40px 0 40px;*/
 	font-size: 16px;
 }
+
+
+@media (max-width:860px){
+
+  .space-wrapper li h3 {
+    color: #000;
+    clear: both;
+    
+    font-size: 11px;
+}
+
+}
+
 
 .space-wrapper svg {
     width: 100%;

@@ -9,6 +9,14 @@ $scope.$on('UNLOAD',function(){$scope.loading=false});
  $scope.goCats = false;
 
 
+ $scope.removeslideshow = function(){
+  $scope.removeit = true;
+
+   // console.log($scope.removeit);
+ }
+
+
+
   $scope.remove = function() {
         $scope.useroption = !$scope.useroption;
     };
@@ -22,7 +30,7 @@ $scope.$on('UNLOAD',function(){$scope.loading=false});
     
 }
 
-$scope.slideshow = false;
+
 
 
 //     if($location.path() === '/recordsrequest'){

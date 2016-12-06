@@ -142,10 +142,11 @@
               <div class="navbar-collapse collapse" id="navbar">
 
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#/home" class="btn-ads btn-block" ng-class="{activenavlink: isActive('/home')}">Home</a></li>
-                  <li><a href="#/leadership" ng-click="setcurrent('leadership')" ng-class="{'activenavlink': isActive('/leadership')}">Leadership</a></li>
-                  <li><a href="#/aboutus" ng-class="{activenavlink: isActive('/aboutus')}">About Us</a></li>
-                  <li><a href="#/contactus" ng-class="{activenavlink: isActive('/contactus')}">Contact us</a></li>
+
+                  <li><a href="#/home" class="btn-ads btn-block" ng-click="removeit=false" ng-class="{activenavlink: isActive('/home')}">Home</a></li>
+                  <li><a href="#/leadership" ng-click="removeit=true" ng-class="{'activenavlink': isActive('/leadership')}">Leadership</a></li>
+                  <li><a href="#/aboutus" ng-click="showme=true" ng-class="{activenavlink: isActive('/aboutus')}">About Us</a></li>
+                  <li><a href="#/contactus" ng-click="showme=true" ng-class="{activenavlink: isActive('/contactus')}">Contact us</a></li>
 
                             <!-- <li class="dropdown">
                                 <a class="dropdown-toggle" href="#" data-toggle="dropdown"><strong class="caret"></strong>&nbsp;Navigation</a>
@@ -168,7 +169,7 @@
 
                         </div>
                       </header>
-                      <section class="headerbackground" ng-hide="switchStatus = switchStatus">
+                      <section class="headerbackground" ng-hide="removeit">
 
 
 
@@ -291,17 +292,19 @@
 
                     </div>
                   </div>
-              <section class="main" ng-controller="pasbaappcontroller">
+
+
+              <section class="main">
 
                 <div class="green-space">
 
  <!-- optional arrow  -->
-                 <!--  <div id="arrowcontain">
+                   <div id="arrowcontain">
                    
                      <a href="" smooth-scroll target="p4" offset="80"> 
                    
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" class="arrow" ><path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path></svg></a>
-                    </div> -->
+                    </div> 
 
                     <div ng-include src="'shared/layout/tabs.html'"></div>
 
@@ -322,9 +325,10 @@
                     <ul class="pull-left footer-menu col-md-4">
                       <li>
                         <a href="index.html"> Home </a>
-                        <a href="#/leadership">Leadership</a>
-                        <a href="#/aboutus">About Us</a>
+                        <a href="#/leadership" ng-click="removeit=true">Leadership</a>
+                        <a href="#/aboutus" ng-click="removeit=true">About Us</a>
                         <a href="contact.html"> Contact us </a>
+
                       </li>
                     </ul>
 
