@@ -37,9 +37,11 @@
 
                                 <div class="col-xs-4 col-sm-3 icon-word animate-repeat" ng-repeat="app in unrestrictapps | filter:searchapps">
                                     <div class="shortcut {{app.classname}}" data-toggle="tooltip">
-                                        <a href="#/unrestrictedapps/{{unrestrictapps.indexOf(app)}}"><img ng-src="{{app.icon}}"></a>
+                                        <a ng-href="#/unrestrictedapps/{{unrestrictapps.indexOf(app)}}" ng-click="$emit('removeslider')"><img ng-src="{{app.icon}}"></a>
 
                                     </div>
+
+                                    
 
 
 
