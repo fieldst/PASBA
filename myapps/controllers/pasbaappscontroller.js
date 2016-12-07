@@ -9,8 +9,9 @@ $scope.$on('UNLOAD',function(){$scope.loading=false});
  $scope.goCats = false;
 
 
- $scope.removeslideshow = function(){
-  $scope.removeit = true;
+
+ $scope.removeslideshow = function(selection){
+  $scope.removeit = selection;
 
    // console.log($scope.removeit);
  }
