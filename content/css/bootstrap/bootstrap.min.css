@@ -1646,7 +1646,8 @@ p {
 
 .small,
 small {
-    font-size: 85%
+    font-size: 85%;
+    color: #500707 !important;
 }
 
 .mark,

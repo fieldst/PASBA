@@ -1158,7 +1158,7 @@ a:hover{
   
 }
 
-.ng-hide {
+ .ng-hide{
   animation-name:slideOutRight;
   animation-duration: .5s;
 }
@@ -1451,6 +1451,14 @@ li.active{
 .search-input{
 	padding: 5px;
 }
+
+
+/*IE hack*/
+
+input[type=text]::-ms-clear {
+   display: none;
+}
+
 
 .cat-search-input{
 	padding: 5px;
