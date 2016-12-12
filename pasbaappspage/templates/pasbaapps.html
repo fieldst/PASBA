@@ -198,7 +198,7 @@ max-width: 145px;
   <h3>{{app.name}}</h3>
  <div class="view view-first" ng-attr-style="background: {{ app.background }}">
 
-    <img ng-src="{{app.icon}}" />
+    <img ng-src="{{app.icon}}" alt="{{app.name}}"/>
 
     <div class="mask">
       <h2>{{app.name}}</h2>
@@ -223,7 +223,7 @@ max-width: 145px;
   <h3>{{app.name}}</h3>
 <div class="view view-first" ng-attr-style="background: {{app.background}}">
 
-    <img ng-src="{{app.icon}}" />
+    <img ng-src="{{app.icon}}" alt="{{app.name}}" />
 
     <div class="mask">
       <h2>{{app.name}}</h2>
@@ -236,8 +236,8 @@ max-width: 145px;
 
   
 
-</div> <!-- close wrapper -->
-
+</div>
+<div class="clear"></div>
 </div><!-- close colspan-->
 
 <home-widget></home-widget>

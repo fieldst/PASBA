@@ -209,9 +209,9 @@ padding-bottom: 47px;
   	width: 100%;
   	background: #fff;
   	font-size: .625em;
-
-        color: black;
-	margin: 22px auto;
+    height: auto;
+    color: black;
+	  margin: 22px auto;
 }
 
 .pageTitle {

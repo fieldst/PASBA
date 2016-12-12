@@ -22,6 +22,19 @@
                                 </div>
                             </div>
 
+
+                             <div class="widget">
+                                <div class="widget-header">
+                                    <h3>References</h3>
+                                </div>
+                                <div class="widget-body apps-navigation">
+                                   
+                                  <ul ng-repeat="word in references">
+                                    <li><a ng-href="{{word.link}}" target="_blank" ng-click="getdestination()" ng-class="{activelink: isActive('/{{word.link}}')}">{{word.name}}</a></li>
+                                </ul>
+                                </div>
+                            </div>
+
                          
                             <div class="widget">
                                 <div class="widget-header">

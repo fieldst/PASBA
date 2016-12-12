@@ -93,7 +93,7 @@ console.log($scope.noshade)
         {name: 'Inpatient Professional Service Rounds Metric', icon: 'content/images/icons/inpatient.svg', classname: 'color8', link: '#/unrestrictedapps', target: '../DataAnalysis/defaultIPSR.asp'},
         {name: 'MAPR Data Quality Measures Metric', icon: 'content/images/icons/quality.svg', classname: 'color1', link: '#/unrestrictedapps', target: '../DataAnalysis/defaultMAPR.asp'},
         {name: 'R299/SIDR Report', icon: 'content/images/icons/sidrreport.svg', classname: 'color2', link: '#/unrestrictedapps', target: '../mrDQMCP/SIDRReports.aspx'},
-        {name: 'Commanders Corner', icon: 'content/images/icons/commander.svg', classname: 'color3', link: '', target: ''},
+        // comming soon {name: 'Commanders Corner', icon: 'content/images/icons/commander.svg', classname: 'color3', link: '', target: ''},
 
   ]
 

@@ -47,6 +47,12 @@ app.controller('dmrpccontroller', function($scope, $compile, $timeout, $location
         {name: 'Medical Regulating', link: 'medicalregulating'},
         {name: 'SIDR', link: 'sidr'}
   ]
+
+
+   $scope.references = [
+        {name: 'NARA', link: 'https://www.archives.gov/'},
+        {name: 'NPRC', link: 'https://www.archives.gov/st-louis'},
+  ]
   
 
 });

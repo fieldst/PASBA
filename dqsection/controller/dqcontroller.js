@@ -78,7 +78,7 @@ app.controller('dqcontroller', function($scope, $compile, $timeout, $location) {
 
 //need new emails
   $scope.POC = [
-        {name: 'Chief, DQ Section', link: 'mailto:carolyn.m.enloe.civ@mail.mil'},
+        {name: 'Chief, DQ Branch', link: 'mailto:carolyn.m.enloe.civ@mail.mil'},
         {name: 'RHC-Europe, West & RHC-Central', link: 'mailto:jesse.r.hernandez4.civ@mail.mil'},    
         
   ]

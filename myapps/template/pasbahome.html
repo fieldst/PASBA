@@ -24,7 +24,7 @@
                             <div id="person-contain">
                                 <div class="col-xs-4 col-sm-3 icon-word animate-repeat" ng-repeat="app in externalapps | filter:searchapps">
                                     <div class="shortcut {{app.classname}}">
-                                        <a href="{{app.link}}" target="blank"><img ng-src="{{app.icon}}"></a>
+                                        <a href="{{app.link}}" target="blank"><img ng-src="{{app.icon}}" alt="{{app.name}}"></a>
 
                                     </div>
 
@@ -37,7 +37,7 @@
 
                                 <div class="col-xs-4 col-sm-3 icon-word animate-repeat" ng-repeat="app in unrestrictapps | filter:searchapps">
                                     <div class="shortcut {{app.classname}}" data-toggle="tooltip">
-                                        <a ng-href="#/unrestrictedapps/{{unrestrictapps.indexOf(app)}}" ng-click="$emit('removeslider')"><img ng-src="{{app.icon}}"></a>
+                                        <a ng-href="#/unrestrictedapps/{{unrestrictapps.indexOf(app)}}" ng-click="$emit('removeslider')"><img ng-src="{{app.icon}}" alt="{{app.name}}"></a>
 
                                     </div>
 
@@ -70,7 +70,7 @@
                                    
                                    
                                     <div class="shortcut {{restrict.color.color}}">
-                                        <a href="{{restrict.TokenLink}}" target="blank"><img ng-src="{{restrict.color.icon}}"></a>
+                                        <a href="{{restrict.TokenLink}}" target="blank"><img ng-src="{{restrict.color.icon}}" alt="{{restrict.TokenName}}"></a>
                                         
                                         
                                     </div>

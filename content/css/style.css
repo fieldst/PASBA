@@ -97,20 +97,20 @@ body{
     border: 3px solid #fff;
     height: 340px;
     clear: both;
-    width: 318px;
-    height: 350px;
+    width: 275px;
+    height: 300px;
     margin-right: 50px;
     text-align: center;
 }
 
-.leadership-intro-image img{
-	 width: 255px;
+.leadership-intro-image img {
+    width: 218px;
     vertical-align: middle;
 }
 
 .leadership-intro-image p {
     width: 100%;
-    min-width: 256px;
+    min-width: 222px;
     font-weight: bold;
 }
 
@@ -195,7 +195,7 @@ body{
 }
 
 .orange{
-	background: #7F1906;
+	background: #DB480B;
 }
 
 .green{
@@ -290,6 +290,10 @@ body{
     
 }
 
+.content-right .remove-break{
+  margin-left: 344px;
+}
+
 .qoute p{
 	color: #500707;
 	font-style: italic;
@@ -300,6 +304,14 @@ body{
 .content-right a.link:before{
 	content:  "\f0c1";
 	 font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    padding-right: 5px;
+}
+
+.content-right .mail:before{
+  content: "\f003";
+  font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     padding-right: 5px;
@@ -411,7 +423,7 @@ body{
 .content-right .linkinline li {
     float: left;
     /*padding-right: 75px;*/
-    width: 33%;
+    width: 28%;
    
 }
 
@@ -1548,7 +1560,7 @@ input[type=text]::-ms-clear {
 }
 
 .apps-navigation li a {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 
@@ -1595,6 +1607,8 @@ input[type=text]::-ms-clear {
     font-style: normal;
     font-weight: normal;
 }
+
+
 
 .widget-body li .phone:before{
     content: "\f095";
@@ -2174,7 +2188,8 @@ h2.product-title{
 
 .update {
     float: right;
-    margin: -100px 21px;
+    margin: -12px 21px;
+
 }
 
 .update p{
@@ -2614,7 +2629,15 @@ h2.product-title{
 .footer-wrapper{
   height: 101px;
   padding: 19px;
+  height: auto;
 }
+
+@media (max-width:1200px){
+.navbar-right {
+    margin-top: 30px;
+}
+}
+
 
 @media (max-width:767px) {
   .footer ul {
