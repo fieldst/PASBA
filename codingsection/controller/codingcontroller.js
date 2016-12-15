@@ -24,7 +24,7 @@ app.controller('codingcontroller', function($scope, $compile, $timeout, $locatio
 					}
 
 	$scope.title = {
-						home : "HIMS and Coding",
+						home : "HIM and Coding",
 						guidelines : "Coding Guidelines",
 						sources : "Data Sources",
 						regulate : "Medical Regulating",

@@ -98,6 +98,20 @@ console.log($scope.noshade)
   ]
 
 
+   $scope.unrestrictappspasbaapps = [
+  
+        
+        {name: 'Behavioral Health EATC - Summary', icon: 'content/images/icons/caper.svg', info: 'Compliance in Enhanced Access to Care (EATC) in BH and PC clinics.', link: '#/viewapps', background: '#7F0000', target: '../DataAnalysis/defaultBHSummary.asp'},
+        {name: 'CAPER Reports', icon: 'content/images/icons/eod.svg', info: 'These reports help MTFs track daily data transmittals, receipt and data processing.', link: '#/viewapps', background: '#131340', target: '../caperreports'},
+        {name: 'DQMCP RPTS', icon: 'content/images/icons/ipsr.svg', info: 'Survey results from the DQMCP application includes monthly and YTD reports', link: '#/viewapps', background: '#201040', target: '../mrDQMCP/DQMCPMetrics.aspx'},
+        {name: 'EOD Summary', icon: 'content/images/icons/eodcompliance.svg', info: 'EOD Summary is a monthly report monitoring the compliance with the "End of Day" requirements at RMC, MTF and CLINIC level.', link: '#/viewapps', background: '#401A04', target: '../DataAnalysis/defaultEOD.asp'},
+        {name: 'Inpatient Professional Service Rounds', icon: 'content/images/icons/inpatient.svg', info: 'Reports the documentation, utilization, and data capture of professional rounds.', link: '#/viewapps', background: '#182073', target: '../DataAnalysis/defaultIPSR.asp'},
+        {name: 'MAPR Data Quality Measures', icon: 'content/images/icons/quality.svg', info: 'Published under the MAPR along with the PBAM adjustments for the reporting month.', link: '#/viewapps', background: '#004000', target: '../DataAnalysis/defaultMAPR.asp'},
+        {name: 'SIDR Reports', icon: 'content/images/icons/sidrreport.svg', info: 'SIDR reports include SIDR Completeness Transmittal Receipt Dates Counts by Source of Admission Files processed', link: '#/viewapps', background: '#0E4040', target: '../mrDQMCP/SIDRReports.aspx'},
+
+  ]
+
+
 $scope.externalapps = [
   
         {name: 'MAP', icon: 'content/images/icons/M.svg', classname: 'color1', link: '../map'},

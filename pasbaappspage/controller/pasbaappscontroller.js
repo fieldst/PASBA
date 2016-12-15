@@ -1,4 +1,4 @@
-app.controller('pasbaappsinfocontroller', function($scope, $compile) {
+app.controller('pasbaappsinfocontroller', function($scope, $compile, $timeout, $http, $routeParams, usSpinnerService, $location, $animate, $rootScope) {
   $scope.testing = 'test';
 
    $scope.nonrestricted = [
@@ -24,7 +24,7 @@ app.controller('pasbaappsinfocontroller', function($scope, $compile) {
         {name: 'Coding Help Desk', icon: 'content/images/icons/codinghelp.svg', info: 'Allows users in the *army.mil to enter coding inquiries to a database.', background: '#004000'},
         {name: 'DART-PDHA ', icon: 'content/images/icons/dqmcp.svg', info: 'DART-PDHRA', background: '#00509A'},
   ]
-
+$scope.currentItem = $routeParams.itemId;
 
 });
 
