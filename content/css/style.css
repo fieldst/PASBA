@@ -74,7 +74,7 @@ body{
     padding: 15px 68px;
     
     border: 3px solid #fff;
-    height: 340px;
+    height: 415px;
     clear: both;
     width: 311px;
     
@@ -188,6 +188,39 @@ body{
 	width: 280px;
 }
 
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: none;
+    z-index: 99999;
+    height: 2000px;
+    overflow: hidden;
+}
+
+.modelBox {
+    width: 50%;
+    min-height: 500px;
+    margin: 104px auto;
+    background-color: #fff;
+    top: 10%;
+    position: relative;
+    opacity: 1;
+}
+
+.alertcontainer{
+  padding: 50px;
+
+}
+
+
+.alertwrapper{
+  
+}
 
 
 .blue{
@@ -423,7 +456,7 @@ body{
 .content-right .linkinline li {
     float: left;
     /*padding-right: 75px;*/
-    width: 28%;
+    width: 16%;
    
 }
 

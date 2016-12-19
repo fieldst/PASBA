@@ -53,8 +53,8 @@ app.controller('dqcontroller', function($scope, $compile, $timeout, $location) {
   
 
   $scope.References = [
-        {name: 'Acronyms and Glossary', link: '../quality/resources/DQ_AcronymsGlossary.pdf'},
-        {name: 'Tricare-Data Quality',  link: 'http://tricare.osd.mil/ocfo/mcfs/dqmcp.cfm'},
+        // {name: 'Acronyms and Glossary', link: '../quality/resources/DQ_AcronymsGlossary.pdf'},
+        {name: 'Defense Health Agency (DHA)',  link: 'https://info.health.mil/bus/brm/dqmc/SitePages/Metrics.aspx'},
         {name: 'Access to Care/AKO', link: 'https://www.us.army.mil/suite/page/574226'},
         {name: 'TRICARE MEPRS', link: 'http://www.meprs.info/index.cfm'},
         {name: 'TRICARE Operations Center', link: 'https://mhs.health.mil/toc/'},
@@ -69,30 +69,30 @@ app.controller('dqcontroller', function($scope, $compile, $timeout, $location) {
   ]
 
   $scope.Templates = [
-        {name: 'DQ Cdr Statement FY16', link: '../quality/resources/DQCdrsStatementFY16.docx'},
-        {name: 'DQ Review List FY16', link: '../quality/resources/DQReviewListFY16.docx'},
-        {name: 'DQ Manager letter of appt', link: '../quality/resources/DQMgr_ApptLetter.doc'}, 
+        {name: 'DQ Cdr Statement FY17', link: '../quality/resources/FY17_ARMY_FINAL_COMMANDERS_DQ_STATEMENT.docx'},
+        {name: 'DQ Review List FY17', link: '../quality/resources/FY17_ARMY_ LIST_DQMC_6040-40_2016OCT_20160513.docx'},
+        {name: 'DQ Manager letter of appt', link: '../quality/resources/DQMgr_ApptLetter.pdf'}, 
         {name: 'DQ Team Member letter of appt.', link: '../quality/resources/DQTeamMbr_ApptLetter.doc'},    
         
   ]
 
 //need new emails
   $scope.POC = [
-        {name: 'Chief, DQ Branch', link: 'mailto:carolyn.m.enloe.civ@mail.mil'},
-        {name: 'RHC-Europe, West & RHC-Central', link: 'mailto:jesse.r.hernandez4.civ@mail.mil'},    
+        {name: 'Chief, DQ Branch', link: 'mailto:jennifer.e.gifford4.civ@mail.mil'},
+        {name: 'RHC-Europe, West & RHC-Central', link: 'mailto:jesse.r.hernandez4.civ@mail.mil,celeste.r.burton.civ@mail.mil'},    
         
   ]
 
   $scope.Training = [
         {name: 'UBO Training', link: 'http://www.tricare.mil/ocfo/mcfs/ubo/learning_center/ubo101.cfm'},
-        {name: 'AMEDD Virtual Library', link: 'https://medlinet.amedd.army.mil/healthmg.htm'},    
-        {name: 'Univ. of the Health Sciences', link: 'http://www.usuhs.mil'},  
-        {name: 'WISDOM', link: 'http://tricare.mil/tma/dhcape/data/wisdom.aspx'},  
+        {name: 'AMEDD Virtual Library', link: ' https://medlinet.amedd.army.mil/'},    
+        {name: 'Univ. of the Health Sciences', link: 'https://www.usuhs.edu/'},  
+        {name: 'WISDOM', link: 'https://health.mil/Military-Health-Topics/Technology/WISDOM-Training'},  
          
   ]
 
   $scope.Others = [
-        {name: 'Comman Mgmt. Systems', link: 'https://cms.mods.army.mil/cms'},
+        {name: 'Command Mgmt. Systems', link: 'https://cms.mods.army.mil/cms'},
         {name: 'Managed Care/AKO', link: 'https://www.us.army.mil/suite/page/336433'},
         {name: 'PAD/AKO', link: 'https://www.us.army.mil/suite/page/419354'},
         {name: 'Pt. -Ctrd. Medical Homes', link: 'https://mitc.amedd.army.mil/sites/Communities/APCMHRC/Pages/default.aspx'},        

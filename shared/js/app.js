@@ -133,8 +133,8 @@ app.config(function($routeProvider){
 }).when("/coding", {
 		templateUrl: "codingsection/templates/codinghome.html",
 		controller: 'codingcontroller',
-}).when("/codingguildelines", {
-		templateUrl: "codingsection/templates/codingguildline.html",
+}).when("/codingguidelines", {
+		templateUrl: "codingsection/templates/codingguideline.html",
 		controller: 'codingcontroller',
 }).when("/codinghelpdesk", {
 		templateUrl: "codingsection/templates/helpdesk.html",

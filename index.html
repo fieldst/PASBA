@@ -108,8 +108,25 @@
 
 
       </head>
-      <body>
+      <div class="overlay">
+  <div class="modelBox">
+    
+    <div align="right">
+      <a href="#" class="close">Close</a>
+    </div>
 
+    <div class="alertcontainer">
+
+      <div class="alertwrapper center">
+
+      <h4>DOD NO</h4>
+    </div>
+
+    </div>
+  </div>
+</div>
+      <body>
+  
     <!--[if lte IE 9]>
         <div style="width: 100vw; height: 100vh; background-color: rgba(100,100,100,0.75); position: absolute; z-index: 100; ">
             <div id="oldie" style="position: absolute; top: 25%; z-index: 100; background-color: orange; left: 25%; width: 50%; height: 50%; font-size: 50px; color: white; padding: 50px; line-height: 1em; text-align: center ">
@@ -213,7 +230,7 @@
 
                                    <h3>DMRPC</h3>
                                    <h4>Deployed Medical Records Processing Center</h4>
-                                   <h5>Providing data for multiple PASBA applications and reports, DMRPC  is the primary contact point on the management of medical documentation of military</h5>
+                                   <h5>Providing data for multiple PASBA applications and reports, DMRPC  is the primary contact point on the management of medical documentation of military.</h5>
                                  </div>
                                  <h5></h5>
                                </div>
@@ -228,8 +245,8 @@
                            <div class="info">
                              <div class="blurb-wrapper">
                               <div>
-                                <h3>HIMS and Coding</h3>
-                                <h4>The Health Information Management and Coding Consultation Branch is the Army's lead agent for providing coding guidance and policy to all Military Treatment Facilities in both the deployed and fixed facilities</h4>
+                                <h3>HIM Branch</h3>
+                                <h4>The Health Information Management and Coding Consultation Branch is the Army's lead agent for providing coding guidance and policy to all Medical Treatment Facilities in both the deployed and fixed facilities.</h4>
                               </div>
                             </div>
                           </div>
@@ -244,7 +261,7 @@
                          <div class="info">
                            <div class="blurb-wrapper">
                             <div>
-                              <h3>Data Quality</h3>
+                              <h3>Data Quality Branch</h3>
                               <h4>Serves as the AMEDD's executing agency for the Military Health System (MHS) Data Quality Management Control Program, providing oversight to improve the accuracy and timely submission of financial and workload data throughout the AMEDD.</h4>
 
                             </div>
@@ -260,7 +277,7 @@
                        <div class="info">
                          <div class="blurb-wrapper">
                           <div>
-                            <h3>Data Analysis</h3>
+                            <h3>Data Analysis Branch</h3>
                             <h4>The mission of the Data Analysis Branch is to provide timely and useful healthcare data and expert data analysis to assist the Department of Defense, US Army, US Army Medical Command, and individual customers in providing the best healthcare for our beneficiaries.</h4>
 
                           </div>
@@ -314,6 +331,8 @@
                   
                   <div class="container">
 
+                  
+
                     <div ng-view></div>
 
                   </div>
@@ -329,7 +348,7 @@
                         <a href="index.html"> Home </a>
                         <a href="#/leadership" ng-click="removeit=true">Leadership</a>
                         <a href="#/aboutus" ng-click="removeit=true">About Us</a>
-                        <a href="contact.html"> Contact us </a>
+                        <a href="#/contactus" ng-click="removeit=true"> Contact us </a>
 
                       </li>
                     </ul>
@@ -383,6 +402,13 @@ $(document).ready(function(){
 </script>
 
  <script>
+
+ $(document).ready(function() {
+  $(".overlay").show();
+  $(".close").on('click', function() {
+    $(".overlay").hide();
+  });
+});
 
      //    $(".green-space").on('click','.pasbaiconlink', function(){
      //      $(this).toggleClass('active').siblings().removeClass('active');

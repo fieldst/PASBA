@@ -32,11 +32,11 @@ app.controller('dmrpccontroller', function($scope, $compile, $timeout, $location
  
   		 $scope.documents = [
   
-        {name: 'Records Request', link: 'dmrpcsection/documents/AuthorizationforDisclosureofMedicalorDentalInformation(DD2870).pdf'},
-        {name: 'DA FORM 3647', link: '../deployment/DeployMedRecGuidance.pdf'},
-        {name: 'ITRCS Data Dictionary', link: '../deployment/DeployMedRecComplete.pdf'},
+        {name: 'Records request', link: 'dmrpcsection/documents/AuthorizationforDisclosureofMedicalorDentalInformation(DD2870).pdf'},
+        {name: 'DA FORM 3647', link: '../deployment/da3647.pdf'},
+        {name: 'ITRCS Data Dictionary', link: '../deployment/DA3647DDv1_1.pdf'},
         {name: 'Page 1 of DA Form 2985', link: '../deployment/SA_refresher060126.ppt'},
-        {name: 'A&C Data Dictionary', link: 'http://www.apd.army.mil/'},
+        {name: 'A&C Data Dictionary', link: '../deployment/DA2985p1DDv1_1.pdf'},
 
   ]
 
