@@ -18,7 +18,7 @@ app.controller('pasbaappsinfocontroller', function($scope, $compile, $timeout, $
         // gone {name: 'Allied Health', icon: 'content/images/icons/allied.svg', info: 'The percentage of total encounters with valid E&M code.', background: '#7F0000'},
         {name: 'Anthrax, Smallpox and Abortions', icon: 'content/images/icons/incorrect.svg', info: 'TEncounters incorrectly coded.', background: '#FF530D'},
         {name: 'Behavioral Health EATC', icon: 'content/images/icons/behavior.svg', info: 'Compliance in Enhanced Access to Care (EATC) in BH and PC clinics with raw data included.', background: '#0E4040'},
-        {name: 'Body Mass Index Detail (BMI-D)', icon: 'content/images/icons/clinicalops.svg', info: 'BMI weight categories for selected population.', background: '#004002'},
+       // {name: 'Body Mass Index Detail (BMI-D)', icon: 'content/images/icons/clinicalops.svg', info: 'BMI weight categories for selected population.', background: '#004002'},
         {name: 'CARA', icon: 'content/images/icons/cara.svg', info: 'Code Auditing and Reporting Application (CARA) Assists the MTFs through remote coding and monitoring.', background: '#19578B'},
         {name: 'Coder Manager', icon: 'content/images/icons/codermanager.svg', info: 'Coding Help Desk.', background: '#FF530D'},
         {name: 'Coding Help Desk', icon: 'content/images/icons/codinghelp.svg', info: 'Allows users in the *army.mil to enter coding inquiries to a database.', background: '#004000'},

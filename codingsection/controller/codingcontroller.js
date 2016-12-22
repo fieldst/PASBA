@@ -24,7 +24,7 @@ app.controller('codingcontroller', function($scope, $compile, $timeout, $locatio
 					}
 
 	$scope.title = {
-						home : "HIM and Coding",
+						home : "Health Information Management",
 						guidelines : "Coding Guidelines",
 						sources : "Data Sources",
 						regulate : "Medical Regulating",
@@ -45,17 +45,17 @@ app.controller('codingcontroller', function($scope, $compile, $timeout, $locatio
         {name: 'Records Request', link: 'dmrpcsection/documents/AuthorizationforDisclosureofMedicalorDentalInformation(DD2870).pdf'},
         {name: 'DA FORM 3647', link: '../deployment/DeployMedRecGuidance.pdf'},
         {name: 'ITRCS Data Dictionary', link: '../deployment/DeployMedRecComplete.pdf'},
-        {name: 'Page 1 of DA Form 2985', link: '../deployment/SA_refresher060126.ppt'},
-        {name: 'A&C Data Dictionary', link: 'http://www.apd.army.mil/'},
+        {name: 'Page 1 of DA Form 2985', link: '../deployment/DA2985p1.pdf'},
+        {name: 'A&C Data Dictionary', link: '../deployment/DA2985p1DDv1_1.pdf'},
 
   ]
 
   $scope.training2016 = [
-        {date: 'September 2016', topic: 'September 2016 Presentation ', link: '../coding/PsychNeuroBehavioralSept2016.pdf', class: 'info'},
-        {date: 'July 2016', topic: 'July 2016 Presentation', link: '../coding/EvalandMgmtCodingJuly2016Final.pdf', class: 'info'},
-        {date: 'April 2016 ', topic: 'April 2016 Presentation', link: '../coding/April2016PhyOccTherapy.pdf', class: 'info'},
-        {date: 'February 2016', topic: 'February 2016 Clinical Pharmacy', link: '../coding/Feb2016ClinicalPharmacy.pdf', class: 'info'},
-        {date: 'January 2016', topic: 'Highlights October 2015 Common Errors', link: '../coding/ICD10CMHighlightsOct2015ComErrs26Jan2016.pdf', class: 'info'},
+        {date: 'September 2016', topic: 'Psychological and Neuropsychological Testing/Behavioral Health Updates ', link: '../coding/PsychNeuroBehavioralSept2016.pdf', class: 'info'},
+        {date: 'July 2016', topic: 'Evaluation and Management Coding - E/M Leveling Tool', link: '../coding/EvalandMgmtCodingJuly2016Final.pdf', class: 'info'},
+        {date: 'April 2016 ', topic: 'PT/OT Documentation and Coding', link: '../coding/April2016PhyOccTherapy.pdf', class: 'info'},
+        {date: 'February 2016', topic: 'Clinical Pharmacy', link: '../coding/Feb2016ClinicalPharmacy.pdf', class: 'info'},
+        {date: 'January 2016', topic: 'Highlights on ICD-10-CM/PCS & October 2015 Audit Common Errors', link: '../coding/ICD10CMHighlightsOct2015ComErrs26Jan2016.pdf', class: 'info'},
         
 ]
 

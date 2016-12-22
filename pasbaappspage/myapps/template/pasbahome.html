@@ -1,0 +1,101 @@
+ <div class="row">
+
+
+
+                        <div class="col-md-8 col-sm-8">
+
+                              <div class="section-header">
+                                        <h2>My Apps</h2>
+
+                                    </div>
+
+                            <div class="row person-wrapper">
+                              <div class="filter">
+
+                                <label><h4>Search</h4></label><input type="text" placeholder="app name" ng-model="searchapps">
+                            </div> 
+                            <div class="restrict-status">
+                               
+
+                                    <h4>Non Restricted Applications</h4>
+                                    
+                            </div>
+
+                            <div id="person-contain">
+                                <div class="col-xs-4 col-sm-3 icon-word animate-repeat" ng-repeat="app in externalapps | filter:searchapps">
+                                    <div class="shortcut {{app.classname}}">
+                                        <a href="{{app.link}}" target="blank"><img ng-src="{{app.icon}}" alt="{{app.name}}"></a>
+
+                                    </div>
+
+
+
+                                    <a href=""><h3>{{app.name}}</h3></a>
+
+                                </div>
+
+
+                                <div class="col-xs-4 col-sm-3 icon-word animate-repeat" ng-repeat="app in unrestrictapps | filter:searchapps">
+                                    <div class="shortcut {{app.classname}}" data-toggle="tooltip">
+                                        <a ng-href="#/unrestrictedapps/{{unrestrictapps.indexOf(app)}}" ng-click="$emit('removeslider')"><img ng-src="{{app.icon}}" alt="{{app.name}}"></a>
+
+                                    </div>
+
+                                    
+
+
+
+                                    <a href=""><h3>{{app.name}}</h3></a>
+
+                                </div>
+
+
+
+                               
+
+                                <div class="clear"></div>
+
+
+<!-- Restricted Applications -->
+                                <div class="restrict-status">
+
+                                    <h4>Restricted Applications</h4>
+                                    
+                            </div>
+                                  <div test-test ng-if="test != 'true'"></div>
+                                
+                                  <div class="col-xs-4 col-sm-3 icon-word animate-repeat" ng-repeat="restrict in restrictedapps | filter:searchapps">
+                                   <!--  <img src="content/images/pasbaapps-icons/lock.svg" class="lock"> -->
+
+                                   
+                                   
+                                    <div class="shortcut {{restrict.color.color}}">
+                                        <a href="{{restrict.TokenLink}}" target="blank"><img ng-src="{{restrict.color.icon}}" alt="{{restrict.TokenName}}"></a>
+                                        
+                                        
+                                    </div>
+                                    <a href="{{restrict.TokenLink}}"><h3>{{restrict.TokenName}}</h3></a>
+                                </div>
+
+                                
+                                  </div>
+                            </div>
+                        </div>
+
+                        
+
+                        <!-- <home-widget panel="panelMyApps"></home-widget> -->
+
+                        <home-widget></home-widget>
+
+
+
+
+
+
+                           
+
+
+                        
+
+                   

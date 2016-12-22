@@ -27,9 +27,9 @@ app.controller('dqcontroller', function($scope, $compile, $timeout, $location) {
 
 	$scope.title = {
 						home : "Data Quality",
-						dqmcprogram : "Data Quality Management Control (DQMC) Program",
-						policies : "DQMC Policies and Regulations",
-            guildlines : "Data Quality Guidelines",
+						dqmcprogram : "Data Quality Management Control Program (DQMCP)",
+						policies : "DQMCP Policies and Regulations",
+						guildlines : "Data Quality Guidelines",
 						regulate : "Medical Regulating",
 						sidr : "Instructions for proccessing deployed SIDR",
             faq : "Data Quality Frequently Asked Questions",
@@ -64,14 +64,14 @@ app.controller('dqcontroller', function($scope, $compile, $timeout, $location) {
 
   $scope.Guildance = [
         {name: 'M2 Standard Report for DQ', link: '../quality/resources/DQ_M2StandardReport.pdf'},
-        {name: 'Sampling Technique', link: '../quality/resources/DQ_SamplingTechnique.pdf'},    
+        // {name: 'Sampling Technique', link: '../quality/resources/DQ_SamplingTechnique.pdf'},    
         
   ]
 
   $scope.Templates = [
-        {name: 'DQ Cdr Statement FY17', link: '../quality/resources/FY17_ARMY_FINAL_COMMANDERS_DQ_STATEMENT.docx'},
-        {name: 'DQ Review List FY17', link: '../quality/resources/FY17_ARMY_ LIST_DQMC_6040-40_2016OCT_20160513.docx'},
-        {name: 'DQ Manager letter of appt', link: '../quality/resources/DQMgr_ApptLetter.pdf'}, 
+        {name: 'DQ Cdr Statement', link: '../quality/resources/FY17_ARMY_FINAL_COMMANDERS_DQ_STATEMENT.docx'},
+        {name: 'DQ Review List', link: '../quality/resources/FY17_ARMY_FINAL_REVIEW LIST_DQMCP.docx'},
+        {name: 'DQ Manager letter of appt', link: '../quality/resources/DQMgr_ApptLetter.doc'}, 
         {name: 'DQ Team Member letter of appt.', link: '../quality/resources/DQTeamMbr_ApptLetter.doc'},    
         
   ]
@@ -79,7 +79,7 @@ app.controller('dqcontroller', function($scope, $compile, $timeout, $location) {
 //need new emails
   $scope.POC = [
         {name: 'Chief, DQ Branch', link: 'mailto:jennifer.e.gifford4.civ@mail.mil'},
-        {name: 'RHC-Europe, West & RHC-Central', link: 'mailto:jesse.r.hernandez4.civ@mail.mil,celeste.r.burton.civ@mail.mil'},    
+        {name: 'RHC-Europe, West & RHC-Central', link: 'mailto:jesse.r.hernandez4.civ@mail.mil;celeste.r.burton.civ@mail.mil'},    
         
   ]
 
@@ -95,7 +95,7 @@ app.controller('dqcontroller', function($scope, $compile, $timeout, $location) {
         {name: 'Command Mgmt. Systems', link: 'https://cms.mods.army.mil/cms'},
         {name: 'Managed Care/AKO', link: 'https://www.us.army.mil/suite/page/336433'},
         {name: 'PAD/AKO', link: 'https://www.us.army.mil/suite/page/419354'},
-        {name: 'Pt. -Ctrd. Medical Homes', link: 'https://mitc.amedd.army.mil/sites/Communities/APCMHRC/Pages/default.aspx'},        
+        {name: 'Patient Centered Medical Homes', link: 'https://mitc.amedd.army.mil/sites/Communities/APCMHRC/Pages/default.aspx'},        
         
   ]
 

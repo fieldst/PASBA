@@ -94,37 +94,8 @@
         <script src="libraries/spin.min.js"></script>
         <script src="libraries/bower_components/angular-sticky-navigation-directive/dist/ng-sticky.js"></script>
         <script src="libraries/bower_components/angular-toggle-switch/angular-toggle-switch.js"></script>
-
-
-
-        
-        
-
-
-        
-        
-
-
-
-
       </head>
-      <div class="overlay">
-  <div class="modelBox">
-    
-    <div align="right">
-      <a href="#" class="close">Close</a>
-    </div>
-
-    <div class="alertcontainer">
-
-      <div class="alertwrapper center">
-
-      <h4>DOD NO</h4>
-    </div>
-
-    </div>
-  </div>
-</div>
+      <div class="overlay"><div ng-include src="'shared/layout/alert.html'"></div></div>
       <body>
   
     <!--[if lte IE 9]>
@@ -246,7 +217,7 @@
                              <div class="blurb-wrapper">
                               <div>
                                 <h3>HIM Branch</h3>
-                                <h4>The Health Information Management and Coding Consultation Branch is the Army's lead agent for providing coding guidance and policy to all Medical Treatment Facilities in both the deployed and fixed facilities.</h4>
+                                <h4>The HIM Branch is the Army's lead agent for providing coding guidance and policy to all Medical Treatment Facilities in both the deployed and fixed facilities.</h4>
                               </div>
                             </div>
                           </div>
@@ -401,20 +372,7 @@ $(document).ready(function(){
 
 </script>
 
- <script>
-
- $(document).ready(function() {
-  $(".overlay").show();
-  $(".close").on('click', function() {
-    $(".overlay").hide();
-  });
-});
-
-     //    $(".green-space").on('click','.pasbaiconlink', function(){
-     //      $(this).toggleClass('active').siblings().removeClass('active');
-     //   })  
-
-</script>       
+ 
 
 
 

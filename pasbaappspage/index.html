@@ -1,0 +1,441 @@
+<html ng-app="pasbaapp">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=11">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PASBA Website</title>
+
+  <!--font awesome-->
+  <link rel="stylesheet" href="libraries/font-awesome-4.3.0/css/font-awesome.min.css" type="text/css">
+
+  <!-- plugin styles -->
+  <link rel="stylesheet" href="content/css/bootstrap/bootstrap.min.css" type="text/css">
+
+
+  <!-- Custom styles -->
+  <link id="theme_style" type="text/css" href="content/css/style.css" rel="stylesheet" media="screen">
+  <link id="theme_style" type="text/css" href="content/css/pasbaappscss.css" rel="stylesheet" media="screen">
+
+  <!-- Carousel -->
+  <link rel="stylesheet" href="content/css/carousel.css" type="text/css"> 
+
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="content/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="content/images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="content/images/favicon/favicon-16x16.png">
+
+  <!-- Animate -->
+  <link rel="stylesheet" href="libraries/css/animate.min.css" type="text/css">
+
+  <!--ui bootstrap-->
+  <link rel="stylesheet" href="libraries/bower_components/angular-bootstrap/ui-bootstrap-csp.css" type="text/css">
+
+  <!-- Full calendar optional -->
+  <!-- <link rel="stylesheet" href="libraries/bower_components/fullcalendar/dist/fullcalendar.css" type="text/css"> -->
+
+
+  <!--  AOS stylesheet -->
+  <link rel="stylesheet" href="libraries/bower_components/aos/dist/aos.css" />
+
+  <!-- toggle switch stylesheet -->
+  <link rel="stylesheet" href="libraries/bower_components/angular-toggle-switch/angular-toggle-switch.css" />
+
+
+  <!-- JS Library -->
+  <script src="js/jquery.js"></script>
+
+
+
+  <!-- AOS script -->
+  <script src="libraries/bower_components/aos/dist/aos.js"></script>
+
+
+
+  <!--Angular JS-->
+
+  <script src="shared/angular/angular.min.js"></script>
+  <script src="shared/angular/angular-route.min.js"></script>
+  <script src="shared/angular/angular-animate.min.js"></script>
+
+  <script src="shared/js/app.js"></script>
+
+  <!-- controllers -->
+  <script src="myapps/controllers/pasbaappscontroller.js"></script>
+  <script src="pasbaappspage/controller/pasbaappscontroller.js"></script>
+  <script src="shared/controllers/appcontroller.js"></script>
+  <script src="shared/controllers/appcontroller.js"></script>
+  <script src="dmrpcsection/controller/dmrpccontroller.js"></script>
+  <script src="dqsection/controller/dqcontroller.js"></script>
+  <script src="about/controller/aboutcontroller.js"></script>
+  <script src="dataanalysissection/controller/dataanalysiscontroller.js"></script>
+  <script src="codingsection/controller/codingcontroller.js"></script>
+
+  <!-- directives -->
+  <script src="pasbaapps/directives/pasbaapps.directive.js"></script>
+  <script src="myapps/directives/myapps.directive.js"></script>
+  <script src="dmrpcsection/directives/dmrpc.directive.js"></script>
+  <script src="dqsection/directives/dq.directive.js"></script> 
+  <script src="dataanalysissection/directives/dataanalysis.directive.js"></script>
+  <script src="codingsection/directives/coding.directive.js"></script>
+  <script src="about/directives/about.directive.js"></script>
+
+
+
+
+
+  <!-- libraries -->
+
+        <script src="libraries/slick/slick.js"></script>
+        <script src="shared/directives/smoothscrolldirective.js"></script>
+        <script src="libraries/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+        <script src="libraries/bower_components/angular-resource/angular-resource.js"></script>
+        <script src="libraries/angular-spinner.js"></script>
+        <script src="libraries/spin.min.js"></script>
+        <script src="libraries/bower_components/angular-sticky-navigation-directive/dist/ng-sticky.js"></script>
+        <script src="libraries/bower_components/angular-toggle-switch/angular-toggle-switch.js"></script>
+
+
+
+        
+        
+
+
+        
+        
+
+
+
+
+      </head>
+      <div class="overlay">
+  <div class="modelBox">
+    
+    <div align="right">
+      <a href="#" class="close">Close</a>
+    </div>
+
+    <div class="alertcontainer">
+
+      <div class="alertwrapper center">
+
+      <h4>DOD NOTICE AND CONSENT</h4>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="55" height="55"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z" class="alerticon"></path></svg>
+      <p>You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.</p>
+      <p>By using this IS (which includes any device attached to this IS), you consent to the following conditions:</p>
+      <p>-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.</p>
+      <p>-At any time, the USG may inspect and seize data stored on this IS.</p>
+      <p>-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.</p>
+      <p>-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.</p>
+      <p>-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation of services by attorneys, psychotherapists, or clergy, and their assistants.  Such communications and work product are private and confidential.</p>
+
+    </div>
+
+    </div>
+  </div>
+</div>
+      <body>
+  
+    <!--[if lte IE 9]>
+        <div style="width: 100vw; height: 100vh; background-color: rgba(100,100,100,0.75); position: absolute; z-index: 100; ">
+            <div id="oldie" style="position: absolute; top: 25%; z-index: 100; background-color: orange; left: 25%; width: 50%; height: 50%; font-size: 50px; color: white; padding: 50px; line-height: 1em; text-align: center ">
+                Your version of Internet Explorer is not compatible with this application.
+                <div style="font-size: 30px; margin-top: 25px">Contact your local IMD to install an approved version of IE11, Firefox or Chrome.</div>
+                <div style="cursor: pointer; position: absolute; bottom: 25px">
+                    <a style="font-size: 30px; color: white; background-color: rgb(145,145,145); padding: 10px 15px;" href="https://pasba.army.mil">Back to PASBA</a>
+                </div>
+            </div>
+        </div>
+        <![endif]-->
+
+        <div class="wrapper" ng-controller="pasbaappcontroller">
+
+          <div id="top"></div>
+          <header class="navbar navbar-default navbar-fixed-top navbar-top">
+            <div class="container">
+              <div class="navbar-header">
+                <button data-target="navbar-toggle collapsed" data-toggle="collapse" class="navbar-toggle" type="button">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+
+                </button>
+
+                <a href="index.html" class="navbar-brand"><span class="logo"><img src="content/images/pasbalogomedcom.png" alt="PASBA Logo"></span></a><br/>
+               <!-- optional slider toggle <div class="side-hide"><p>Toggle Slider</p><toggle-switch ng-model="switchStatus" on-label="show" off-label="hide"><toggle-switch></div> -->
+
+              </div>
+
+              <div class="navbar-collapse collapse" id="navbar">
+
+                <ul class="nav navbar-nav navbar-right">
+
+                  <li><a href="#/home" class="btn-ads btn-block" ng-click="removeit=false" ng-class="{activenavlink: isActive('/home')}">Home</a></li>
+                  <li><a href="#/leadership" ng-click="removeit=true" ng-class="{'activenavlink': isActive('/leadership')}">Leadership</a></li>
+                  <li><a href="#/aboutus" ng-click="removeit=true" ng-class="{activenavlink: isActive('/aboutus')}">About Us</a></li>
+                  <li><a href="#/contactus" ng-click="removeit=true" ng-class="{activenavlink: isActive('/contactus')}">Contact us</a></li>
+
+                            <!-- <li class="dropdown">
+                                <a class="dropdown-toggle" href="#" data-toggle="dropdown"><strong class="caret"></strong>&nbsp;Navigation</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="account_posts.html">Sub</a></li>
+                                    <li><a href="account_create_post.html">Sub</a></li>
+                                    <li><a href="account_profile.html">Sub</a></li>
+                                </ul>
+                              </li> -->
+                              <li class="dropdown">
+                                <a class="dropdown-toggle welcomeuser" href="#" data-toggle="dropdown"><i class="fa fa-user"></i>Welcome {{username.akoUserID}}&nbsp;</a>
+                                <div class="dropdown-menu dropdown-login" style="padding:15px;min-width:250px">
+
+                                </div>
+                              </li>
+
+                            </ul>
+                          </div>
+
+
+                        </div>
+                      </header>
+                      <section class="headerbackground" ng-hide="removeit">
+
+
+
+                        <!-- slider --> 
+
+
+
+                        <div class="Modern-Slider">
+                          <!-- Item -->
+                          <div class="item">
+                            <div class="img-fill">
+                              <img src="content/images/deploy-resize1.jpg">
+                              <div class="info">
+                                <div class="blurb-wrapper">
+                                  <div>
+                                    <h3>Welcome to the PASBA Application Suite</h3>
+                                    <h2>Where Inspiration...Meets Innovation</h2>  
+                                    <h4>Mission</h4> 
+                                    <h5>Improve Army Medicine by Providing Medical Coding and Auditing, Data Quality, Analytics, and Deployed Record Services.</h5>
+                                    <h4>Vision</h4>
+                                    <h5>Lead the Evolution of Healthcare through Clinical and Business Operations for a Ready and Reliable Force.</h5>
+
+
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- // Item -->
+                          <!-- Item -->
+                          <div class="item">
+                            <div class="img-fill">
+                              <img src="content/images/medic-helo-crop.png">
+                              <div class="info">
+
+                                <div class="blurb-wrapper">
+                                  <div> 
+
+                                   <h3>DMRPC</h3>
+                                   <h4>Deployed Medical Records Processing Center</h4>
+                                   <h5>Providing data for multiple PASBA applications and reports, DMRPC  is the primary contact point on the management of medical documentation of military.</h5>
+                                 </div>
+                                 <h5></h5>
+                               </div>
+                             </div>
+                           </div>
+                         </div>
+                         <!-- // Item -->
+                         <!-- Item -->
+                         <div class="item">
+                          <div class="img-fill">
+                           <img src="content/images/coding.jpg">
+                           <div class="info">
+                             <div class="blurb-wrapper">
+                              <div>
+                                <h3>HIM Branch</h3>
+                                <h4>The Health Information Management and Coding Consultation Branch is the Army's lead agent for providing coding guidance and policy to all Medical Treatment Facilities in both the deployed and fixed facilities.</h4>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+
+                      <div class="item">
+                        <div class="img-fill">
+                         <img src="content/images/dataquality.jpg">
+                         <div class="info">
+                           <div class="blurb-wrapper">
+                            <div>
+                              <h3>Data Quality Branch</h3>
+                              <h4>Serves as the AMEDD's executing agency for the Military Health System (MHS) Data Quality Management Control Program, providing oversight to improve the accuracy and timely submission of financial and workload data throughout the AMEDD.</h4>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="item">
+                      <div class="img-fill">
+                       <img src="content/images/dataanalysis.jpg">
+                       <div class="info">
+                         <div class="blurb-wrapper">
+                          <div>
+                            <h3>Data Analysis Branch</h3>
+                            <h4>The mission of the Data Analysis Branch is to provide timely and useful healthcare data and expert data analysis to assist the Department of Defense, US Army, US Army Medical Command, and individual customers in providing the best healthcare for our beneficiaries.</h4>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+
+
+                </div>
+
+
+                <div id="p4"></div>
+                
+              </section>
+
+              <div class="load-wrapp" ng-show="loading">
+                    <div style="margin-top: 241px">
+
+                      <!-- loading icon css -->
+                      <div class="load-1">
+                        <p>LOADING...</p>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                      </div>
+
+                      <!-- end loading -->
+
+                    </div>
+                  </div>
+
+
+              <section class="main">
+
+                <div class="green-space">
+
+ <!-- optional arrow  -->
+                   <div id="arrowcontain">
+                   
+                     <a href="" smooth-scroll target="p4" offset="80" ng-hide="removeit"> 
+                   
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" class="arrow" ><path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path></svg></a>
+                    </div> 
+
+                     <div ng-include src="'shared/layout/tabs.html'"></div> 
+</div>
+
+                  
+                  <div class="container">
+
+                  
+
+                    <div ng-view></div>
+
+                  </div>
+                </section>
+
+                <div class="clear"></div>
+
+                <div class="footer">
+
+                <div class="footer-wrapper">
+                    <ul class="pull-left footer-menu col-md-4">
+                      <li>
+                        <a href="index.html"> Home </a>
+                        <a href="#/leadership" ng-click="removeit=true">Leadership</a>
+                        <a href="#/aboutus" ng-click="removeit=true">About Us</a>
+                        <a href="#/contactus" ng-click="removeit=true"> Contact us </a>
+
+                      </li>
+                    </ul>
+
+                    <div class="site-info">
+                     
+                      <p>Where Inspiration...Meets Innovation</p>
+
+                    </div>
+
+                  <div class="address">
+                     <p>Patient Administration Systems and Biostatistics Activity<br/> 2404 Stanley Rd, Ste 25, Bldg. 126 Fort Sam Houston, TX 78234-5053</p>
+                    
+                   </div>
+
+                    <div style="clear: both"></div>
+
+<div class="update"><p>Updated: December 8, 2016</p></div>
+                    
+                  </div><!--  end footer wrapper -->
+                </div>
+              </div> <!-- end wrapper -->
+
+              <!-- Essentials -->
+              <!-- <script src="libraries/css/bootstrap/bootstrap.min.js"></script> -->
+
+<!-- top slider -->
+              <script>
+
+
+$(document).ready(function(){
+
+  $(".Modern-Slider").slick({
+    autoplay:true,
+    autoplaySpeed:10000,
+    speed:600,
+    slidesToShow:1,
+    slidesToScroll:1,
+    pauseOnHover:false,
+    dots:true,
+    pauseOnDotsHover:true,
+    cssEase:'linear',
+   // fade:true,
+   draggable:false,
+   prevArrow:'<button class="PrevArrow"></button>',
+   nextArrow:'<button class="NextArrow"></button>', 
+ });
+  
+})
+
+</script>
+
+ <script>
+
+ $(document).ready(function() {
+  $(".overlay").show();
+  $(".close").on('click', function() {
+    $(".overlay").hide();
+  });
+});
+
+     //    $(".green-space").on('click','.pasbaiconlink', function(){
+     //      $(this).toggleClass('active').siblings().removeClass('active');
+     //   })  
+
+</script>       
+
+
+
+</div> <!-- close contain -->
+
+<script>
+AOS.init({
+  offset: 200,
+  duration: 600,
+  easing: 'ease-in-sine',
+  delay: 100,
+});
+</script>
+</body>
+</html>

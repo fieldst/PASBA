@@ -19,11 +19,11 @@ app.controller('dmrpccontroller', function($scope, $compile, $timeout, $location
 					}
 
 	$scope.title = {
-						home : "Deployment Guilde Home",
+						home : "Deployment Guide Home",
 						instruction : "Records Request Instructions",
 						pad : "PAD Deployed Medical Documentation",
 						regulate : "Medical Regulating",
-						sidr : "Instructions for proccessing deployed SIDR"
+						sidr : "Instructions for processing deployed SIDR"
 	}
 
 	// $scope.documents = {
@@ -35,7 +35,7 @@ app.controller('dmrpccontroller', function($scope, $compile, $timeout, $location
         {name: 'Records request', link: 'dmrpcsection/documents/AuthorizationforDisclosureofMedicalorDentalInformation(DD2870).pdf'},
         {name: 'DA FORM 3647', link: '../deployment/da3647.pdf'},
         {name: 'ITRCS Data Dictionary', link: '../deployment/DA3647DDv1_1.pdf'},
-        {name: 'Page 1 of DA Form 2985', link: '../deployment/SA_refresher060126.ppt'},
+        {name: 'Page 1 of DA Form 2985', link: '../deployment/DA2985p1.pdf'},
         {name: 'A&C Data Dictionary', link: '../deployment/DA2985p1DDv1_1.pdf'},
 
   ]

@@ -190,7 +190,7 @@ body{
 
 
 .overlay {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     position: absolute;
     top: 0px;
     bottom: 0px;
@@ -205,9 +205,9 @@ body{
 .modelBox {
     width: 50%;
     min-height: 500px;
-    margin: 104px auto;
+    margin: 28px auto;
     background-color: #fff;
-    top: 10%;
+    top: 3%;
     position: relative;
     opacity: 1;
 }
@@ -219,9 +219,46 @@ body{
 
 
 .alertwrapper{
-  
+
 }
 
+.col-sm-4-custom{
+    width: 24.333% !important;
+}
+
+.acccontain{
+  width: 400px;
+  margin: auto;
+}
+
+.alertwrapper h4{
+  color: red;
+}
+
+.alertwrapper p{
+  text-align: left;
+
+}
+
+.closed{
+  color: #000;
+}
+
+.accept{
+  padding: 15px;
+  text-align: left;
+  float: left;
+}
+
+.decline{
+  padding: 15px;
+  float: right;
+}
+
+.alertwrapper .alerticon{
+ height: 70px;
+ width: 70px;
+}
 
 .blue{
 	background: #215DA2;
@@ -830,6 +867,7 @@ a:hover{
 .backbutton{
   fill: #117ABC;
   height: 42px;
+  width: 50px;
 }
 
 .previous p {
@@ -841,8 +879,10 @@ a:hover{
     font-size: 24px;
 }
 
-.backcontain{
-  width: 100px;
+.backcontain {
+    width: 120px;
+    height: 50px;
+    clear: both;
 }
 
 
@@ -889,7 +929,7 @@ a:hover{
     border-radius: 5px;
     text-align: center;
     background-color: rgba(255,255,255,.8);
-    z-index: 9999999;
+    z-index: 99998;
     position: absolute;
 }
 
@@ -2901,14 +2941,14 @@ h2.product-title{
     margin: auto;
 }
 
-.green-space .arrow{
+.green-space .arrow {
     fill: #fff;
     margin: -58 auto;
-    z-index: 999999;
+    z-index: 99998;
     width: 60px;
     height: 60px;
     position: absolute;
-  }
+}
 
 .gallery-container {
     width: 100%;
