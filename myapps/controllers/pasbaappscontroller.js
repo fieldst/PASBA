@@ -1,4 +1,4 @@
-app.controller('pasbaappcontroller', function($scope, $compile, $timeout, $http, $routeParams, usSpinnerService, $location, $animate, $rootScope ) {
+app.controller('pasbaappcontroller', function($scope, $compile, $timeout, $http, $routeParams, usSpinnerService, $uibModal, $location, $animate, $rootScope ) {
 
 $rootScope.location = $location;
 $scope.$on('LOAD',function(){$scope.loading=true});
@@ -29,6 +29,17 @@ $scope.$on('removeslider',function(){$scope.removeit=true});
        
     
 }
+
+ var access = $scope;
+    access.showmodal = function(size) {
+      $uibModal.open({
+        templateUrl: 'confirmTpl.html',
+        size: size,
+        controller: function($scope) {
+         
+        }
+      });
+    };
 
 
 

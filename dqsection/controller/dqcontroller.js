@@ -69,10 +69,10 @@ app.controller('dqcontroller', function($scope, $compile, $timeout, $location) {
   ]
 
   $scope.Templates = [
-        {name: 'DQ Cdr Statement', link: '../quality/resources/FY17_ARMY_FINAL_COMMANDERS_DQ_STATEMENT.docx'},
-        {name: 'DQ Review List', link: '../quality/resources/FY17_ARMY_FINAL_REVIEW LIST_DQMCP.docx'},
-        {name: 'DQ Manager letter of appt', link: '../quality/resources/DQMgr_ApptLetter.doc'}, 
-        {name: 'DQ Team Member letter of appt.', link: '../quality/resources/DQTeamMbr_ApptLetter.doc'},    
+        {name: 'DQ Cdr Statement', link: '../quality/resources/FY17_ARMY_FINAL_COMMANDERS_DQ_STATEMENT.pdf'},
+        {name: 'DQ Review List', link: '../quality/resources/FY17_ARMY_FINAL_REVIEW LIST_DQMCP.pdf'},
+        {name: 'DQ Manager appt. letter', link: '../quality/resources/DQMgr_ApptLetter.doc'}, 
+        {name: 'DQ Assurance Team Member appt. letter', link: '../quality/resources/DQTeamMbr_ApptLetter.doc'},    
         
   ]
 

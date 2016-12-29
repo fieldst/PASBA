@@ -1,4 +1,4 @@
-<html ng-app="pasbaapp">
+﻿<html ng-app="pasbaapp">
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=11">
   <meta charset="utf-8">
@@ -147,7 +147,7 @@
                                 </ul>
                               </li> -->
                               <li class="dropdown">
-                                <a class="dropdown-toggle welcomeuser" href="#" data-toggle="dropdown"><i class="fa fa-user"></i>Welcome {{username.akoUserID}}&nbsp;</a>
+                                <a class="dropdown-toggle welcomeuser" ng-click="showmodal('lg')" href=""><i class="fa fa-user"></i>Welcome {{username.akoUserID}}&nbsp;</a>
                                 <div class="dropdown-menu dropdown-login" style="padding:15px;min-width:250px">
 
                                 </div>
@@ -283,6 +283,10 @@
                     </div>
                   </div>
 
+ 
+
+
+
 
               <section class="main">
 
@@ -318,6 +322,7 @@
                       <li>
                         <a href="index.html"> Home </a>
                         <a href="#/leadership" ng-click="removeit=true">Leadership</a>
+                        <a href="#/leadership" ng-click="removeit=true">Organizational Chart</a>
                         <a href="#/aboutus" ng-click="removeit=true">About Us</a>
                         <a href="#/contactus" ng-click="removeit=true"> Contact us </a>
 
@@ -372,7 +377,30 @@ $(document).ready(function(){
 
 </script>
 
- 
+ <script id="confirmTpl.html" type="text/ng-template">
+    <div class="modal-header" ng-controller="pasbaappcontroller">
+
+    <div class="name">
+      <h4>{{username.akoUserID}}</h4>
+      </div>
+    <div class="center">
+      <h4>Your restricted app access</h4>
+      </div>
+      
+      
+    </div>
+    <div class="modal-body center" ng-controller="pasbaappcontroller">
+     
+    <ul class="row col-md-6" ng-repeat="restrict in restrictedapps">
+      <li><a href="{{restrict.TokenLink}}" target="blank">{{restrict.TokenName}}</a></li>
+    </ul>
+    </div>
+    <div class="clear"></div>
+    <div class="modal-footer center">
+      <button class="btn btn-primary" ng-click="$close(model.employee)">OK</button>
+      
+    </div>
+  </script>
 
 
 

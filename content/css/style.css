@@ -98,7 +98,7 @@ body{
     height: 340px;
     clear: both;
     width: 275px;
-    height: 300px;
+    height: 330px;
     margin-right: 50px;
     text-align: center;
 }
@@ -361,8 +361,21 @@ body{
 }
 
 .content-right .remove-break{
-  margin-left: 344px;
+ margin-left: 344px !important; 
+
+ /*better for responsive view*/
+/* width: 67%;
+float: right;*/
 }
+
+@media (max-width: 1300px){
+.content-right .remove-break{
+  width: 100%;
+  margin: 0 !important;
+}
+
+
+  } 
 
 .qoute p{
 	color: #500707;
@@ -540,6 +553,7 @@ body{
 
 .center{
 	text-align: center;
+  clear: both;
 }
 
 .medium-image{
@@ -914,6 +928,26 @@ a:hover{
 
 .modal-header{
 	text-transform: uppercase;
+  color: #117ABC;
+}
+
+.modal-body li a{
+  text-align: center
+  
+  
+}
+
+.name{
+  float: right;
+}
+
+
+
+
+
+.submit{
+  margin: auto;
+  text-align: center;
 }
 
 
@@ -1342,6 +1376,16 @@ a:hover{
     height: 74px;
 }
 
+.space-wrapper .active2 svg{
+  fill: #00317C;
+}
+
+
+.space-wrapper .active2 h3{
+  color: #00317C;
+}
+
+
 .space-wrapper .disabled{
   width: 100%;
     padding-bottom: 10px;
@@ -1726,7 +1770,7 @@ input[type=text]::-ms-clear {
 }*/
 
 .widget-body ul li {
-    padding: 3px 4px;
+    padding: 3px 0px;
 }
 
 .widget-body ul li li {
