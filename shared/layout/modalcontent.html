@@ -1,0 +1,97 @@
+<script id="chuptemplate.html" type="text/ng-template">
+
+ <div class="container" ng-controller="pasbaappsinfocontroller">
+    
+
+    <div class="modal-header center">
+
+    <h4>CHUP Fact Sheet</h4>
+     
+    </div>
+    <div class="modal-body">
+    <p>The Army Medical Home (AMH) is one of the patient primary entry point in the
+Military Health System (MHS). Since 2010, Army Primary Care has focused on
+the establishment of a patient-centered healthcare delivery system that
+includes comprehensive and coordinative services from a clinical team
+consisting of a Primary Care Manager (PCM), nursing staff, and integrated
+specialists (e.g., Clinical Pharmacist, Nurse Case Manager [NCM], Population
+Health Registered Nurse [PH-RN], and Behavioral Health team) assigned to the
+AMH. The delivery of high quality healthcare continues to evolve and
+requires the support of information technology (IT) systems. The Chronic
+Pain, High Utilizer, and Polypharmacy (CHUP) portal, developed by the
+Patient Administration Systems and Biostatistics Activity (PASBA), is an IT
+solution that assists the AMH team with the provision of individualized,
+coordinated care for this identified population.</p>
+
+<p>The presentation of the CHUP data affords the opportunity of an overview of
+the Regional Health Command (RHC) CHUP population. Data is also presented at
+the Medical Treatment Facility (MTF) and AMH levels where actionable
+information is defined. The AMH data is drilled down to the 4th level
+Medical Expense & Performance Reporting System (MEPRS) code and is
+associated with the AMH parent/child Defense Medical Information System
+Identification (DMISID) allowing the team to develop individualized action
+plans for the identified, high risk patient population.</p>
+
+
+
+    </div>
+    <div class="modal-footer center">
+      <button class="btn btn-primary" ng-click="$close(model.employee)">OK</button>
+      
+    </div>
+    </div>
+  </script>
+
+
+<script id="teletemplate.html" type="text/ng-template">
+    <div class="modal-header center" ng-controller="pasbaappsinfocontroller">
+      <h4>TeleHealth Fact Sheet</h4>
+    </div>
+    <div class="clear"></div>
+    <div class="modal-body center">
+     
+   
+    </div>
+    <div class="clear"></div>
+    <div class="modal-footer center">
+     <button class="btn btn-primary" ng-click="$close(model.employee)">OK</button>
+      
+    </div>
+  </script>
+
+
+<!-- MAP fact sheet -->
+
+<script id="mapfactsheet.html" type="text/ng-template">
+
+ <div class="container" ng-controller="pasbaappsinfocontroller">
+    
+
+  <div class="modal-header center">
+
+    <h4>MAP Fact Sheet</h4>
+  </div>
+    
+
+    <div class="modal-body">
+      <h4>Overview</h4>
+<p>The MEDCOM360 Analytics Platform is a web-based application that provides a single source for a host of metrics reporting and metric analysis capabilities.   The ability to rapidly connect to multiple data sources and create and publish ad hoc metric reporting from within the platform addresses the needs for a solution to frequent data changes and historically long software change request queues.</p>
+<p>The modular design allows for the addition of future major collections or changes without interfering with the current code base.</p>
+
+<h4>Metric Dashboard Module</h4>
+<p>The metric-dashboard is the main functional module. This is where data is explored, reports are created and viewed. This module is divided into two main views, the Data Analysis platform and the Reporting platform. The Reporting platform is a simplified view of the Data Analysis platform. It allows users to select and view a report, as well as view and change report filter values. The Data Analysis platform is much more complex and is where users can create data groups, retrieve data from data sources, set data filters, create chart and report elements and then publish completed reports.</p>
+
+<div class="modalpicture">
+<img src="content/images/mappictureone.png">
+
+<img src="content/images/mappicturetwo.png">
+</div>
+
+    </div>
+
+    <div class="modal-footer center">
+      <button class="btn btn-primary" ng-click="$close(model.employee)">OK</button>
+      
+    </div>
+    </div>
+  </script>

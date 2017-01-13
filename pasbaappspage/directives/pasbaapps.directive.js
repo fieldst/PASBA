@@ -1,6 +1,6 @@
-app.directive('pasbaapps', function() {
+app.directive('pasbaApps', function() {
   return{
-    templateUrl: 'pasbaapps/templates/pasbaapps.widget.html',
+    templateUrl: 'pasbaappspage/templates/pasbaapps.widget.html',
   }
 });
 

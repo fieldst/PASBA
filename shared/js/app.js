@@ -9,7 +9,6 @@ var app = angular.module('pasbaapp', [
 	'angularSpinner',
 	'dm.stickyNav',
 	'toggle-switch',
-    'ui.bootstrap'
 
 
 

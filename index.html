@@ -72,7 +72,7 @@
   <script src="codingsection/controller/codingcontroller.js"></script>
 
   <!-- directives -->
-  <script src="pasbaapps/directives/pasbaapps.directive.js"></script>
+  <script src="pasbaappspage/directives/pasbaapps.directive.js"></script>
   <script src="myapps/directives/myapps.directive.js"></script>
   <script src="dmrpcsection/directives/dmrpc.directive.js"></script>
   <script src="dqsection/directives/dq.directive.js"></script> 
@@ -94,6 +94,9 @@
         <script src="libraries/spin.min.js"></script>
         <script src="libraries/bower_components/angular-sticky-navigation-directive/dist/ng-sticky.js"></script>
         <script src="libraries/bower_components/angular-toggle-switch/angular-toggle-switch.js"></script>
+		<style>
+			
+		</style>
       </head>
       <div class="overlay"><div ng-include src="'shared/layout/alert.html'"></div></div>
       <body>
@@ -308,12 +311,13 @@
 
                   
 
-                    <div ng-view></div>
+                    <div ng-view autoscroll="true"></div>
 
                   </div>
                 </section>
 
-                <div class="clear"></div>
+                <div class="footerclear"></div>
+
 
                 <div class="footer">
 
@@ -322,7 +326,7 @@
                       <li>
                         <a href="index.html"> Home </a>
                         <a href="#/leadership" ng-click="removeit=true">Leadership</a>
-                        <a href="#/leadership" ng-click="removeit=true">Organizational Chart</a>
+                        <!-- <a href="#/leadership" ng-click="removeit=true">Organizational Chart</a> -->
                         <a href="#/aboutus" ng-click="removeit=true">About Us</a>
                         <a href="#/contactus" ng-click="removeit=true"> Contact us </a>
 
@@ -377,30 +381,12 @@ $(document).ready(function(){
 
 </script>
 
- <script id="confirmTpl.html" type="text/ng-template">
-    <div class="modal-header" ng-controller="pasbaappcontroller">
+ 
 
-    <div class="name">
-      <h4>{{username.akoUserID}}</h4>
-      </div>
-    <div class="center">
-      <h4>Your restricted app access</h4>
-      </div>
-      
-      
-    </div>
-    <div class="modal-body center" ng-controller="pasbaappcontroller">
-     
-    <ul class="row col-md-6" ng-repeat="restrict in restrictedapps">
-      <li><a href="{{restrict.TokenLink}}" target="blank">{{restrict.TokenName}}</a></li>
-    </ul>
-    </div>
-    <div class="clear"></div>
-    <div class="modal-footer center">
-      <button class="btn btn-primary" ng-click="$close(model.employee)">OK</button>
-      
-    </div>
-  </script>
+
+
+
+ 
 
 
 

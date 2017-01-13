@@ -1,6 +1,6 @@
-<div class="col-md-4 col-sm-4">
+<div class="col-md-4 col-sm-4" sticky-nav="ng-sticky-fixed-myapps" ignore-element-size>
 
- 							 <div class="widget">
+               <div class="widget">
                                 <div class="widget-header">
                                     <h3>Data Quality</h3>
                                 </div>
@@ -13,8 +13,8 @@
                                     <li><a href="#/dqguidelines" ng-class="{activelink: isActive('/dqguidelines')}">DQ Guidelines</a></li>
                                     <li><a href="#/dqprogrammetrics" ng-class="{activelink: isActive('/dqprogrammetrics')}">DQMCP Metrics</a></li>
                                      <!-- <li><a href="../quality/resources/dqmcpUserGuide.pdf" target="_blank">DQMC User's Manual</a></li> -->
-                                      <li><a href="../quality/resources/FY17DQMCPUsersGuide0616.pdf" target="_blank">DQMCP User's Manual</a></li>
-                                       <li><a href="../quality/resources/dqMgrList.xls" target="_blank">DQ Managers List</a></li>
+                                      <li><a href="../quality/resources/FY17DQMCPDataQualityStatementUserGuideFINAL.pdf" target="_blank">DQMCP User's Manual</a></li>
+                                       <!--<li><a href="../quality/resources/dqMgrList.xls" target="_blank">DQ Managers List</a></li>-->
                                         <li><a href="#/faq" ng-class="{activelink: isActive('/faq')}">DQ FAQ</a></li>
 
                                 </ul>
@@ -46,7 +46,7 @@
                     </ul>
                 </li>
 
-                <li><input type="checkbox" id="item-0" /><label for="item-0">Guidance</label>
+                <li><input type="checkbox" id="item-1" /><label for="item-1">Guidance</label>
 
                     <ul ng-repeat="item in Guildance">
                         <li><a href="{{item.link}}" target="_blank">{{item.name}}</a></li>
@@ -54,7 +54,7 @@
                     </ul>
                 </li>
 
-                <li><input type="checkbox" id="item-0" /><label for="item-0">Templates</label>
+                <li><input type="checkbox" id="item-2" /><label for="item-2">Templates</label>
 
                     <ul ng-repeat="item in Templates">
                         <li><a href="{{item.link}}" target="_blank">{{item.name}}</a></li>
@@ -62,7 +62,7 @@
                     </ul>
                 </li>
               
-                <li><input type="checkbox" id="item-0" /><label for="item-0">DQ POC</label>
+                <li><input type="checkbox" id="item-3" /><label for="item-3">DQ POC</label>
 
                     <ul ng-repeat="item in POC">
                         <li><a href="{{item.link}}" target="_blank">{{item.name}}</a></li>
@@ -70,7 +70,7 @@
                     </ul>
                 </li>
 
-                 <li><input type="checkbox" id="item-0" /><label for="item-0">Training</label>
+                 <li><input type="checkbox" id="item-4" /><label for="item-4">Training</label>
 
                     <ul ng-repeat="item in Training">
                         <li><a href="{{item.link}}" target="_blank">{{item.name}}</a></li>
@@ -78,7 +78,7 @@
                     </ul>
                 </li>
 
-                 <li><input type="checkbox" id="item-0" /><label for="item-0">Others</label>
+                 <li><input type="checkbox" id="item-5" /><label for="item-5">Others</label>
 
                     <ul ng-repeat="item in Others">
                         <li><a href="{{item.link}}" target="_blank">{{item.name}}</a></li>

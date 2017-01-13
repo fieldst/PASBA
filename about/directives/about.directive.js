@@ -5,4 +5,4 @@ app.directive('aboutWidget', function(){
 });
 
 
-});
+

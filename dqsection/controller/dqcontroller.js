@@ -72,7 +72,7 @@ app.controller('dqcontroller', function($scope, $compile, $timeout, $location) {
         {name: 'DQ Cdr Statement', link: '../quality/resources/FY17_ARMY_FINAL_COMMANDERS_DQ_STATEMENT.pdf'},
         {name: 'DQ Review List', link: '../quality/resources/FY17_ARMY_FINAL_REVIEW LIST_DQMCP.pdf'},
         {name: 'DQ Manager appt. letter', link: '../quality/resources/DQMgr_ApptLetter.doc'}, 
-        {name: 'DQ Assurance Team Member appt. letter', link: '../quality/resources/DQTeamMbr_ApptLetter.doc'},    
+        {name: 'DQ Team Member appt. letter', link: '../quality/resources/DQTeamMbr_ApptLetter.doc'},    
         
   ]
 

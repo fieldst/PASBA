@@ -63,19 +63,7 @@
 
 <style>
 
-/*.ie10 .description{
-  bottom: 630px !important;
-  background: #fff;
-  padding: 10px;
-  width:500px;
-  z-index:99999;
-  border: 1px solid #500707;
-  box-shadow: 3px 0px 29px #888;
-  position: absolute;
-  display: none;
-  top: 50px;
 
-}*/
 
 .description{
   bottom: 160px;
@@ -189,7 +177,47 @@ max-width: 145px;
       <h2>PASBA APPS</h2>
 </div>
 
-    <div class="container-pasbaapps">
+   <div class="container-pasbaapps">
+   
+<div id="mapwrapper">
+   
+   <h4 id="powered"><u>Powered by MEDCOM Analytics Platform</u></h4>
+  
+
+<div class="mapproduct">
+
+  
+<div class="icon-contain" ng-repeat="app in map">
+  <h3>{{app.name}}</h3>
+ <div class="view view-first" ng-attr-style="background: {{ app.background }}">
+
+    <!--<img ng-src="{{app.icon}}" alt="{{app.name}}"/>--> 
+	
+	 <div ng-include="app.icon" class="svgColor"></div>
+
+    <div class="mask">
+      <h2>{{app.name}}</h2>
+      <p>{{app.info}}</p>
+
+    <div id="mapinfocontain">
+      <a href="" class="mapinfo" ng-click="this[app.header]('lg')">Learn More</a>
+
+      <a href="../map" class="maplink">Visit</a>
+    </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+<div style="clear: both"></div>
+</div>
+  
+
+  <div class="clear"></div>
+   
+   
+   
+   
 <h4 id="nonrestricted"><u>Non-Restricted</u></h4>
   
 
@@ -204,6 +232,7 @@ max-width: 145px;
       <h2>{{app.name}}</h2>
       <p>{{app.info}}</p>
       <a href="#/viewapps/{{nonrestricted.indexOf(app)}}" class="info">Visit</a>
+
     </div>
   </div>
 
@@ -240,7 +269,15 @@ max-width: 145px;
 <div class="clear"></div>
 </div><!-- close colspan-->
 
-<home-widget></home-widget>
+<div ng-include src="'shared/layout/modalcontent.html'"></div> 
+
+ 
+
+   
+
+
+
+<pasba-apps></pasba-apps>
 
 
 

@@ -30,16 +30,21 @@ $scope.$on('removeslider',function(){$scope.removeit=true});
     
 }
 
- var access = $scope;
-    access.showmodal = function(size) {
+ 
+ var accessthree = $scope;
+
+  
+    accessthree.showmodalmapmodel = function(size) {
       $uibModal.open({
-        templateUrl: 'confirmTpl.html',
+        templateUrl: 'mapfactsheet.html',
         size: size,
         controller: function($scope) {
-         
+        
         }
       });
     };
+
+   
 
 
 
@@ -79,7 +84,7 @@ $scope.setcurrent = function(value){
 
   }
 };
-console.log($scope.noshade)
+
 
 
 

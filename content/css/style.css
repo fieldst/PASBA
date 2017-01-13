@@ -280,6 +280,7 @@ body{
 	background: #00767F;
 }
 
+
 /*ng sticky style*/
 
 .ng-sticky-fixed{
@@ -296,7 +297,7 @@ body{
    
     position:fixed;
     top:96;
-    width:19.333%;
+    width:19.100%;
     right: 92;
     float: right;
 
@@ -873,6 +874,44 @@ a:hover{
 
 }
 
+.widget .learnmore {
+    font-size: 13px;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.widget h2.maplearn, h2.mapvisit{
+  display: inline-block;
+  padding-right: 10px;
+  color: #fff;
+  
+}
+
+.widget h2.maplearn{
+  background: #117ABC;
+  padding: 7px 15px;
+  font-size: 12px;
+  color: #fff;
+  font-family: Raleway, serif;
+  text-transform: uppercase;
+}
+
+.widget h2.mapvisit{
+  background: #500707;
+  padding: 7px 15px;
+  font-size: 12px;
+  color: #fff;
+  font-family: Raleway, serif;
+  text-transform: uppercase;
+}
+
+
+.footerclear{
+  clear: both;
+  padding: 70px;
+}
+
 .divider{
 	padding: 50px;
 }
@@ -933,9 +972,9 @@ a:hover{
 
 .modal-body li a{
   text-align: center
-  
-  
 }
+
+
 
 .name{
   float: right;
@@ -1328,9 +1367,112 @@ a:hover{
     list-style: none;
 }
 
+.svgColor > svg {
+      fill: white;
+      width: auto;
+      height: 90%;
+      padding-top: 5%;
+      }
+
+  .mapproduct {
+    width: 47%;
+    margin: auto;
+    text-align: center;
+}
+
+#mapwrapper{
+  background: #f6f6f6;
+  padding: 10px;
+  height: auto;
+  border: 1px solid #FFFFFF;
+}
+
+#powered{
+  font-weight: bold
+}
+
 #pasbaapps{
   max-width: 1384px;
   margin:auto;
+}
+
+.mapinfo{
+  background: #117ABC;
+  padding: 7px 15px;
+  font-size: 12px;
+  color: #fff;
+  font-family: Raleway, serif;
+  text-transform: uppercase;
+ 
+}
+
+.mapinfo:hover{
+  transition-delay: 0.2s;
+  color: #fff;
+}
+
+.mapinfo:hover{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+
+.maplink:hover{
+  opacity: 1;
+  transform: translateY(0px);
+  color: #fff;
+}
+
+.maplink:hover{
+   transition-delay: 0.2s;
+}
+
+.view a.maplink:hover {
+    box-shadow: 0 0 5px #000;
+}
+
+
+.view a.mapinfo:hover {
+    box-shadow: 0 0 5px #000;
+}
+
+.maplink{
+  background: #500707;
+  padding: 7px 15px;
+  font-size: 12px;
+  color: #fff;
+  font-family: Raleway, serif;
+  text-transform: uppercase;
+}
+
+.mapproduct{
+  background: #000;
+}
+
+.mapproduct .mask .mapinfo .maplink{
+  display: inline-block;
+  padding-right: 10px;
+  clear: both;
+}
+
+.mapwrapper{
+  background: #000;
+}
+
+.modalpicture{
+  width: 100%;
+  display: block;
+}
+
+
+.modalpicture img{
+  padding: 24px 0;
+  width: 100%;
+}
+
+#mapinfocontain {
+    margin: 10px -39px;
+    width: 100%;
 }
 
 .space-wrapper li {
@@ -1604,7 +1746,7 @@ input[type=text]::-ms-clear {
 }
 .widget, .post, .box-content {
     background: #FFF;
-    padding: 15px 0px 0 15px;
+    padding: 15px 0px 4px 15px;
     border: 1px solid #DDD;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -1625,12 +1767,19 @@ input[type=text]::-ms-clear {
 	margin-top: 3px;
 }
 
-.widget h3 {
+.widget h3{
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
     color: #117ABC;
     text-align: center;
+}
+
+.widget h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #117abc;
+    
 }
 
 
@@ -1639,6 +1788,21 @@ input[type=text]::-ms-clear {
     color: #82000A;
     font-size: 15px;
     font-weight: normal;
+}
+
+.widget .phone{
+  color: #82000a;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.widget .phone:before{
+  content: "\f095";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    list-style: none;
+    padding-right: 3px;
 }
 
 .side-hide {
@@ -1750,6 +1914,7 @@ input[type=text]::-ms-clear {
 .widget-body h4{
 	color: #000;
 	text-align: center;
+  font-size: 16px
 }
 
 
@@ -1775,8 +1940,9 @@ input[type=text]::-ms-clear {
 
 .widget-body ul li li {
     padding: 0;
-    width: 262px;
-    margin-left: 21px;
+    width: 300px;
+    margin-left: 18px;
+    overflow: hidden
 }
 
 
@@ -2988,7 +3154,7 @@ h2.product-title{
 .green-space .arrow {
     fill: #fff;
     margin: -58 auto;
-    z-index: 99998;
+    z-index: 900;
     width: 60px;
     height: 60px;
     position: absolute;
