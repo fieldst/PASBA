@@ -1946,9 +1946,13 @@ input[type=text]::-ms-clear {
 }
 
 
-.widget-body img{
+.widget-body img, svg{
 	margin: auto;
 	width: 200px;
+}
+
+.widget-body .calendar{
+  width: 108px;
 }
 
 /*widget body hover*/

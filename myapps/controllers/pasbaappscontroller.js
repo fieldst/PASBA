@@ -131,7 +131,7 @@ $scope.setcurrent = function(value){
 $scope.externalapps = [
   
         {name: 'MAP', icon: 'content/images/icons/M.svg', classname: 'color1', link: '../map'},
-        {name: 'MEDCOM360', icon: 'content/images/icons/medcomchart.svg', classname: 'color2', link: '../medcom360'},
+        {name: 'PH360', icon: 'content/images/icons/medcomchart.svg', classname: 'color2', link: '../medcom360'},
        
 
   ]
