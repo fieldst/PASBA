@@ -1,4 +1,4 @@
-app.controller('pasbaappcontroller', function($scope, $compile, $timeout, $http, $routeParams, usSpinnerService, $uibModal, $location, $animate, $rootScope ) {
+app.controller('pasbaappcontroller', function($scope, $compile, $timeout, $http, $routeParams, usSpinnerService, $uibModal, $location, $animate, $rootScope ){
 
 $rootScope.location = $location;
 $scope.$on('LOAD',function(){$scope.loading=true});
@@ -104,7 +104,7 @@ $scope.setcurrent = function(value){
         {name: 'BHEATC-Summary', icon: 'content/images/icons/caper.svg', classname: 'color3', link: '#/unrestrictedapps', target: '../DataAnalysis/defaultBHSummary.asp'},
         {name: 'PASBA BMI Metric', icon: 'content/images/icons/inpatient.svg', classname: 'color4', link: '#/unrestrictedapps', target: '../DataAnalysis/defaultIRIS.asp'},
         {name: 'CAPER Reports', icon: 'content/images/icons/eod.svg', classname: 'color5', link: '#/unrestrictedapps', target: '../caperreports', remove: ''},
-        {name: 'DQMCP Program Metrics', icon: 'content/images/icons/ipsr.svg', classname: 'color6', link: '#/unrestrictedapps', target: '../mrDQMCP/DQMCPMetrics.aspx'},
+        {name: 'DQMCP Program Metrics', icon: 'content/images/icons/ipsr.svg', classname: 'color2', link: '#/unrestrictedapps', target: '../mrDQMCP/DQMCPMetrics.aspx'},
         {name: 'End of Day Compliance Summary Metric', icon: 'content/images/icons/eodcompliance.svg', classname: 'color7', link: '#/unrestrictedapps', target: '../DataAnalysis/defaultEOD.asp'},
         {name: 'Inpatient Professional Service Rounds Metric', icon: 'content/images/icons/inpatient.svg', classname: 'color8', link: '#/unrestrictedapps', target: '../DataAnalysis/defaultIPSR.asp'},
         {name: 'MAPR Data Quality Measures Metric', icon: 'content/images/icons/quality.svg', classname: 'color1', link: '#/unrestrictedapps', target: '../DataAnalysis/defaultMAPR.asp'},
@@ -224,9 +224,16 @@ $scope.$emit('UNLOAD')
 })
 
 
-
     
 });
+
+
+
+
+
+
+
+
 
 
   

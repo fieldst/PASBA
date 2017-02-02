@@ -4,9 +4,9 @@ app.controller('pasbaappsinfocontroller', function($scope, $compile, $uibModal, 
      $scope.map = [ 
   
         // {name: 'Commanders Corner', icon: 'content/images/icons/cc.svg', info: 'Info about  CC', link: '#/viewapps', background: '#e55934', target: ''},
-        {name: 'CHUP', icon: 'content/images/icons/ascendant6.svg', info: 'The presentation of the CHUP data affords the opportunity of an overview of the Regional Health Command (RHC) CHUP population', link: '#/viewapps', background: '#9bc53d', target: '', header: 'showchupmodal'},
+        {name: 'CHUP', icon: 'content/images/icons/ascendant6.svg', info: 'The presentation of the CHUP data affords the opportunity of an overview of the Regional Health Command (RHC) CHUP population', link: '#/viewapps', background: '#9bc53d', target: '', header: 'showchupmodal', styleclass: 'mapinfo', contentname: 'Learn More'},
 		    // {name: 'Data Quality', icon: 'content/images/icons/positive3.svg', info: 'Info about DQ', link: '#/viewapps', background: '#ffbf00', target: ''},
-        {name: 'TeleHealth', icon: 'content/images/icons/th.svg', info: 'Info about TeleHealth', link: '#/viewapps', background: '#8C1717', target: '', header: 'showtelemodal'},
+        {name: 'TeleHealth', icon: 'content/images/icons/th.svg', info: 'The TH360 provides access to a standardized telehealth data set that can be used by the MHS, Army, RHCs, and MTFs to analyze telehealth production and productivity.', link: '#/viewapps', background: '#8C1717', target: '', header: 'showtelemodal', styleclass: '', contentname: ''},
 		    // {name: 'Public Health', icon: 'content/images/icons/ph360.svg', info: 'Info about PH', link: '#/viewapps', background: '#8C1717', target: ''},
       //   {name: 'Coding', icon: 'content/images/icons/numbered10.svg', info: 'Info about Coding', link: '#/viewapps', background: '#5bc0eb', target: ''},
 

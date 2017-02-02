@@ -13,6 +13,11 @@ body{
 	font-family:helvetica;
 }
 
+h2, h3, h4{
+  color: #117abc;
+}
+
+
 .blurb-wrapper {
     background: rgba(0,0,0,.6);
     border-radius: 20px;
@@ -25,7 +30,7 @@ body{
 /*person apps section*/
 
 .blurb-wrapper h1,h2,h3,h4,h5{
-	/*line-height: 2vh !important;*/
+	color: #fff;
 }
 
 .person-wrapper {
@@ -98,19 +103,20 @@ body{
     height: 340px;
     clear: both;
     width: 275px;
-    height: 330px;
+    height: 300px;
     margin-right: 50px;
     text-align: center;
+    clear: both;
 }
 
 .leadership-intro-image img {
-    width: 218px;
+    /*width: 218px;*/
     vertical-align: middle;
 }
 
 .leadership-intro-image p {
     width: 100%;
-    min-width: 222px;
+    min-width: 209px;
     font-weight: bold;
 }
 
@@ -296,9 +302,9 @@ body{
   .ng-sticky-fixed-myapps{
    
     position:fixed;
-    top:96;
+    top:96px;
     width:19.100%;
-    right: 92;
+    right: 98px;
     float: right;
 
   }
@@ -909,7 +915,7 @@ a:hover{
 
 .footerclear{
   clear: both;
-  padding: 70px;
+  padding: 30px;
 }
 
 .divider{
@@ -930,6 +936,10 @@ a:hover{
     margin-bottom: 10px;
     float: right;
     font-size: 24px;
+}
+
+a:hover{
+  color: #134b7d;
 }
 
 .backcontain {
@@ -1385,6 +1395,8 @@ a:hover{
   padding: 10px;
   height: auto;
   border: 1px solid #FFFFFF;
+  box-shadow: 2px 4px 15px 0px #888;
+  border-radius: 10px;
 }
 
 #powered{
@@ -1471,7 +1483,7 @@ a:hover{
 }
 
 #mapinfocontain {
-    margin: 10px -39px;
+    margin: -9px -39px;
     width: 100%;
 }
 
@@ -2222,7 +2234,7 @@ input[type=text]::-ms-clear {
 }
 
 .color6{
-	background: #201040;
+	background: rgb(155, 197, 61);
 }
 
 .color7{
