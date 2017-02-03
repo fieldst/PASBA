@@ -1,12 +1,15 @@
 /*============body===================*/
-body{
-	background: #EEEEEE;
-	font-family: Open Sans,sans-serif;
-	font-weight: normal;
-	font-size: 16px;
-	color: #555;
-	line-height: 25px;
-	letter-spacing: 0.8px;
+body {
+    background: #EEEEEE;
+    font-family: Open Sans,sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #555;
+    line-height: 25px;
+    letter-spacing: 0.8px;
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
@@ -44,6 +47,7 @@ h2, h3, h4{
     margin: 0;
     overflow-x: hidden;
     overflow-y: auto;
+    margin-bottom: 10px;
 }
 
 .about-wrapper {
@@ -309,6 +313,16 @@ h2, h3, h4{
 
   }
 
+  @media (max-width: 1500px){
+    .ng-sticky-fixed-myapps {
+    position: fixed;
+    top: 96px;
+    width: 19.100%;
+    right: 84px;
+    float: right;
+}
+  }
+
 
 .intro-image p {
     text-align: center;
@@ -515,6 +529,14 @@ float: right;*/
     /*padding-right: 75px;*/
     width: 16%;
    
+}
+
+@media (max-width: 1250px){
+  .content-right .linkinline li {
+    float: left;
+    padding-right: 75px;
+    width: 49%;
+}
 }
 
 .content-right .linkinline li:before{
@@ -1232,6 +1254,13 @@ a:hover{
     width: 575px;
     margin: -22px -11px;
 }
+
+@media (max-width: 1145px){
+  .logo img {
+    width: 439px;
+    margin: -22px -11px;
+}
+}
 .navbar-top {
     background: #FFF;
     padding-top: 24px;
@@ -1384,19 +1413,20 @@ a:hover{
       padding-top: 5%;
       }
 
-  .mapproduct {
-    width: 47%;
+ .mapproduct {
+    width: 53%;
     margin: auto;
     text-align: center;
 }
 
-#mapwrapper{
-  background: #f6f6f6;
-  padding: 10px;
-  height: auto;
-  border: 1px solid #FFFFFF;
-  box-shadow: 2px 4px 15px 0px #888;
-  border-radius: 10px;
+#mapwrapper {
+    background: rgba(0,0,0,.04);
+    padding: 10px;
+    height: auto;
+    border: 1px solid #FFFFFF;
+    /*box-shadow: 2px 4px 15px 0px #888;*/
+    border-radius: 10px;
+    width: 100%;
 }
 
 #powered{
@@ -1490,11 +1520,23 @@ a:hover{
 .space-wrapper li {
     float: left;
     border-right: 1px solid #c8c8c8;
-    height: 121px;
+    height: 120px;
     padding: 5px 13px;
     text-align: center;
     width: 14%;
     list-style: none;
+}
+
+@media (max-width: 860px){
+  .space-wrapper li {
+    float: left;
+    border-right: 1px solid #c8c8c8;
+    height: 120px;
+    text-align: center;
+    width: 14%;
+    list-style: none;
+    padding: 0;
+}
 }
 
 .space-wrapper li:first-child{

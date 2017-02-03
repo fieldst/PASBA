@@ -176,14 +176,14 @@ max-width: 145px;
 <div class="section-header">
       <h2>PASBA APPS</h2>
 </div>
-
+<div class="person-wrapper-pasbaapps">
    <div class="container-pasbaapps">
    
 <div id="mapwrapper">
    
    <h4 id="powered"><u>Powered by MEDCOM Analytics Platform</u></h4>
   
-
+<div style="clear: both"></div>
 <div class="mapproduct">
 
   
@@ -208,6 +208,9 @@ max-width: 145px;
   </div>
 
   </div>
+
+
+
 </div>
 <div style="clear: both"></div>
 </div>
@@ -221,7 +224,7 @@ max-width: 145px;
 <h4 id="nonrestricted"><u>Non-Restricted</u></h4>
   
 
-
+<div style="margin: auto">
 <div class="icon-contain" ng-repeat="app in nonrestricted">
   <h3>{{app.name}}</h3>
  <div class="view view-first" ng-attr-style="background: {{ app.background }}">
@@ -237,6 +240,8 @@ max-width: 145px;
   </div>
 
   </div>
+
+</div>
 
   
 
@@ -268,7 +273,7 @@ max-width: 145px;
 </div>
 <div class="clear"></div>
 </div><!-- close colspan-->
-
+</div>
 <div ng-include src="'shared/layout/modalcontent.html'"></div> 
 
  

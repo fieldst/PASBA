@@ -15,18 +15,18 @@ div#all {
 /* generic css */
 
 .view {
-  margin: auto 2px;
-  float: left;
-  border: 10px solid #fff;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  box-shadow: 1px 1px 2px #e6e6e6;
-  cursor: default;
-  background: #fff url(../images/bgimg.jpg) no-repeat center center;
-  width: 240px;
-  height: 200px;
-  padding-top: 5px;
+    margin: auto 2px;
+    float: left;
+    border: 10px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    background: #fff url(../images/bgimg.jpg) no-repeat center center;
+    width: 266px;
+    height: 200px;
+    padding-top: 5px;
 }
 
 .view .mask,
@@ -49,19 +49,21 @@ left: 0;
     color: #fff;
     text-align: center;
     position: relative;
-    font-size: 14px;
+    font-size: 18px;
     font-family: Raleway, serif;
     padding: 10px;
-    margin: -8px 71px 0 0;
+    margin: -9px 71px 0 0;
 }
 
 .view p {
     font-family: Merriweather, serif;
-    font-size: 13px;
+    font-size: 16px;
     position: relative;
     color: #fff;
-    padding: 0px 93px 0px 10px;
+    padding: 0px 73px 0px 8px;
     text-align: center;
+    line-height: 19px;
+    margin-bottom: 15px;
 }
 
 .view a.info {
@@ -73,6 +75,7 @@ left: 0;
     font-family: Raleway, serif;
     text-transform: uppercase;
     margin: -9px 11px 10px -53px;
+
 }
 
 .view a.info:hover {
@@ -98,6 +101,20 @@ padding-bottom: 47px;
 
 .container-pasbaapps h3{
   font-size: 15px;
+  color: #555;
+}
+
+.person-wrapper-pasbaapps {
+    background: #fff;
+    padding: 34px 23px;
+    min-height: 100px;
+    overflow: hidden;
+    height: auto;
+    width: 105%;
+   /* max-height: 1300px;*/
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .view-first .mask {
@@ -179,7 +196,7 @@ padding-bottom: 47px;
 .container-pasbaapps {
     width: 100%;
     /*margin: auto;*/
-    margin-left: 61px;
+    
     text-align: center;
     max-width: 1400px;
    
@@ -189,6 +206,7 @@ padding-bottom: 47px;
     padding-bottom: 23px;
     font-size: 22px;
     color: #500707;
+    font-weight: bold
 }
 
 #mainleft {
