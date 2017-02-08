@@ -16,9 +16,7 @@ body {
 	font-family:helvetica;
 }
 
-h2, h3, h4{
-  color: #117abc;
-}
+
 
 
 .blurb-wrapper {
@@ -32,9 +30,7 @@ h2, h3, h4{
 }
 /*person apps section*/
 
-.blurb-wrapper h1,h2,h3,h4,h5{
-	color: #fff;
-}
+
 
 .person-wrapper {
     background: #fff;
@@ -233,7 +229,7 @@ h2, h3, h4{
 }
 
 .col-sm-4-custom{
-    width: 24.333% !important;
+    width: 100.333% !important;
 }
 
 .acccontain{
@@ -305,12 +301,27 @@ h2, h3, h4{
 
   .ng-sticky-fixed-myapps{
    
+
+     position: fixed;
+    top: 96px;
+    width: 17.1%;
+    right: 206px;
+    float: right;
+    height: auto !important;
+
+  }
+
+  /*side widget responsive styles*/
+
+  @media (max-width: 1850px){
+    .ng-sticky-fixed-myapps {
     position:fixed;
     top:96px;
     width:19.100%;
     right: 98px;
     float: right;
-
+    height: auto !important;
+}
   }
 
   @media (max-width: 1500px){
@@ -318,10 +329,60 @@ h2, h3, h4{
     position: fixed;
     top: 96px;
     width: 19.100%;
-    right: 84px;
+    right: 88px;
     float: right;
+    height: auto !important;
 }
   }
+
+  @media (max-width: 1470px){
+  .ng-sticky-fixed-myapps {
+    position: fixed;
+    top: 96px;
+    width: 19.100%;
+    right: 41px;
+    float: right;
+    height: auto !important;
+}
+}
+
+
+@media (max-width: 900px){
+  .ng-sticky-fixed-myapps{
+    position: initial;
+    height: auto;
+    top: 0;
+    right: 0;
+    float: none;
+    width: unset;
+  }
+}
+
+
+@media (max-width: 800px){
+  .ng-sticky-fixed-myapps{
+    position: fixed;
+    top: 96px;
+    width: 30.1%;
+    right: 44px;
+    float: right;
+    height: auto !important;
+  }
+}
+
+
+@media (max-width: 750px){
+  .ng-sticky-fixed-myapps{
+    position: initial;
+    top: 96px;
+    width: auto;
+    right: 0;
+    float: unset;
+    height: auto !important;
+  }
+}
+
+
 
 
 .intro-image p {
@@ -2524,13 +2585,25 @@ h2.product-title{
     font-size: 22px;
     color: #82000A;
     font-style: italic;
+    margin: auto;
+    width: 60%;
 
 }
+
+
 
 .update {
     float: right;
     margin: -12px 21px;
 
+}
+
+@media (max-width: 900px){
+  .update{
+    margin: auto;
+    float: unset;
+    text-align: center
+  }
 }
 
 .update p{

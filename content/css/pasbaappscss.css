@@ -91,6 +91,17 @@ left: 0;
     margin: auto;
 }
 
+.iconwrapper{
+  margin: auto;
+}
+
+@media (max-width: 972px){
+  .iconwrapper{
+    margin: auto;
+    width: 52%;
+  }
+}
+
 .icon-contain{
 width: auto;
 height: auto;
