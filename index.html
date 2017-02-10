@@ -99,8 +99,11 @@
 		</style>
       </head>
       <div class="overlay"><div ng-include src="'shared/layout/alert.html'"></div></div>
-      <body>
-  
+      <body class="noscroll">
+ <script>
+
+
+ </script>
     <!--[if lte IE 9]>
         <div style="width: 100vw; height: 100vh; background-color: rgba(100,100,100,0.75); position: absolute; z-index: 100; ">
             <div id="oldie" style="position: absolute; top: 25%; z-index: 100; background-color: orange; left: 25%; width: 50%; height: 50%; font-size: 50px; color: white; padding: 50px; line-height: 1em; text-align: center ">
@@ -119,11 +122,8 @@
           <header class="navbar navbar-default navbar-fixed-top navbar-top">
             <div class="container">
               <div class="navbar-header">
-
-
-
-
-                <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                <button type="button" class="navbar-toggle" 
+                  data-toggle="collapse" data-target=".navbar-collapse">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
@@ -131,15 +131,12 @@
 
                 </button>
 
-
-
-
-                <a href="index.html" class="navbar-brand"><span class="logo"><img src="content/images/pasbalogomedcom.png" alt="PASBA Logo"></span></a><br/>
+                <a href="" class="navbar-brand"><span class="logo"><img src="content/images/pasbalogomedcom.png" alt="PASBA Logo"></span></a><br/>
                <!-- optional slider toggle <div class="side-hide"><p>Toggle Slider</p><toggle-switch ng-model="switchStatus" on-label="show" off-label="hide"><toggle-switch></div> -->
 
               </div>
 
-              <div class="navbar-collapse collapse" id="navbar">
+              <div class="navbar-collapse collapse">
 
                 <ul class="nav navbar-nav navbar-right">
 
@@ -314,7 +311,7 @@
 </div>
 
                   
-                  <div class="container bodycontainter">
+                  <div class="container">
 
                   
 
@@ -340,15 +337,11 @@
                       </li>
                     </ul>
 
-                    <div class="site-info">
-                     
-                      <p>Where Inspiration...Meets Innovation</p>
-
-                    </div>
+                    
 
                   <div class="address">
                      <p>Patient Administration Systems and Biostatistics Activity<br/> 2404 Stanley Rd, Ste 25, Bldg. 126 Fort Sam Houston, TX 78234-5053</p>
-                    
+                     <h4>Where Inspiration...Meets Innovation</h4>
                    </div>
 
                     <div style="clear: both"></div>
@@ -360,7 +353,7 @@
               </div> <!-- end wrapper -->
 
               <!-- Essentials -->
-              <!-- <script src="libraries/css/bootstrap/bootstrap.min.js"></script> -->
+               <script src="content/css/bootstrap/bootstrap.min.js"></script> 
 
 <!-- top slider -->
               <script>

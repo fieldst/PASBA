@@ -12,6 +12,10 @@ body {
     overflow-x: hidden;
 }
 
+
+
+
+
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
 	font-family:helvetica;
 }
@@ -39,7 +43,6 @@ body {
     overflow: auto;
     height: auto;
     width: 105%;
-   /* max-height: 1300px;*/
     margin: 0;
     overflow-x: hidden;
     overflow-y: auto;
@@ -52,12 +55,29 @@ body {
     min-height: 100px;
     overflow: auto;
     height: auto;
-    width: 140%;
+    width: 135%;
     
     margin: 0;
     overflow-x: hidden;
     overflow-y: hidden;
 }
+
+@media (max-width: 800px){
+  .about-wrapper {
+    background: #fff;
+    /*padding: 34px 23px;*/
+    min-height: 100px;
+    overflow: auto;
+    height: auto;
+    width: 100%;
+    
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+}
+
+
 
 .about-wrapper p{
   line-height: 1.7em;
@@ -124,6 +144,7 @@ body {
     width: 255px;
     vertical-align: middle;
 }
+
 
 .about-intro-image{
 	 float: left;
@@ -197,16 +218,25 @@ body {
 
 .overlay {
     background-color: rgba(0, 0, 0, 0.9);
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     display: none;
     z-index: 99999;
-    height: 2000px;
-    overflow: hidden;
+    overflow: visible;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
+
+.noscroll{
+  overflow: hidden;
+}
+
+
+
+
 
 .modelBox {
     width: 50%;
@@ -216,6 +246,7 @@ body {
     top: 3%;
     position: relative;
     opacity: 1;
+    min-width: 418px;
 }
 
 .alertcontainer{
@@ -232,18 +263,21 @@ body {
     width: 100.333% !important;
 }
 
-.acccontain{
-  width: 400px;
-  margin: auto;
+.acccontain {
+    width: 100%;
+    margin: auto;
+    min-width: 362px;
+    max-width: 369px;
 }
 
 .alertwrapper h4{
   color: red;
 }
 
-.alertwrapper p{
-  text-align: left;
-
+.alertwrapper p {
+    text-align: left;
+    line-height: 26px;
+    font-size: 16px;
 }
 
 .closed{
@@ -284,6 +318,54 @@ body {
 
 .yellow{
 	background: #00767F;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
 }
 
 
@@ -373,9 +455,10 @@ body {
 
 @media (max-width: 750px){
   .ng-sticky-fixed-myapps{
+    position: static; /*IE fix*/
     position: initial;
     top: 96px;
-    width: auto;
+    width: 100%;
     right: 0;
     float: unset;
     height: auto !important;
@@ -396,7 +479,7 @@ body {
 
 .body-image {
     padding-right: 65px;
-    padding: 15px 68px;
+    padding: 15px 31px;
     /*background: #F5F5F5;*/
     
     height: 350px;
@@ -595,7 +678,7 @@ float: right;*/
 @media (max-width: 1250px){
   .content-right .linkinline li {
     float: left;
-    padding-right: 75px;
+    
     width: 49%;
 }
 }
@@ -648,6 +731,12 @@ float: right;*/
 
 .medium-image{
 	width: 200px;
+}
+
+@media (max-width: 750px){
+  .medium-image{
+    width: 179px;
+  }
 }
 
 button.accordion {
@@ -1284,8 +1373,12 @@ a:hover{
 	color: #00317C !important;
 }
 
-.navbar-brand{
-	height: 70px;
+
+
+@media (max-width: 750px){
+  .navbar-toggle{
+    margin-top: 34px;
+  }
 }
 
 .logo-drop{
@@ -1620,7 +1713,7 @@ a:hover{
     color: #000;
     clear: both;
     
-    font-size: 11px;
+    font-size: 8px;
 }
 
 }
@@ -1853,7 +1946,13 @@ input[type=text]::-ms-clear {
 
 /*==========Main & Widget=================*/
 .wrapper{
-	margin-top:70px !important;
+	margin-top:56px;
+}
+
+@media (max-width: 725px){
+  .wrapper{
+    margin-top: 82px;
+  }
 }
 .main{
 	padding:30px 0;
@@ -2600,9 +2699,9 @@ h2.product-title{
 
 @media (max-width: 900px){
   .update{
-    margin: auto;
     float: unset;
-    text-align: center
+    text-align: center;
+    width: 87%;
   }
 }
 
@@ -2618,6 +2717,12 @@ h2.product-title{
     text-align: center;
     position: relatvie;
     
+}
+
+.address h4{
+  font-style: italic;
+  color: #117ABC;
+  margin-top: 18px;
 }
 
 
