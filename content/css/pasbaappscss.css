@@ -29,8 +29,6 @@ div#all {
     padding-top: 5px;
 }
 
-@media (max-width: )
-
 .view .mask,
 .view .content {
   width: 300px;
@@ -91,17 +89,6 @@ left: 0;
     width: 214px;
     height: 162px;
     margin: auto;
-}
-
-.iconwrapper{
-  margin: auto;
-}
-
-@media (max-width: 972px){
-  .iconwrapper{
-    margin: auto;
-    width: 52%;
-  }
 }
 
 .icon-contain{
