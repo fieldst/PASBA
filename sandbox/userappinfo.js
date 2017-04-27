@@ -35,7 +35,7 @@
          "TokenLink":"/apps/codingInquiryApps/codingHelpDeskFrameset.html"
       },
       {
-         "TokenName":"Deployment Assessment Referral Tracking ",
+         "TokenName":"Deployment Assessment Referral Tracking",
          "TokenLink":"/dataanalysis/defaultDART.asp"
       },
       {

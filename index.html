@@ -3,6 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=11">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <meta http-equiv="refresh" content="10" /> -->
   <title>PASBA Website</title>
 
   <!--font awesome-->
@@ -94,12 +95,14 @@
         <script src="libraries/spin.min.js"></script>
         <script src="libraries/bower_components/angular-sticky-navigation-directive/dist/ng-sticky.js"></script>
         <script src="libraries/bower_components/angular-toggle-switch/angular-toggle-switch.js"></script>
-		<style>
-			
-		</style>
+        <script src="libraries/bower_components/ngstorage/ngStorage.min.js"></script>
+
+
+
+
       </head>
-      <div class="overlay"><div ng-include src="'shared/layout/alert.html'"></div></div>
-      <body class="noscroll">
+      
+      <body class="noscroll" >
  <script>
 
 
@@ -117,7 +120,7 @@
         <![endif]-->
 
         <div class="wrapper" ng-controller="pasbaappcontroller">
-
+<div class="overlay"><div ng-include src="'shared/layout/alert.html'"></div></div>
           <div id="top"></div>
           <header class="navbar navbar-default navbar-fixed-top navbar-top">
             <div class="container">
@@ -312,7 +315,7 @@
 
                   
                   <div class="container">
-
+<!-- <button ng-click="$storage.$reset()">Clear localStorage</button> -->
                   
 
                     <div ng-view autoscroll="true"></div>

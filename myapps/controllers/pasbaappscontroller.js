@@ -1,4 +1,4 @@
-app.controller('pasbaappcontroller', function($scope, $compile, $timeout, $http, $routeParams, usSpinnerService, $uibModal, $location, $animate, $rootScope ){
+app.controller('pasbaappcontroller', function($scope, $compile, $timeout, $http, $routeParams, $localStorage, usSpinnerService, $uibModal, $location, $animate, $rootScope ){
 
 $rootScope.location = $location;
 $scope.$on('LOAD',function(){$scope.loading=true});
@@ -16,6 +16,7 @@ $scope.$on('removeslider',function(){$scope.removeit=true});
    // console.log($scope.removeit);
  }
 
+
  $scope.$on('#/unrestrictedapps', function removeslideshow(selection){
     $scope.removeit = selection;
  });
@@ -29,6 +30,16 @@ $scope.$on('removeslider',function(){$scope.removeit=true});
        
     
 }
+
+  //Tabs
+
+  $scope.myapps = "My Apps";
+  $scope.pasbaapps = "PASBA Apps";
+  $scope.dmrpc = "DMRPC";
+  $scope.him = "HIM";
+  $scope.dataquality = "Data Quality";
+  $scope.dataanalysis = "Data Analysis";
+  
 
  
  var accessthree = $scope;
@@ -127,6 +138,8 @@ $scope.setcurrent = function(value){
 
   ]
 
+  
+
 
 $scope.externalapps = [
   
@@ -164,7 +177,6 @@ $scope.$emit('LOAD')
     },{});
 
 
-		console.log($scope.restrictedapps);
 
 
    
@@ -180,44 +192,146 @@ $http.get("sandbox/colors.js").
 
 		$scope.colors = colorresponse.data;
 
+// old fix
 
-$scope.unrestricteddata = [
-      {
-         "color":"color1",
-         "icon": "content/images/icons/administrator.svg"
+//      arrayList = [], obj_c_processed = [];
+
+// for (var i in $scope.restrictedapps) {
+//     var obj = {TokenName: $scope.restrictedapps[i].TokenName, TokenLink: $scope.restrictedapps[i].TokenLink};
+
+//     for (var j in $scope.colors) {
+//         if ($scope.restrictedapps[i].TokenName == $scope.colors[j].TokenName) {
+//             obj.TokenName = $scope.colors[j].TokenName;
+//             obj_c_processed[$scope.colors[j].TokenName] = true;
+//         }
+//     }
+
+   
+// }
+
+// for (var j in $scope.colors){
+//     if (typeof obj_c_processed[$scope.colors[j].id] == 'undefined') {
+//         arrayList.push({color: $scope.colors[j].color, icon: $scope.colors[j].icon, TokenName: $scope.colors[j].TokenName, TokenLink: $scope.restrictedapps[i].TokenLink});
+//     }
+// }
+
+
+// $scope.newjson = arrayList;
+
+function mergeArraysOnProperty(array1, array2, property) {
+  array1.forEach(function(element1) {
+    array2.forEach(function(element2) {
+      if (element1[property] === element2[property]) {
+        for (var newProperty in element2) {
+          if (element2.hasOwnProperty(newProperty)) {
+            element1[newProperty] = element2[newProperty];
+          }
+        }
       }
-      ];
-
-		// restrictvalues.push({"restrictedapps.UserApp"});
-
-	// $scope.restrictedapps.push({color : "white"});
-
-
-
-
-	function addColor (objectArray, colorArray, restrictedtemplate){
-	
-	objectArray.forEach(function(object, index){
-		object.color = colorArray[index];
-
-
-		 if($scope.restrictedapps.length > 0){
-
-
-     $scope.test = "true";
-
-    
-  }
-
-	});
-	
+    });
+  });
+  return array1;
 };
 
-addColor($scope.restrictedapps, $scope.colors, $scope.unrestricteddata);
- // console.log($scope.restrictedapps);
+$scope.newjson = mergeArraysOnProperty($scope.restrictedapps, $scope.colors, "TokenName");
+
+
+
+
+//default template
+if($scope.newjson.length > 0){
+
+    $scope.test = "true";
+    }
+
+
+
+
+$scope.check_credentials = function (app) {
+
+var request = $http({
+    method: "POST",
+    url: "https://pasbadevweb/PACT/API/createweblogentry",
+    data: {
+        AuditEvent: "App Access",
+        AuditEventObject: app
+    },
+    headers: { 'Content-Type': 'application/json' }
+    
+});
+
+
+}
+
+
+$scope.check_credentials_tabs = function (appname) {
+var app = appname;
+var request = $http({
+    method: "POST",
+    url: "https://pasbadevweb/PACT/API/createweblogentry",
+    data: {
+        AuditEvent: "Branch Access",
+        AuditEventObject: app
+    },
+    headers: { 'Content-Type': 'application/json' }
+    
+});
+
+
+}
+
+
+
+$scope.check_credentials_unrestricted = function (app) {
+
+var request = $http({
+    method: "POST",
+    url: "https://pasbadevweb/PACT/API/createweblogentry",
+    data: {
+        AuditEvent: "App Access",
+        AuditEventObject: app
+    },
+    headers: { 'Content-Type': 'application/json' }
+    
+});
+
+
+}
+
+
+
+
+ $scope.codeAddress = function() {
+
+    
+
+           var request = $http({
+    method: "POST",
+    url: "https://pasbadevweb/PACT/API/createweblogentry",
+    data: {
+        AuditEvent: "LOGIN",
+        AuditEventObject: "PASBA"
+    },
+    headers: { 'Content-Type': 'application/json' }
+   
+});
+           
+  
+    
+        
+        }
+
+
+
 
 
 	})
+
+        
+
+    
+
+
 $scope.$emit('UNLOAD')
 
 
@@ -226,6 +340,27 @@ $scope.$emit('UNLOAD')
 
     
 });
+
+var idleTime = 0;
+$(document).ready(function () {
+    //Increment the idle time counter every minute.
+    var idleInterval = setInterval(timerIncrement, 60000); // 1 minute
+
+    //Zero the idle timer on mouse movement.
+    $(this).mousemove(function (e) {
+        idleTime = 0;
+    });
+    $(this).keypress(function (e) {
+        idleTime = 0;
+    });
+});
+
+function timerIncrement() {
+    idleTime = idleTime + 1;
+    if (idleTime > 44) { // 20 minutes
+        window.location.reload();
+    }
+}
 
 
 
